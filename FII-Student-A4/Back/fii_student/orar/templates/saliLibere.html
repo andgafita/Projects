@@ -1,0 +1,52 @@
+﻿{% extends 'navbar.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          {% load static %}
+     	<title>Săli libere acum</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+{#          <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">#}
+{#          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">#}
+{#          <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">#}
+          <link rel="stylesheet" type="text/css" href="{% static 'a.css' %}">
+         <link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+         <style>
+    :root {
+      --background-first: {{ user.personalise.background_first }};
+      --background-second: {{ user.personalise.background_second }};
+      --navbar: {{ user.personalise.navbar_color }};;
+      --color1-first: {{ user.personalise.color1_first }};
+      --color1-second: {{ user.personalise.color1_second }};
+      --color2-first: {{ user.personalise.color2_first }};
+      --color2-second: {{ user.personalise.color2_second }};
+      --font: {{ user.personalise.font_color }};
+      --font-family: {{ user.personalise.font_family }};
+    }
+  </style>
+     </head>
+
+     <body>
+
+          <section>
+
+               <h1>SĂLI LIBERE ACUM</h1>
+                      <article id="form">
+                         <div id="buttons">
+                                             <button type="submit" name="An" value="An" onclick="location.href='/orar/';">Orar</button>
+                             <button type="submit" name="An" value="An" onclick="location.href='http://www.uaic.ro/studii/structura-anului-universitar/';">Structura anului universitar</button>
+                              <button type="submit" name="An" value="An" onclick="location.href='/orar?sali_libere_acum=-';">Săli libere acum</button>
+                              <button type="submit" name="An" value="An" onclick="location.href='/orar/program_sali/';">Disponibilitate săli</button>
+                         </div>
+               </article>
+
+               <article id="cards">
+                         {% for rand in randuri %}
+                         <div>{{rand.sala}}</div>
+                         {% endfor %}
+               </article>
+          </section>
+     </body>
+</html>
+{% endblock %}

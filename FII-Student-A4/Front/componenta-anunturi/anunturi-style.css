@@ -1,0 +1,120 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-size:15px;
+}
+body{
+    font-family: 'Montserrat';
+}
+
+li{
+ list-style: none;   
+}
+
+.anunt-container{
+    display:flex;
+    margin-bottom:10px;
+    box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    margin-bottom: 30px;
+}
+
+.anunt-container .anunt .continut{
+    height: 3.6em;
+    line-height: 1.2em;
+    overflow: hidden;
+    background-color: white;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.anunt-container .anunt{
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.anunt-container .anunt > a:last-child{
+    color: #00001c;
+    font-weight: bold;
+    padding: 5px;
+    background-color:#ffe234;
+    text-decoration: none;
+    
+}
+
+.board{
+    width:80%;
+}
+
+.container{
+    margin:auto;
+    margin-top:20px;
+    width:80%;
+    display:flex; 
+    margin-bottom: 10px;
+}
+
+.date{
+    
+    padding:10px;
+    background-color: #09BCFF;
+    color:white;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    flex-direction: column;
+}
+
+.date > p{
+    text-align:center;
+}
+
+
+.day{
+    font-weight:bold;
+    font-size: 25px;
+}
+
+.top{
+    background-color: white;
+    border-bottom: 1.2px grey solid;
+    padding: 5px 5px 15px 2px;
+    width: 80%;
+    font-weight: bold;
+}
+
+.meniu{
+    width: 18%;
+    box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    margin-left: 20px;
+    height: 100%;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    display:block;
+    width: 100%;
+    margin-bottom:10px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+  }
+
+.btn.active {
+    background-color: #666;
+    color: white;
+  }

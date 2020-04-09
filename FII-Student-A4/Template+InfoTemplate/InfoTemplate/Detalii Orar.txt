@@ -1,0 +1,24 @@
+BUTOANELE VERZI TREBUIE FACUTE MAI MARI
+
+CULORI
+
+NAVBAR- #000428 eventual va fi modificata culoare ulterior
+
+Butoane - #1fd191 - Verde
+Edge-uri - #1fd191 - Verde
+
+Linie Zile - #1fd191 - #0086aa - Green1
+Tabel Head/ Lateral - #f64abd - #ad3abd - Purple
+
+Text Alb - #ffffff
+Linia1 - #ffffff
+Linia2 -#f7f5f7
+
+FONTURI
+
+Titlu - Open Sans Bold - 42pt
+Text Butoane Sus - Montserrat Medium 23 pt
+
+Text Zile Saptamna - Open Sans Semibold - 30 pt
+Text Ore  - MontSerrat - Medium - 32pt
+Text interior - MontSerrat - Medium - 20pt

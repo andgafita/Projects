@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Yomovie guide</title>
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script src="js/scholarly.min.js"></script>
+  </head>
+  <body prefix="schema: http://schema.org">
+    <header>
+      <div class="banner">
+        <img src="scholarly-html.svg" width="227" height="50" alt="Scholarly HTML logo">
+        <div class="status">Info UAIC 2019</div>
+      </div>
+      <h1>Ghid Yomovies</h1>
+    </header>
+    <div role="contentinfo">
+      <dl>
+        <dt>Autori</dt>
+        <dd>
+          Asoltanei Cristian
+        </dd>
+        <dd>
+          Bujoreanu Vlad
+        </dd>
+        <dd>
+          Gafita Andrei
+        </dd>
+        <dd>
+          Paduraru Andra
+        </dd>  
+    </div>
+
+
+    <section id="Abstract" role="doc-abstract">
+      <h2>Abstract</h2>
+      <p>
+        Aplicatia Yomovies pune la dispozitia utilizatorilor posibilitatea de a incarca filme
+        interactive pe aceasta si de a le viziona. Un utilizator poate sa exploreze diferitele fire narative
+        posibile unui film si sa primeasca insigne pentru anumite cai. De asemenea pentru fiecare film cea mai 
+        populare cale poate fi vizionata in sectiunea 'classic movies'. Un utilizator logat poate incarca filme 
+        si sa vada ce insigne a obtinut de la filmele la care s-a uitat. 
+      </p>
+    </section>
+
+    <section id="Ghid de utilizare">
+      <h2>Ghid de utilizare</h2>
+
+      <section id="Login/Sign up">
+        <h3>Login </h3>
+        <p>
+          Pagina aceasta este intermediul aplicatiei prin care se pot accesa toate functionalitatile acesteia.
+          Multe functionalitati nu sunt deschise utilizatorului daca acesta nu este logat, vom vorbi despre acestea 
+          la fiecare sectiune. Pe pagina aceasta utilizatorul poate sa isi creeze un cont(Sign up) si poate sa se logheze 
+          cu acest cont (login) pe aplicatie. (parola este criptata in baza de date din motive de securitate).<br>
+          Atunci cand utilizatorul este logat, in locul butonului de login/sign up va aparea butonul de "Logout".
+        </p>
+      </section>
+
+      <section id="Home">
+        <h3>Home</h3>
+        <img src="pagina_home.png" style="width:750px;height:300px;"/>
+        <p>
+          Pe aceasta pagina sunt prezentate toate filmele din baza de date a aplicatiei, acestea putand fi filtrate dupa diferite
+          criterii (vezi imaginea) cum ar fi actori, numar de decizii, titlu etc. De aici utilizatorul poate sa aleaga sa vizioneze
+          un film pur si simplu dand click pe el. Click-ul va duce la pagina de vizionare a filmului corespunzator.<br>
+          Deasemenea pot fi vizualizate aici si diferite aspecte despre film, cum ar fi cine l-a creat, data incarcarii, numarul de voturi etc.
+        </p>
+      </section>
+
+      <section id="Vizionare">
+        <h3>Vizionare</h3>
+        <p>
+          La vizionarea unui clip utilizatorul va putea dupa terminarea acestuia sa aleaga o cale diferita pe care sa o urmeze 
+          datorita intrebarilor puse de catre uploader si raspunusurilor. Fiecare dintre aceste raspunsuri duc la clipuri diferite(poate) 
+          si ofera utilizatorilor libertatea de a alege. Dupa ce un utilizator a ajuns la finalul unui film, adica a vazut un clip de final 
+          din film, acesta poate sa dea filmului un rating. Exista posibilitatea ca utilizatorul sa primeasca o insigna(achivement/badge) daca 
+          a ajuns la un clip care ofera aceasta insigna. Daca utilizatorul nu este logat acesta nu va avea acces la functionalitatile de rate
+          sau badges.
+        </p>
+      </section>
+
+      <section id="Classic Movies">
+        <h3>Classic Movies</h3>
+        <p>
+          Pe aceasta pagina sunt afisate tot toate filmele si filtrele insa de aici se poate ajunge la vizionarea unui 'film clasic'.
+          Un film clasic este calea cea mai populare dintr-un film, urmata de cei mai multi oameni. Implicit, utilizatorul nu mai poate 
+          alege alt raspuns la o intrebare, firul narativ (din arborele de decizie) fiind deja stabilit.
+        </p>
+      </section>
+      <section id="Upload">
+        <h3>Upload</h3>
+        <img src="pagina_upload.png" style="width:750px;height:350px;"/>
+        <img src="pagina_upload_clip.png" style="width:750px;height:350px;"/>
+        <p>
+          Utilizatorul va trebui sa insereze intai date despre film iar deabia dupa poate edita arborele de decizie al filmului.
+          Acesta poate insera clip-ul aferent deciziei la care se afla, un badge care este optional la fiecare clip, o intrebare precum
+          si raspunsurile la intrebari.<br>
+          Pentru a schimba textul de pe o alegere, utilizatorul va scrie in casuta de text de deasupra acestora textul dorit si va da click pe buton 
+          (click-stanga). Pentru a merge la un alt nod din arbore (la o alta decizie) pentru a incarca clip si celelalte date, utilizatorul va trebui
+          sa dea click-dreapta pe alegerea pe care vrea sa o modifice/puna. Utilizatorul poate sa stearga o alegere apasand click-3 pe mouse pe decizia respectiva
+          (rotita de la mouse).
+        </p>
+      </section>
+      <section id="Account settings">
+        <h3>Account settings</h3>
+        <p>
+          Pe aceasta pagina utilizatorul va putea sa isi schimbe email-ul, numele de utilziator sau parola. Daca email-ul sau numele de utilizator sunt deja folosite 
+          de catre un alt utilizator atunci se va notifica printr-un text rosu care apare dinamic utilizatorul.
+        </p>
+      </section>
+      <section id="Badges">
+        <h3>Badges</h3>
+        <p>
+            Aici utilizatorul poate vedea ce insigne (badges) a luat la ce filme, se pot afisa fie toate insignele odata fie doar de la un film corespunzator.
+        </p>
+      </section>
+      <section id="Yomovies">
+          <h3>Yomovies</h3>
+          <p>
+              Aici utilizatorul va putea vedea filmele incarcate de el iar un click pe un film va duce la modul de editare al filmului, pornind de la primul clip din film.
+          </p>
+        </section>
+    </section>
+    <section id="Bibliografie">
+      <h3>In realizarea acestui document s-au folosit:</h3>
+      <p>
+        https://w3c.github.io/scholarly-html/ <br>
+        https://github.com/w3c/scholarly-html
+      </p>
+    </section>
+  </body>
+</html>

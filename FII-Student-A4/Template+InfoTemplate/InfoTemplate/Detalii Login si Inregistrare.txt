@@ -1,0 +1,23 @@
+logo.png va fi adaugat ulterior de Cristina
+size-ul la fonturi e relativa
+
+Folositi Limba romana, nu ca mine in modelul de Login pls
+
+Culori
+
+NAVBAR- #000428 eventual va fi modificata culoare ulterior
+Background - #1b1354
+Card Stanga- opacity 85%- #1fd191 - #0086aa - Green1
+
+linie nth of type odd, linie username... - opacity 60% - #1fd191 - #0086aa - Green1
+linie nth of type even - opacity 60% -#f64abd - #ad3abd - Purple
+Text Alb - #ffffff
+
+
+FONTURI
+
+LOGIN si INREGISTRARE - Open Sans - Bold - 72 pt
+Text username.... nume... rol - Open Sans - Regular 
+Text Buton log in , sign in - Roboto Black
+Forgot - Montserrat Regulat 35 pt
+Create - Open Sans - Light 35pt

@@ -1,0 +1,37 @@
+PENTRU A VEDEA CUM ARATA FOLOSITI Culori.png
+
+Culori Flat de baza:
+#1fd191 - Verde 
+#1b1354 - Albastru inchis ( fundal )
+#030b3d - Albastru inchis2 ( meniu stanga)
+#ff9e3e - Orange 
+#9c09d3	- Mov
+#ce4abd - Mangenta Sort OF
++ Alte elemente din alea deschise din lista de gradiente if you want
+
+
+Gradiente Pentru Elemente:
+
+#ffc53f - #ff84f2 - Orange1
+#ffc16a - #ff6a72 - Orange2
+#1fd191 - #0086aa - Green1
+#2af598 - #009efd - Green2
+#f9f586 - #1fd191 -  Lime
+#f64abd - #ad3abd - Purple
+#aa076b - #000428 - DarkPurple1
+#ff9692 - #fc73c2 - #ad74f2 - Pink
+#aa076b - #610457 - DarkPurple2
+#65e1e0 - #6497e6 - #8566e6 - LightBlue
+#004e92 - #000428 -DarkBlue
+#c31432 - #240b36 -Red
+
+
+Circular Gradient pentru background:
+	
+Toate 3 sunt dark blue gradients 
+
+#1b1353 - #000428
+#00396e - #000428
+#004e92 - #000428
+
+

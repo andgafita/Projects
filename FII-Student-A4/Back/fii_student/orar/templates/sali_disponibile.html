@@ -1,0 +1,85 @@
+﻿{% extends 'navbar.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <title>Disponibilitate săli</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+{#        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">#}
+{#        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">#}
+{#        <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">#}
+        <link rel="stylesheet" href="{% static 'dispSali.css' %}" type="text/css" media="screen"/>
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+                 <style>
+    :root {
+      --background-first: {{ user.personalise.background_first }};
+      --background-second: {{ user.personalise.background_second }};
+      --navbar: {{ user.personalise.navbar_color }};;
+      --color1-first: {{ user.personalise.color1_first }};
+      --color1-second: {{ user.personalise.color1_second }};
+      --color2-first: {{ user.personalise.color2_first }};
+      --color2-second: {{ user.personalise.color2_second }};
+      --font: {{ user.personalise.font_color }};
+      --font-family: {{ user.personalise.font_family }};
+    }
+  </style>
+
+    </head>
+
+    <body>
+    {% load my_filters %}
+
+     <section>
+            <h1>DISPONIBILITATEA SĂLILOR</h1>
+            <article>
+                <div id="buttons">
+                                         <button type="submit" name="An" value="An" onclick="location.href='/orar/';">Orar</button>
+                             <button type="submit" name="An" value="An" onclick="location.href='http://www.uaic.ro/studii/structura-anului-universitar/';">Structura anului universitar</button>
+                              <button type="submit" name="An" value="An" onclick="location.href='/orar?sali_libere_acum=-';">Săli libere acum</button>
+                              <button type="submit" name="An" value="An" onclick="location.href='/orar/program_sali/';">Disponibilitate săli</button>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item1">LIBER</div>
+                    <div class="grid-item2">OCUPAT</div>
+                </div>
+            </article>
+
+            <article id="sndArt">
+
+            {% for sala in rangesali %}
+            <h2 id="H2">{{sali|index:sala}}</h2>
+
+            <table class="table1">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th scope="col" abbr="Starter">Luni</th>
+                        <th scope="col" abbr="Medium">Marti</th>
+                        <th scope="col" abbr="Business">Miercuri</th>
+                        <th scope="col" abbr="Deluxe">Joi</th>
+                        <th scope="col" abbr="Deluxe">Vineri</th>
+                        <th scope="col" abbr="Deluxe">Sambata</th>
+                        <th scope="col" abbr="Deluxe">Duminica</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for ora in rangeore %}
+                    <tr>
+                        <th scope="row">{{ore|index:ora}}:00</th>
+                        {% for zi in rangezile %}
+                        <td class={{lista|index:sala|index:zi|index:ora}}></td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endfor %}
+            </article>
+     </section>
+    </body>
+</html>
+{% endblock %}

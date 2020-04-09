@@ -1,0 +1,4 @@
+{% autoescape off %}
+    Salut,  {{ user.email|safe }},
+    Acceseaza http://{{ domain|safe }}{% url 'activate' uidb64=uid token=token %} pentru a confirma email-ul.
+{% endautoescape %}

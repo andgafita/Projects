@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav>
+                <button onclick="location.href='index.html';">Home</button>
+                <button onclick="location.href='index.html';">Classic movies</button>
+                <button onclick="location.href='accountsettings.html';">Profile</button>
+                <button onclick="location.href='Upload.html';">Upload</button>
+                <button id="currentButton">Login/Sign up</button>
+        </nav>
+
+        <div id="loginPageContent">
+            <div id="leftSide"></div>
+            <div id="middlePart">
+                    <form id="dateLogin">
+                        <h1>Log in</h1>
+                        <p>Username:</p>
+                        <input type="text" name="username">
+                        <p>Password:</p>
+                        <input type="password" name="pass">
+                        <button>Log in</button>
+                    </form>
+
+                    <form id="dateSignup">
+                            <h1>Sign Up</h1>
+                            <p>Email:</p>
+                            <input type="text" name="email">
+                            <p>Username:</p>
+                            <input type="text" name="username">
+                            <p>Password:</p>
+                            <input type="password" name="pass">
+                            <p>Confirm Password:</p>
+                            <input type="password" name="confirmpass">
+                            <button>Sign up</button>
+                        </form>
+            </div>
+            <div id="rightSide"></div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

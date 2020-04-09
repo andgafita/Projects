@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8">
+    {% load static %}
+    <link href="{% static "navbar.css" %}" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+
+
+<style>
+:root{
+--background-first: {{user.personalise.background_first}};
+--background-second: {{user.personalise.background_second}};
+--navbar:{{ user.personalise.navbar_color }};
+--color1-first:{{ user.personalise.color1_first }};
+--color1-second:{{ user.personalise.color1_second }};
+--color2-first:{{ user.personalise.color2_first }};
+--color2-second:{{ user.personalise.color2_second }};
+--font: {{ user.personalise.font_color }};
+--font-family: {{ user.personalise.font_family }};
+}</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="{% static 'logoalb.png' %}" style="width: 140px; position: relative; top: -15px;" alt="FiiStudent"></a>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Acasă</a></li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Orar<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Sali</a></li>
+            <li><a href="#">Materii</a></li>
+            <li><a href="#">Grupa</a></li>
+          </ul>
+        </li>-->
+				<li><a href='/orar/'>Orar</a></li>
+				<li><a href="/personalise/boards/">Boards</a></li>
+				<li><a href="/news/">Noutăți</a></li>
+				<li><a href="/resources/">Resurse</a></li>
+				<li><a href="/personalise/notificari">Notificări</a></li>
+				<li><a href="/users/settings/">Personal</a></li>
+				<li><a href="/3d_tour/">3D</a></li>
+{#        <li><a href="#">Setari Cont</a></li>#}
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+          {% if user.is_authenticated %}
+{#                    <p style="color:white">Salut, {{ user.first_name }}!</p>#}
+                    <li><a> Salut, {{ user.first_name }}!</a></li>
+                    <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span> Deconectare</a></li>
+          {% else %}
+              <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Conectare</a></li>
+              <li><a href="{% url 'signup' %}"><span class="glyphicon glyphicon-registration-mark"></span> Înregistrare</a></li>
+          {% endif %}
+{#        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Deconectare</a></li>#}
+      </ul>
+    </div>
+  </div>
+</nav>
+{% block content %} {% endblock %}
+</body>
+</html>

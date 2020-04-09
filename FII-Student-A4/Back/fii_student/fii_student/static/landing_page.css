@@ -1,0 +1,161 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#bodyContainer {
+    background-image: url("landing_background.jpg");
+    background-size: cover;
+    background-position-y: center;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: grid;
+    grid-template-areas: "a";
+}
+
+/* =================================== */
+
+/* ========= Nav Bar Section ========= */
+
+/* =================================== */
+
+#navBarForm {
+    grid-area: a;
+    z-index: 1;
+}
+
+/* ========================================== */
+
+/* ========= Main Content Container ========= */
+
+/* ========================================== */
+
+#contentContainer {
+    margin: 0px;
+    border: 0px;
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: a;
+}
+
+/* ============================================== */
+
+/* ========= Right Part of the Container ========= */
+
+/* ============================================== */
+
+#contentContainer #rightLandingContainer {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: left;
+    width: 50vw;
+}
+
+/* ============================================== */
+
+/* ========= Left Part of the Container ========= */
+
+/* ============================================== */
+
+#contentContainer #leftLandingContainer {
+    background-color: transparent;
+    color: white;
+    padding-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: left;
+    width: 50vw;
+}
+
+#leftLandingContainer #applicationTitle {
+    background-color: transparent;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant-caps: small-caps;
+    letter-spacing: 0.1em;
+    padding: 0px;
+    margin-top: 2vmin;
+    margin-bottom: 1vmin;
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+    font-size: 3vmax;
+}
+
+#leftLandingContainer #landingInformation {
+    background-color: transparent;
+    padding: 1vmax 0vmax;
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+#leftLandingContainer #learnMoreButton {
+    background-color: transparent;
+    color: white;
+    padding: 1vmin 4vmin;
+    margin-bottom: 2vmin;
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+    border: solid 2px white;
+    border-radius: 100px;
+    transition: all .2s ease-in-out;
+    z-index: 2;
+}
+
+#leftLandingContainer #learnMoreButton:hover {
+    background-color: white;
+    color: black;
+    margin-left: 3vmin;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+/* ============================================ */
+
+/* ========= Learn More PopUp Section ========= */
+
+/* ============================================ */
+
+#learnMorePopUp {
+    grid-area: a;
+    z-index: 2;
+    background-color: darkblue;
+    color: white;
+    height: 75vh;
+    width: 75vw;
+    padding: 2vh 2vw;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+    text-align: justify;
+    display: none;
+    transition: all .2s ease-in-out;
+}
+
+#closePopUpButton {
+    float: right;
+    border-radius: 100px;
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em 1em;
+    transition: all .2s ease-in-out;
+}
+
+#closePopUpButton:hover {
+    background-color: white;
+    color: black;
+    transition: all .2s ease-in-out;
+}

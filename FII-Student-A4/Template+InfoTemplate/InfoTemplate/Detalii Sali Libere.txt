@@ -1,0 +1,21 @@
+
+BUTOANELE VERZI TREBUIE FACUTE MAI MARI
+
+
+CULORI
+
+NAVBAR- #000428 eventual va fi modificata culoare ulterior
+
+Butoane - #1fd191 - Verde
+
+Card nth of type odd - #1fd191 - #0086aa - Green1
+Card nth of type even - #f64abd - #ad3abd - Purple
+
+Text Alb - #ffffff
+Linia1 - #ffffff
+Linia2 -#f7f5f7
+
+FONTURI
+
+Titlu - Open Sans Bold - 42pt
+Text Carduri Roboto Medium -50pt

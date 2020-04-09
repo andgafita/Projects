@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title></title>
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script src="js/scholarly.min.js"></script>
+  </head>
+  <body prefix="schema: http://schema.org">
+    <header>
+      <div class="banner">
+        <img src="scholarly-html.svg" width="227" height="50" alt="Scholarly HTML logo">
+        <div class="status">Project Details</div>
+      </div>
+      <h1>YoMovie</h1>
+    </header>
+    <div role="contentinfo">
+      <dl>
+        <dt>Authors</dt>
+        <dd>
+          Asoltanei Cristian
+        </dd>
+        <dd>Bujoreanu Vlad</dd>  
+        <dd>Gafita Andrei</dd>  
+        <dd>Paduraru Andra-Elena</dd>  
+      </dl>
+    </div>
+    <section id="cerinta" role="doc-cerinta">
+      <!-- review? -->
+      <h2>Cerinta</h2>
+      <p>Să se creeze o aplicație Web care să ofere posibilitatea distribuției de filme interactive. Un utilizator va putea crea un arbore de decizie, iar aplicația va calcula numărul total de căi posibile. Un vizitator va putea vedea o listă de filme pe care le poate filtra după diferite criterii (gen, lungime, actori etc.) și va putea fi ordonată după popularitate, număr de fire epice, număr de finaluri etc. Vizualizarea informatiilor privitoare la un film se poate realiza interactiv conform arborelui de decizie stabilit. Pentru cea mai populară cale, se va genera un film clasic ce va putea fi vizualizat cu orice aplicație capabilă să redea filme. Unele căi vor putea oferi recompense: insigne sau acces la alte filme, de exemplu, “Bravo, ai ajuns aici, înseamnă că ești un bun cercetaș, acum poți viziona și filmul “Singur printre copaci” sau, pentru altă cale, primești insigna “cold blooded murderer”.
+      </p>
+    </section>
+    <section id="detalii-arhitecturale">
+      <!-- review? -->
+      <h2>Detalii arhitecturale</h2>
+      <section id="MVC">
+        <!-- review? -->
+        <h3>MVC</h3>
+        <img src="MVC.png" style="width:750px;height:300px;"/>
+        <p>
+          Pentru structurarea aplicatiei am folosit design pattern-ul MVC(Model View Controller) ce permite impartirea responsabilitatilor intre trei entitati.
+          <code>text/html</code>.
+        </p>
+          <section id="Model">
+            <h3>Model</h3>
+            <p>Aceasta componenta are responsabilitatea de a comunica cu baza de date si de a transmite datele necesare Controller-ului. </p>
+            <code>
+                class Choice extends Model {<br>
+                  public $id = 0;<br>
+                  public $descriere = '';<br>
+                  public $textIntrebare = '';<br>
+                  public $clipPath = '';<br>
+                  public $idPrecedent = 0;<br>
+                  public $choiceNumber = 0;<br>
+                  public $movieId = 0;<br>
+                  public $badgeId = -1;<br>
+                  public $vizualizari = 0;<br><br>
+              
+                  public function __construct($idClip) {<br>
+                      $con = DB::getInstance()->getConnection();<br>
+                      $stmt = $con->prepare('SELECT * FROM choices WHERE id=?');<br>
+                      $stmt->bindParam(1, $idClip, PDO::PARAM_INT);<br>
+                      $stmt->execute();<br>
+                      $row = $stmt->fetch(PDO::FETCH_ASSOC);<br>
+                      if($row) {<br>
+                         $this->id = $row['id'];<br>
+                         $this->descriere = $row['descriere'];<br>
+                         $this->textIntrebare = $row['text_intrebare'];<br>
+                         $this->clipPath = $row['clip_path'];<br>
+                         $this->idPrecedent = $row['id_precedent'];<br>
+                         $this->choiceNumber = $row['choice_number'];<br>
+                         $this->movieId = $row['movie_id'];<br>
+                         $this->badgeId = $row['badge_id'];<br>
+                         $this->vizualizari = $row['vizualizari'];<br>
+                      }<br>
+                      else {<br>
+                          $this->id = $idClip;<br>
+                      }<br>
+                  }
+            </code>
+          </section>
+          <section id="View">
+              <h3>View</h3>
+              <p>View-urile sunt reprezentarea datelor cerute prin intermediul interfetei, aceasta comunica cu Controller-ul si ii cere datele corespunzatoare componentei aplicatiei.</p>
+            </section>
+            <section id="Controller">
+                <h3>Controller</h3>
+                <p>Controller-ul este componenta ce face legatura dintre celelalte doua componente, unui view fiindu-i transmise datele din modelul corespondent. </p>
+                <code>
+                    class UploadController extends Controller { <br>
+                        public function index() {<br>
+                            ;<br>
+                        }<br>
+                        public function upload($clipNr = 0) {<br>
+                            $this->model('Choice');<br>
+                            $this->model('Badge');<br>
+                            $choice = new Choice($clipNr);<br>
+                            $badge = new Badge($choice->badgeId);<br>
+                            $this->view('upload/upload',['childNodes'=>Choice::getAllChildNodes($clipNr),'badge'=>$badge], $choice);<br>
+                        }<br>
+                    }</code>
+              </section>
+      </section>
+      <section id="baza-de-date">
+        <!-- review? -->
+        <h3>Baza de date</h3>
+        <p>Pentru baza de date am folosit MySql, o baza de date relationala ce a permis construirea relatiilor intre tabelele necesare.</p>
+        <p>Structura tabelelor:</p>
+        <img src="baza-de-date.png" style="width:750px;height:300px;"/>
+      </section>
+      <section id="desfasurarea-proiectului">
+          <h3>Desfasurarea proiectului</h3>
+          <p>Prima etapa a fost realizarea unei interfete atractiva utilizatorului care sa permita in acelasi timp si un mediu de dezvoltare a functionalitatilor(upload-ul si vizualizarea unor filme interactive).</p>
+          <p>Urmatoarea etapa a fost realizarea arhitecturii aplicatiei unde am ales design pattern-ul MVC, descris intr-o sectiune anterioara.</p>
+          <p>Structurarea adecvata a bazei de date a usurat proiectarea aplicatiei. Avand in vedere ca principala componenta functionala este un arbore de decizie ce stabileste cursul filmului, am introdus in tabela 'choices' un camp 'id_precedent' ce referentia alegerea anterioara, astfel permitand libera parcurgere a arborelui</p>
+          <p>Una dintre functionalitatile proiectului este sortarea filmelor dupa numarul de fire narative. In acest scop, a fost nevoie de calcularea numarului de frunze din arbore pentru a decide numarul de cai posibile de urmat, o frunza reprezentand un clip component al filmului(o alegere) pentru care nu mai exista alte alegeri(unul din finalurile filmului). In continuare e prezentata o secventa de cod PHP ce se foloseste de o interogare PDO pentru a filtra filmele dupa numarul de fire narative stabilind, folosind datele filmului, numarul de frunze(cai) ale filmului.</p>
+          <code>
+              if($_GET['decisions']!=""){<br>
+                if(!$firstQuery) {$firstQuery = true;$sqlCustomQuery = $sqlCustomQuery . " WHERE ";}<br>
+                    else $sqlCustomQuery = $sqlCustomQuery . " AND ";<br>
+                if ($_GET['decisions'] == "Few") $prag = " < 5";<br>
+                else if ($_GET['decisions'] == "Many") $prag = " >= 5";<br>
+                $sqlCustomQuery = $sqlCustomQuery . " (SELECT COUNT(*) FROM choices WHERE (text_intrebare IS NULL OR text_intrebare='') AND movie_id = movies.id GROUP BY movie_id)" . $prag;<br>
+            }
+          </code>
+
+      </section>      
+      <section id="management-cod-sursa">
+          <h3>Managementul codului-sursa</h3>
+          <p>Fiind un proiect de amplitudine redusă (team of 4) s-a folosit un singur branch (master) pe care s-au făcut incremental commit-uri la implementarea fiecărui feature.</p>
+          <p>Proiectul a folosit sistemul de management și versionare a codului numit git, hostat pe platforma publică github.com, pe un repository privat cu acces doar pentru echipa de dezvoltatori si pentru profesorul evaluator.</p>
+      </section>
+    </section>
+      <section id="Bibliografie">
+          <h2>In realizarea acestui document s-au folosit:</h2>
+          <p>
+            https://w3c.github.io/scholarly-html/ <br>
+            https://github.com/w3c/scholarly-html
+          </p>
+        </section>
+  </body>
+</html>

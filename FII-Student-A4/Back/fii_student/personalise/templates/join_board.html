@@ -1,0 +1,229 @@
+﻿{% extends 'navbar.html' %}
+
+{% block content %}
+<head>
+  <meta charset="utf-8">
+  <title>Join Boards</title>
+    {% load static %}
+        <link href="{% static "join-board-style.css" %}" rel="stylesheet" type="text/css">
+{#        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">#}
+{#        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Open+Sans:300,600,700" rel="stylesheet">#}
+{#    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>#}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+    <script>
+        function call_update_user_boards(uid, bid){
+            $.ajax({
+                url: 'add_pref_board/'+uid+'/'+bid,
+                type: 'POST',
+                data: {
+                    'csrfmiddlewaretoken': "{{ csrf_token }}"
+                },
+                success: function(data, response) {
+
+                }
+            });
+        }
+        function call_remove_user_boards(uid, bid) {
+            $.ajax({
+                url: 'remove_pref_board/' + uid + '/' + bid,
+                type: 'POST',
+                data: {
+                    'csrfmiddlewaretoken': "{{ csrf_token }}"
+                },
+                success: function (data, response) {
+
+                }
+            });
+        }
+    </script>
+{% if user.is_authenticated %}
+    <style>
+    :root{
+        --background-first: {{user.personalise.background_first}};
+        --background-second: {{user.personalise.background_second}};
+        --navbar:{{ user.personalise.navbar_color }};
+        --color1-first:{{ user.personalise.color1_first }};
+        --color1-second:{{ user.personalise.color1_second }};
+        --color2-first:{{ user.personalise.color2_first }};
+        --color2-second:{{ user.personalise.color2_second }};
+        --font: {{ user.personalise.font_color }};
+        --font-family: {{ user.personalise.font_family }};
+    }
+    </style>
+{% endif %}
+
+</head>
+
+<body>
+    <div class="container-all">
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    <div class="filtru">
+        <button class="button toti active" onclick="filter('toti')">Toti anii</button>
+        <button class="button anI." onclick="filter('anI.')">An I</button>
+        <button class="button anII." onclick="filter('anII.')">An II</button>
+        <button class="button anIII." onclick="filter('anIII.')">An III</button>
+        <button class="button abonate." onclick="filter('abonate.')">Abonate</button>
+    </div>
+
+    <a class="link" href ="/personalise/add_board">
+        <img class="plus" src="{% static 'plus.png' %}">
+        <p class="add_board">Adaugă board!</p>
+    </a>
+
+    <div class="main">
+            {% for board in boards %}
+                <div class="card">
+                    <div class="top-container">
+                        <p class="titlu">{{ board.subject }}</p>
+                        <p class="an an{{ board.year }}.">An {{ board.year }}</p>
+                    </div>
+                    <div class="box">
+                        <p class="prof">{{ board.teacher }}</p>
+                        <p class="descriere"><a href="{{ board.id }}/">{{ board.description }}</a></p>
+
+                        {% csrf_token %}
+                        <button class="btn" id="{{ board.id }}" onclick="call_update_user_boards({{ user.id }},{{ board.id }})">Abonează-te</button>
+                        <button class="btn verified" id="{{ board.id }}" onclick="call_remove_user_boards({{ user.id }},{{ board.id }})">Dezabonează-te</button>
+                    </div>
+                </div>
+            {% endfor %}
+    </div>
+    </div>
+</body>
+<script>
+{#  script which runs after page is load #}
+{#  sets corect buttons according to existing joined boards #}
+    $(
+        function(){
+                console.log('da');
+                $.ajax({
+                url: 'check_joined_boards/'+{{ user.id }},
+                type: 'POST',
+                data: {
+                    'csrfmiddlewaretoken': "{{ csrf_token }}"
+                },
+                success: function(data, response) {
+                    var btns = document.getElementsByClassName("btn");
+                    {#console.log(data["boards"]);#}
+                    for (var i = 0; i < btns.length; i++) {
+                        if(! btns[i].className.includes("verified")){
+                            {#console.log(btns[i].id.toString());#}
+                            if(data['boards'].indexOf(btns[i].id.toString()) >= 0){
+                                {#console.log('yes');#}
+
+                                btns[i].className = btns[i].className + " joined";
+                                btns[i].style.display = 'none';
+                                btns[i].style.visibility = "hidden";
+
+                                var verified = btns[i].parentElement.getElementsByClassName("verified")[0];
+                                verified.style.display = 'inline-block';
+                                verified.style.visibility = 'visible';
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    );
+
+</script>
+
+</body>
+
+<script>
+    var lastActiveClass = "button toti";
+
+function filter(an){
+        var current = document.getElementsByClassName("button");
+    for (i = 0; i < current.length; i++) {
+        if (current[i].className.includes("active")) {
+            current = current[i];
+            break
+        }
+    }
+    current.className = lastActiveClass;
+    lastActiveClass = "button " + an;
+    var newActive = document.getElementsByClassName(an);
+    newActive[0].className = lastActiveClass + " active";
+
+    if(an != 'abonate.') { //kinda hack
+
+        var button = document.getElementsByClassName("an");
+        for (var i = 0; i < button.length; i++) {
+            var board = button[i].parentElement.parentElement;
+            console.log(button[i].className);
+            if (!button[i].className.includes(an)) {
+                if (an == "toti") {
+                    board.style.display = 'block';
+                    board.style.visibility = "visible";
+                } else {
+                    board.style.display = 'none';
+                    board.style.visibility = "hidden";
+                }
+            } else {
+                board.style.display = 'block';
+                board.style.visibility = "visible";
+            }
+        }
+    }else {
+        var joined = document.getElementsByClassName("btn"); //actualy the
+        for (var i = 0; i < joined.length; i++) {
+            var board = joined[i].parentElement.parentElement;
+            if (! joined[i].className.includes("verified")) {
+                if (joined[i].className.includes("joined")) {
+                    console.log('joined');
+                    board.style.display = 'block';
+                    board.style.visibility = "visible";
+                }
+                else {
+                    console.log('not joined');
+                    board.style.display = 'none';
+                    board.style.visibility = "hidden";
+                }
+            }
+        }
+    }
+}
+
+    var btns = document.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                    if (this.className.includes("joined")) {
+                        this.className = this.className.replace(" joined", "");
+                    } else if (!this.className.includes("verified")) {
+                        this.className += " joined";
+                    }
+
+                    if (this.className.includes("verified")) {
+                        this.style.display = 'none';
+                        this.style.visibility = 'hidden';
+                        var show = this.parentElement.getElementsByClassName("joined")[0];
+                        show.className = show.className.replace(" joined", "");
+                        show.style.display = 'inline-block';
+                        show.style.visibility = 'visible';
+
+
+                    }
+                    join();
+
+            });
+        }
+
+    function join(){
+        var joined = document.getElementsByClassName("btn");
+        for (var i = 0; i < joined.length; i++) {
+
+            if(joined[i].className.includes("joined")){
+                joined[i].style.display = 'none';
+                joined[i].style.visibility = "hidden";
+
+                var verified = joined[i].parentElement.getElementsByClassName("verified")[0];
+                verified.style.display = 'inline-block';
+                verified.style.visibility = 'visible';
+            }
+        }
+    }
+
+</script>
+{% endblock %}

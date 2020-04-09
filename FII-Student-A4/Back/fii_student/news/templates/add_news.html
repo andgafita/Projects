@@ -1,0 +1,46 @@
+{% extends 'navbar.html' %}
+{% block content %}
+    <head>
+        <meta charset="utf-8">
+        <title>Add news</title>
+        {% load static %}
+        <link href="{% static "add_news.css" %}" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+
+         <style> :root{
+    --background-first: {{user.personalise.background_first}};
+    --background-second: {{user.personalise.background_second}};
+    --navbar:{{ user.personalise.navbar_color }};
+    --color1-first:{{ user.personalise.color1_first }};
+    --color1-second:{{ user.personalise.color1_second }};
+    --color2-first:{{ user.personalise.color2_first }};
+    --color2-second:{{ user.personalise.color2_second }};
+    --font: {{ user.personalise.font_color }};
+    --font-family: {{ user.personalise.font_family }};
+} </style>
+    </head>
+    <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    {% block content2 %}
+        <form class="box" method="post">
+            <h1>Add a new Piece of News</h1>
+            {% csrf_token %}
+            {% for field in form %}
+                <p>
+                    {{ field.label_tag }}<br>
+                    {{ field }}
+                    {% for error in field.errors %}
+                        <p style="color: red">{{ error }}</p>
+                    {% endfor %}
+                </p>
+            {% endfor %}
+            <button type="submit">Add News</button>
+        </form>
+        </body>
+    {% endblock %}
+{% endblock %}

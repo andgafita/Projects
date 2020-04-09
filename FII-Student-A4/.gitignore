@@ -1,0 +1,4 @@
+Back/fii_student/.idea
+*.pyc
+Back/fii_student/*/migrations
+!Back/fii_student/*/migrations/__init__.py

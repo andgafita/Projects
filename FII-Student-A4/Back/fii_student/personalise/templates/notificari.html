@@ -1,0 +1,67 @@
+{% extends 'navbar.html' %}
+{% block content %}
+<head>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'notif.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+<style>
+    :root {
+      --background-first: {{ user.personalise.background_first }};
+      --background-second: {{ user.personalise.background_second }};
+      --navbar: {{ user.personalise.navbar_color }};;
+      --color1-first: {{ user.personalise.color1_first }};
+      --color1-second: {{ user.personalise.color1_second }};
+      --color2-first: {{ user.personalise.color2_first }};
+      --color2-second: {{ user.personalise.color2_second }};
+      --font: {{ user.personalise.font_color }};
+      --font-family: {{ user.personalise.font_family }};
+    }
+</style>
+<title>Notificări</title>
+</head>
+<body>
+
+<h2>Ești abonat la:</h2>
+<br>
+{% for notification in notifications %}
+<a href="/personalise/notificari/remove_notification/{{notification.id}}">Categoria <b>{{notification.category}}</b> cu keyword-ul <b>{{notification.keyword}}</b><br></a>
+{% endfor %}
+<br><br>
+
+<form class="box" method="post">
+{% csrf_token %}
+{% for field in form %}
+  <p>
+  {{ field.label_tag }}<br>
+  {{ field }}
+    {% for error in field.errors %}
+      <p style="color: red">{{ error }}</p>
+    {% endfor %}
+  </p>
+  {% endfor %}
+<button type="submit">Abonare</button>
+</form><br><br>
+
+<h2>Boards:</h2>
+<br>
+{% for board in boards %}
+<a href="/personalise/boards/{{board.id}}">{{board.subject}}</a><br>
+{% endfor %}
+<br><br>
+
+<h2>Noutăți:</h2>
+<br>
+{% for new in news %}
+<a href="/news/{{new.news_id}}">{{new.title}}</a><br>
+{% endfor %}
+<br><br>
+
+<h2>Resurse:</h2>
+<br>
+{% for resource in resources %}
+<a href="/resources/{{resource.resources_id}}">{{resource.title}}</a><br>
+{% endfor %}
+<br><br>
+
+</body>
+{% endblock %}

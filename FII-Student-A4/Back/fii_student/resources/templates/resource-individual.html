@@ -1,0 +1,51 @@
+{% extends 'navbar.html' %}
+{% block content %}
+<head>
+
+      {% load staticfiles %}
+    <meta charset="utf-8">
+    <title>Anunturi</title>
+    <link href="{% static "resource-individual.css" %}" rel="stylesheet" type="text/css">
+{#    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>#}
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+     <style> :root{
+    --background-first: {{user.personalise.background_first}};
+    --background-second: {{user.personalise.background_second}};
+    --navbar:{{ user.personalise.navbar_color }};
+    --color1-first:{{ user.personalise.color1_first }};
+    --color1-second:{{ user.personalise.color1_second }};
+    --color2-first:{{ user.personalise.color2_first }};
+    --color2-second:{{ user.personalise.color2_second }};
+    --font: {{ user.personalise.font_color }};
+    --font-family: {{ user.personalise.font_family }};
+} </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="board">
+            <h1>{{object.title}} </h1>
+            <div class="subtitle">
+                <p> <!--{{object.timestamp}} --></p>
+            </div>
+            <div class="content">
+                {{object.content|safe}}
+            </div>
+        </div>
+        <a href="/resources/" class="meniu">
+
+            <p> &Lang;&Lang;&Lang; Înapoi</p>
+
+
+
+
+        </a>
+    </div>
+
+</body>
+
+
+</html>
+
+{% endblock %}

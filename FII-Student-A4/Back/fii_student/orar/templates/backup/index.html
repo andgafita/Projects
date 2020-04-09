@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orar</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Curs</th>
+            <th>Zi</th>
+            <th>Ora</th>
+            <th>Tip</th>
+            <th>Sala</th>
+            <th>Profesor</th>
+        </tr>
+        {% for rand in randuri  %}
+        <tr>
+            <td>{{rand.curs.titlu_curs}}</td>
+            <td>{{rand.zi}}</td>
+            <td>{{rand.ora}}</td>
+            <td>{{rand.tip}}</td>
+            <td>{{rand.sala.nume_sala}}</td>
+            <td>{{rand.profesor.nume}} {{rand.profesor.prenume}}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+
+
+
+</body>
+</html>

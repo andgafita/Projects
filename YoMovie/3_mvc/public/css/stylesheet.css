@@ -1,0 +1,136 @@
+* {
+    margin:0;
+}
+body {
+    text-align: center;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+}
+nav{
+    background: #1E1E1E;/*#555555*/
+    width: 100%;
+    height: 70px;
+    
+    display: flex;
+}
+
+nav > Button{
+    flex-grow: 1;
+    font: bold 1.4rem Tahoma;
+    text-align: center;
+    background-color: #1E1E1E;
+    border:0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+}
+
+#currentButton{
+    border-bottom: 3px;
+    border-style: solid;
+    border-bottom-color:  red;
+}
+
+.currentButton{
+    border-bottom: 3px;
+    border-style: solid;
+    border-bottom-color:  red;
+}
+
+nav > button:hover{
+    background-color: gold;
+    color: #1E1E1E;
+    border-color: #1E1E1E;
+    transition-duration: 0.5s;  
+}
+
+#container-2 {
+    /* height:100vh;*/
+    display:flex;
+}
+
+.side {
+    width:25%;
+    background-color: gold;
+    /* height:100vh;*/
+    min-height:100vh;
+    background-image: url("stripOfMovie.png");
+    background-size: 150%;
+    background-repeat: repeat-x;
+}
+
+#middle-side {
+    width:50%;
+    /* height:100vh;*/
+    min-height:100vh;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+.dateCont {
+    /*position:relative;
+    margin-left: 300px;*/
+    display: inline-block;
+    width:80%;
+}
+
+input[type=text] ,input[type=password]{
+    border-top: 0px;
+    border-left: 0px;
+    border-right:0px;
+    border-bottom: 0.4rem solid yellow;
+    width:85%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+
+#accountSettings {
+    border-bottom: 3px solid red;
+}
+
+form>p {
+    text-align: left;
+    padding-left: 7%;
+    padding-bottom: 0.2rem;
+    padding-block-start: 3rem;
+    font-family: fantasy;
+    letter-spacing: 0.3rem;
+    font-size: 2em;
+}
+
+.dateCont>img {
+    border-radius: 50%;
+    margin-top: 3%;
+    width: 22%;
+}
+
+.profileButtons {
+    padding:0;
+    height: 4rem;
+    width: 7rem;
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    margin: 9%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:0.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#saveChangesButton {
+    background-color: rgb(37, 211, 37);
+    float: right;
+    margin-left: 0;
+}
+
+form>button {
+    background-color: red;
+    float: left;
+    margin-right: 0;
+}

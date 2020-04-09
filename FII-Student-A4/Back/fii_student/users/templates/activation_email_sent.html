@@ -1,0 +1,124 @@
+{% block content %}
+
+<html lang="en">
+<head>
+
+    {% load staticfiles %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+{#    <link href="https://fonts.googleapis.com/css?family={{ user.personalise.font_family }}"#}
+      <link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+    <title>Inregistrare</title>
+
+ <style> 
+    :root{
+    --background-first: {{user.personalise.background_first}};
+    --background-second: {{user.personalise.background_second}};
+    --navbar:{{ user.personalise.navbar_color }};
+    --color1-first:{{ user.personalise.color1_first }};
+    --color1-second:{{ user.personalise.color1_second }};
+    --color2-first:{{ user.personalise.color2_first }};
+    --color2-second:{{ user.personalise.color2_second }};
+    --font: {{ user.personalise.font_color }};
+    --font-family: {{ user.personalise.font_family }};
+} 
+    /* :root {
+        --background-first: #1b1353;
+        --background-second: #000428;
+        --navbar: #030b3d;
+        --color1-first: #1fd191;
+        --color1-second: #0086aa;
+        --color2-first: #f64abd;
+        --color2-second: #ad3abd;
+        --font: #ffffff;
+        --font-family: 'Montserrat', sans-serif;
+    } */
+
+        html{
+            display: flex;
+            justify-content: center;
+            background-color: var(--background-first);
+            color: var(--font);
+            font-family: var(--font-family);
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            width: 95vw;
+            background-color: transparent;
+            
+        }
+        .container{
+            top: 20px;
+            position: relative;
+            display: flex;
+            background-color: white;
+            width: 80vw; 
+            height: auto;
+            min-height: 200px;
+        }
+
+        .head-title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            background-color: white;
+            color: white;
+            padding: 1em 1em;
+            font-size: 28px;
+            background: linear-gradient(to bottom left, var(--color1-second), var(--color1-first))
+        }
+        .fii-student{
+            font-size: 40px;
+        }
+
+        .text-minune{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2em 2em;
+            font-size: 20px;
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            border: 0px;
+            margin-top: 2em;
+            padding: 1em 2em;
+            color: white;
+            font-family: var(--font-family);
+            background: linear-gradient(to bottom left, var(--color2-second), var(--color2-first));
+        }
+
+        a:hover {
+            background: linear-gradient(to bottom left, var(--color2-first), var(--color2-second));
+        }
+
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="head-title">
+            INREGISTRARE PE <span class="fii-student">FII STUDENT</span>
+            <a href="/">INAPOI</a>
+        </div>
+        <div class="text-minune" style="color:black;">
+            Felicitari, contul a fost creat cu succes. Verifica email-ul pentru link-ul de confirmare.
+        </div>
+    </div>
+    
+
+</body>       
+</html>       
+
+{% endblock %}

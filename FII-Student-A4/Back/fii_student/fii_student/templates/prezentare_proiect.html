@@ -1,0 +1,566 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static "prezentare_proiect.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "navbar.css" %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <title>Presentation Page</title>
+</head>
+
+
+
+<body>
+  <header>
+
+  </header>
+  <section>
+    <img src="{% static "img/alb.png" %}" class="imgLogo"
+      alt="" />
+    <div class="divInfo">
+      <p>FOR STUDENTS BY STUDENTS!</p>
+    </div>
+  </section>
+
+  <section id="functionality">
+    <article class="card2">
+      <i class="fas fa-map-marker-alt fa-5x cardIcon" style="color:white"></i>
+
+
+
+      <div class="card2-text">
+        <h4>Localization</h4>
+
+        <p>The student can search the classrooms in a 3D model of the faculty. 
+        </p>
+        <a href="http://fiistudent.ddns.us/3d_tour/"><button class="button">Learn More</button></a>
+      </div>
+    </article>
+    <article class="card2">
+
+      <i class="far fa-clock fa-5x cardIcon" style="color:white"></i>
+
+
+
+      <div class="card2-text">
+        <h4>Schedule</h4>
+
+        <p>The student can see and edit his own schedule.
+        </p>
+        <a href="http://fiistudent.ddns.us/orar/"><button class="button">Learn More</button></a>
+      </div>
+    </article>
+
+    <article class="card2">
+
+      <i class="far fa-bell fa-5x cardIcon" style="color:white"></i>
+
+
+
+      <div class="card2-text">
+        <h4>Announcements</h4>
+
+        <p>The students can get a notification of the latest announcement.
+        </p>
+        <a href="http://fiistudent.ddns.us/news/"><button class="button">Learn More</button></a>
+      </div>
+    </article>
+	
+	  <article class="card2">
+
+      <i class="fas fa-sliders-h fa-5x cardIcon" style="color:white"></i>
+
+
+
+      <div class="card2-text">
+        <h4>Personalise</h4>
+
+        <p>The student can personalise the website as he wish.
+        </p>
+       <a href="http://fiistudent.ddns.us/users/settings/"> <button class="button">Learn More</button></a>
+      </div>
+    </article>
+	
+	
+
+
+  </section>
+
+  <section id="tech">
+    <h2> Used Technologies</h2>
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="{% static "img/git.svg" %}" class="imgSlide"
+            height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="http://pluspng.com/img-png/logo-javascript-png-javascript-for-ile-y-ld-z-600.png" class="imgSlide"
+            height="100"  alt="" />
+        </div>
+        
+        <div class="slide">
+          <img src="https://cdn.freebiesupply.com/logos/large/2x/angular-icon-1-logo-svg-vector.svg" class="imgSlide"
+            height="100"  alt="" />
+        </div>
+		
+		  <div class="slide">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/220px-Boostrap_logo.svg.png" class="imgSlide"
+            height="100" alt="" />
+        </div>
+       
+        
+        <div class="slide">
+          <img src="https://vuejs.org/images/logo.png" class="imgSlide"
+            height="100" alt="" />
+        </div>
+       
+        <div class="slide">
+          <img src="https://milindtech.com/wp-content/uploads/2018/02/django-logo.png" class="imgSlide"
+            height="100"  alt="" />
+        </div>
+      
+
+        <div class="slide">
+          <img src="http://www.sclance.com/pngs/unity-png/unity_png_1441979.png" class="imgSlide"
+            height="100"  alt="" />
+        </div>
+
+        <div class="slide">
+          <img src="https://seeklogo.com/images/A/autodesk-maya-logo-4B9E2A913A-seeklogo.com.png" class="imgSlide"
+            height="100"  alt="" />
+        </div>
+
+        
+
+      </div>
+    </div>
+  </section>
+  <section id="links">
+    <h2> Links</h2>
+    <div class="section-img">
+      <a href="https://github.com/iguraliuc/FII-Student-A4/tree/master"><img src="{% static "img/git.svg" %}" /></a>
+
+    </div>
+    <div class="section-img">
+      <a href="https://docs.google.com/spreadsheets/d/1ia2uLItnTTqila0xYP9YHGV_nCDqNe8Nsu_ZeuVOPso/edit#gid=1706986900"><img src="{% static "img/google.png" %}" /></a>
+
+    </div>
+    <div class="section-img">
+      <a href="https://trello.com/b/GUJZpRRB/a4-ip"><img src="{% static "img/trello.png" %}" /></a>
+
+    </div>
+  </section>
+
+  <!-- DE AICI -->
+  <!-- Swiper -->
+  <div class="persons">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card-header" style="background-image: url({% static "img/asoltanei.jpg" %})">
+
+          <div class="card-title">
+            <h2>Asoltanei Cristian</h2>
+          </div>
+
+        </div>
+
+        <div class="card-content">
+
+          <p>FRONTEND</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-header" style="background-image: url({% static "img/balan.jpg" %})">
+
+          <div class="card-title">
+            <h2>Bălan Maria</h2>
+          </div>
+
+        </div>
+
+        <div class="card-content">
+
+          <p>QA</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-header" style="background-image: url({% static "img/birzu.jpg" %})">
+
+          <div class="card-title">
+            <h2>Bîrzu Alexandra</h2>
+          </div>
+
+        </div>
+
+        <div class="card-content">
+
+          <p>FRONTEND</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-header" style="background-image: url({% static "img/bujoreanu.jpg" %})">
+
+          <div class="card-title">
+            <h2>Bujoreanu Vlad</h2>
+          </div>
+
+        </div>
+
+        <div class="card-content">
+
+          <p>BACKEND</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-header" style="background-image: url({% static "img/calarasu.jpg" %})">
+
+          <div class="card-title">
+            <h2>Călărașu Teodora</h2>
+          </div>
+
+        </div>
+
+        <div class="card-content">
+
+          <p>LEADER</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-header" style="background-image: url({% static "img/nopic.jpg" %})">
+
+          <div class="card-title">
+            <h2>Chipăruș Denis</h2>
+          </div>
+
+        </div>
+
+        <div class="card-content">
+
+          <p>FRONTEND</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-header" style="background-image: url({% static "img/cirstean.jpg" %})">
+
+          <div class="card-title">
+            <h2>Cîrstean Vlad</h2>
+          </div>
+
+        </div>
+
+        <div class="card-content">
+
+          <p>FRONTEND</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-header" style="background-image: url({% static "img/corban.jpg" %})">
+
+          <div class="card-title">
+            <h2>Corban Cristian</h2>
+          </div>
+
+        </div>
+
+        <div class="card-content">
+
+          <p>FRONTEND</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-header" style="background-image: url({% static "img/cretu.jpg" %})">
+
+          <div class="card-title">
+            <h2>Crețu Marian</h2>
+          </div>
+
+        </div>
+
+        <div class="card-content">
+
+          <p>BACKEND</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card-header" style="background-image: url({% static "img/gheorghita.jpg" %})">
+
+          <div class="card-title">
+            <h2 style="font-size:21px">Dăscalița Gheorghiță</h2>
+          </div>
+
+        </div>
+
+        <div class="card-content">
+
+          <p>FRONTEND</p>
+        </div>
+      </div>
+       <div class="swiper-slide">
+                <div class="card-header" style="background-image: url({% static "img/gafita.jpg" %})">
+
+                    <div class="card-title">
+                      <h2>Gafița Andrei</h2>
+                    </div>
+            
+                  </div>
+            
+                  <div class="card-content">
+            
+                    <p>BACKEND</p>
+                  </div>
+          </div> 
+          <div class="swiper-slide">
+            <div class="card-header" style="background-image: url({% static "img/guraliuc.jpg" %})">
+
+                <div class="card-title">
+                  <h2>Guraliuc Iulian</h2>
+                </div>
+        
+              </div>
+        
+              <div class="card-content">
+        
+                <p>SCRUM MASTER</p>
+              </div>
+      </div> 
+      <div class="swiper-slide">
+        <div class="card-header" style="background-image: url({% static "img/hugeanu.jpg" %})">
+
+            <div class="card-title">
+              <h2>Hugeanu Felix </h2>
+            </div>
+    
+          </div>
+    
+          <div class="card-content">
+    
+            <p>FRONTEND</p>
+          </div>
+  </div> 
+  <div class="swiper-slide">
+    <div class="card-header" style="background-image: url({% static "img/iordache.jpg" %})">
+
+        <div class="card-title">
+          <h2>Iordache Viorel</h2>
+        </div>
+
+      </div>
+
+      <div class="card-content">
+
+        <p>FRONTEND </p>
+      </div>
+</div> 
+<div class="swiper-slide">
+  <div class="card-header" style="background-image: url({% static "img/manoleasa.jpg" %})">
+
+      <div class="card-title">
+        <h2>Tudor Manoleasa </h2>
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <p>QA</p>
+    </div>
+</div> 
+<div class="swiper-slide">
+  <div class="card-header" style="background-image: url({% static "img/munteanur.jpg" %})">
+
+      <div class="card-title">
+        <h2>Munteanu Rareș </h2>
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <p>BACKEND</p>
+    </div>
+</div> 
+<div class="swiper-slide">
+  <div class="card-header" style="background-image: url({% static "img/padurarua.jpg" %})">
+
+      <div class="card-title">
+        <h2>Păduraru Andra</h2>
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <p>FRONTEND</p>
+    </div>
+</div> 
+<div class="swiper-slide">
+  <div class="card-header" style="background-image: url({% static "img/paduraru.jpg" %})">
+
+      <div class="card-title">
+        <h2>Păduraru Teodor </h2>
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <p>FRONTEND</p>
+    </div>
+</div> 
+<div class="swiper-slide">
+  <div class="card-header" style="background-image: url({% static "img/pantiru.jpg" %})">
+
+      <div class="card-title">
+        <h2>Panțiru Gabriel</h2>
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <p>BACKEND </p>
+    </div>
+</div> 
+<div class="swiper-slide">
+  <div class="card-header" style="background-image: url({% static "img/popa.jpg" %})">
+
+      <div class="card-title">
+        <h2>Popa George </h2>
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <p>QA</p>
+    </div>
+</div> 
+<div class="swiper-slide">
+  <div class="card-header" style="background-image: url({% static "img/teodorescu.jpg" %})">
+
+      <div class="card-title">
+        <h2>Teodorescu Alexandru</h2>
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <p>FRONTEND </p>
+    </div>
+</div> 
+<div class="swiper-slide">
+  <div class="card-header" style="background-image: url({% static "img/tesu.jpg" %})">
+
+      <div class="card-title">
+        <h2>Teșu Cristina</h2>
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <p>SCRUM MASTER</p>
+    </div>
+</div> 
+<div class="swiper-slide">
+  <div class="card-header" style="background-image: url({% static "img/nopic.jpg" %})">
+
+      <div class="card-title">
+        <h2>Țocu Andrei </h2>
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <p>FRONTEND</p>
+    </div>
+</div> 
+<div class="swiper-slide">
+  <div class="card-header" style="background-image: url({% static "img/ursu.jpg" %})">
+
+      <div class="card-title">
+        <h2>Ursu Dragoș</h2>
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <p>SCRUM MASTER</p>
+    </div>
+</div> 
+<div class="swiper-slide">
+  <div class="card-header" style="background-image: url({% static "img/vlaiduc.jpg" %})">
+
+      <div class="card-title">
+        <h2>Vlaiduc Rareș</h2>
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <p>BACKEND</p>
+    </div>
+</div> 
+<div class="swiper-slide">
+  <div class="card-header" style="background-image: url({% static "img/zbant.jpg" %})">
+
+      <div class="card-title">
+        <h2>Zbanț Radu</h2>
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <p>FRONTEND</p>
+    </div>
+</div> 
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <script src="{% static "swiper.js" %}"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.persons', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <!-- PANA AICI -->
+
+  <section id="video">
+    <h2>Presentation</h2>
+    <video width= 70% height= 70% controls>
+      <source src="{% static "video.mp4" %}" type="video/mp4">
+    </video>
+  </section>
+
+</body>
+</html>

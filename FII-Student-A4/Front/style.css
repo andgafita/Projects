@@ -1,0 +1,215 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: black;
+}
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+  border-radius: 24px;
+  transition: 0.25s;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.box2{
+  width: 900px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+  border-radius: 24px;
+  transition: 0.25s;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.box h1,.box2 h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "email"],.box input[type = "password"],.box2 input[type = "email"],.box2 input[type = "password"],input{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #1c6a9e;
+  padding: 10px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "email"]:focus,.box input[type = "password"]:focus,.box2 input[type = "email"]:focus,.box2 input[type = "password"]:focus{
+  width: 280px;
+  border-color: #229854;
+}
+input:hover{
+  width: 100%;
+  border-color: #229854;
+}
+
+input[type="button"]:hover,input[type="submit"]:hover,input[type="reset"]:hover{
+  width: 75%;
+  border-color: #229854;
+}
+.box input[type = "submit"],.box2 input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #229854;
+  padding: 10px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box input[type = "submit"]:hover,.box2 input[type = "submit"]:hover{
+  background: #145931;
+}
+
+.box input[value = "Register"], .box input[value = "More news"],.box2 input[value = "Register"], .box2 input[value = "More news"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #8f204f;
+  padding: 10px 30px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box input[value = "Register"]:hover, .box input[value = "More news"]:hover,.box2 input[value = "Register"]:hover, .box2 input[value = "More news"]:hover{
+  background: #6A183A;
+}
+
+.box input[value = "Cancel"], .box input[value = "Logout"],.box2 input[value = "Cancel"], .box2 input[value = "Logout"],.box input[value = "Back"],.box2 input[value = "Back"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #4c4c4c;
+  padding: 10px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[value = "Clear"],.box2 input[value = "Clear"]{
+border:0;
+background: none;
+display: block;
+margin: 20px auto;
+text-align: center;
+border: 2px solid #1c6a9e;
+padding: 10px 40px;
+outline: none;
+color: white;
+border-radius: 24px;
+transition: 0.25s;
+cursor: pointer;
+}
+.box input[value = "Previous page"],.box2 input[value = "Previous page"],.box input[value = "Next page"],.box2 input[value = "Next page"]{
+  border:0;
+  background: none;
+  //display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #1c6a9e;
+  padding: 10px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+
+}
+.box input[value = "Clear"]:hover,.box2 input[value = "Clear"]:hover,.box input[value = "Previous page"]:hover,.box2 input[value = "Previous page"]:hover,.box input[value = "Next page"]:hover,.box2 input[value = "Next page"]:hover{
+background: #0b4770;
+}
+.box input[value = "Cancel"]:hover, .box input[value = "Logout"]:hover,.box2 input[value = "Cancel"]:hover, .box2 input[value = "Logout"]:hover,.box input[value = "Back"]:hover,.box2 input[value = "Back"]:hover{
+background: #323232;
+}
+
+a:active, a:focus,input, input:active, input:focus{
+outline: 0;
+outline-style:none;
+outline-width:0;
+}
+
+a:active, a:focus,button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner{
+border: none;
+}
+
+label,h3{
+  color: white;
+}
+/*
+div{
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  display: flex;
+}
+div>input{
+  width: 100%;
+}
+*/
+article{
+  //height: 200px;
+  border: 2px solid #229854;
+  //margin-top: 10%;
+  text-align: center;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  background-color: inherit;
+  margin: 3%;
+
+}
+article:hover{
+  border:0;
+  display: block;
+//margin: 10% -200%;
+  margin: 3% -50%;
+  padding: 15% 15%;
+  border: 2px solid #1c6a9e;
+
+  outline: none;
+  border-radius: 24px;
+  transition: 0.25s;
+}

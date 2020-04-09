@@ -1,0 +1,75 @@
+/////CSS
+
+
+form>p {
+    text-align: left;
+    padding-left: 7%;
+    padding-bottom: 0.2rem;
+    padding-block-start: 3rem;
+    font-family: fantasy;
+    letter-spacing: 0.3rem;
+    font-size: 2em;
+}
+.dateCont {
+    /*position:relative;
+    margin-left: 300px;*/
+    display: inline-block;
+    width:80%;
+}
+abc
+
+input[type=text] ,input[type=password]{
+    border-top: 0px;
+    border-left: 0px;
+    border-right:0px;
+    border-bottom: 0.4rem solid yellow;
+    width:85%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+
+.profileButtons {
+    padding:0;
+    height: 4rem;
+    width: 7rem;
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    margin: 9%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:0.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#saveChangesButton {
+    background-color: rgb(37, 211, 37);
+    float: right;
+}
+
+form>button {
+    background-color: red;
+    float: left;
+}
+
+
+
+///////HTML
+
+<form class="dateCont">
+                <img src="avatar.png" alt="Avatar">
+                <p>Username:</p>
+                <input type="text" name="username" value="User's name">
+                <br>
+                <p>Email:</p>
+                <input type="text" name="email" value="useremail@mail.com">
+                <br>
+                <p>New password:</p>
+                <input type="password" name="newpass">
+                <p>Confirm new password:</p>
+                <input type="password" name="email">
+                <br>
+                <input type="submit" class="profileButtons" id="saveChangesButton" value="Save changes">
+                <button type="reset" class="profileButtons"  value="Delete account">Delete account</button>
+ </form>

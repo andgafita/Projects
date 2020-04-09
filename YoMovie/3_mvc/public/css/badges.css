@@ -1,0 +1,149 @@
+* {
+    margin:0;
+}
+body {
+    text-align: center;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+nav{
+    background: #1E1E1E;/*#555555*/
+    width: 100%;
+    height: 70px;
+    
+    display: flex;
+}
+
+nav > Button{
+    flex-grow: 1;
+    font: bold 1.4rem Tahoma;
+    text-align: center;
+    background-color: #1E1E1E;
+    border:0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+}
+
+#currentButton{
+    border-bottom: 3px;
+    border-style: solid;
+    border-bottom-color:  red;
+}
+
+.currentButton{
+    border-bottom: 3px;
+    border-style: solid;
+    border-bottom-color:  red;
+}
+
+nav > button:hover{
+    background-color: gold;
+    color: #1E1E1E;
+    border-color: #1E1E1E;
+    transition-duration: 0.5s;  
+}
+
+.side {
+    /*float:left;*/
+    width:25%;
+    background-color: gold;
+    /* height:100vh;*/
+    min-height:100vh;
+    background-image: url("/mvc/app/contents/icons/stripOfMovie.png");
+    background-size: 150%;
+    background-repeat: repeat-x;
+}
+
+#middle-side {
+    width:50%;
+   /*float:left;*/
+    /* height:100vh;*/
+    min-height:100vh;
+    margin-block-start: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.badge {
+    height:100px;
+    width:100px;
+    margin:2%;
+    border:3px solid black;
+}
+
+#container-2 {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+#navBarBadge {
+    border-bottom: 3px solid red;
+}
+
+#left-side>p {
+    margin-top:35%;
+    font-size:2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+#badgeInformation {
+    border:3px solid black;
+    margin-block-start: 35%;
+    margin-inline-start: 7%;
+    margin-inline-end: 7%;
+    border-radius:5%;
+}
+
+#badgeInformation>img {
+    margin-top:5%;
+    /*width:85%;*/
+}
+
+#badgeInformation>h2 {
+    margin-top:8%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#badgeInformation>p {
+    margin-inline-end: 5%;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-direction:column;
+    padding-inline-start: 0;
+}
+ul>li {
+    text-align: left;
+    font-size: 1.7rem;
+    margin: 0 0 0.3rem 0;
+    font: Tahoma;
+    font-weight: 600;
+    margin-left:10%;
+    margin-right:1rem;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+ul>li:hover {
+    background-color: gray;
+    border-radius:10px;
+    text-align: center;
+}
+
+#badgeImage{
+    width:250px;
+    height:250px;
+}

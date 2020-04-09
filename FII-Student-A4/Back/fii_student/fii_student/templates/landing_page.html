@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link href="{% static "landing_page.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "landing_nav_bar.css" %}" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div id="bodyContainer">
+    <form id="navBarForm" method="get" action="javascript:alert('De implementat...');">
+        <div class="header">
+            <a href="#default" class="logo">Logo</a>
+            <div class="header-right">
+                <div class="flex-cont">
+                    <a class="buton1" style="color:white" href="{% url 'signup' %}">REGISTER</a>
+                    <a class="buton2" style="color:white" href="#contact">CONTACT</a>
+                    <a class="active" style="color:white" href="{% url 'login' %}">SIGN IN</a>
+                    {% if user.is_authenticated %}
+                        <p style="color:white">Salut, {{ user.first_name }}!</p>
+                        <a style="color:white" class="buton1" href="{% url 'logout' %}">LOGOUT</a></p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="contentContainer">
+        <div id="leftLandingContainer">
+            <h1 id="applicationTitle">
+                Bine ați venit !
+            </h1>
+            <p id="landingInformation">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in magna sapien. Vestibulum bibendum
+                turpis
+                vel
+                tortor vestibulum, ac consequat ipsum tempus. Ut ut ultrices mauris. Donec aliquet bibendum mi eu
+                placerat.
+                Etiam varius lectus ut justo imperdiet, in dignissim eros molestie. Nam placerat euismod velit a
+                ultrices.
+                Quisque nec libero consectetur urna rutrum fringilla at sit amet ligula. Fusce feugiat nibh ut nibh
+                dignissim fermentum. Nullam finibus massa ut lacus tristique, ut pellentesque est finibus. Sed
+                vestibulum
+                mollis efficitur.
+            </p>
+            <button id="learnMoreButton">AFLA MAI MULTE</button>
+        </div>
+        <div id="rightLandingContainer">
+
+        </div>
+    </div>
+    <div id="learnMorePopUp">
+        <button id="closePopUpButton">X</button>
+        <h2>Exemplu de titlu</h2>
+        <p>
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem consequat augue egestas
+            convallis. Curabitur augue purus, rutrum vitae augue ut, blandit finibus eros. Praesent quis purus eget
+            risus auctor sollicitudin quis nec felis. Aliquam erat volutpat. Nam enim lacus, laoreet porta
+            pellentesque a, placerat a magna. Pellentesque sagittis fermentum velit, accumsan accumsan enim lacinia
+            ac. Suspendisse hendrerit quam vitae sapien mollis, at facilisis justo viverra.
+
+            Quisque cursus ac est sed sollicitudin. Integer efficitur pellentesque tincidunt. Sed maximus tincidunt
+            tellus, quis finibus quam mollis at. Ut sit amet est consequat neque congue rutrum. Mauris dapibus
+            pellentesque orci, a laoreet justo aliquam ac. Fusce condimentum nisi sit amet vestibulum lacinia. Fusce
+            in feugiat ante. Sed euismod mattis neque, tristique efficitur sapien pharetra vitae. Maecenas vehicula
+            blandit nibh vel venenatis. Integer egestas magna a vehicula semper. Proin gravida vel quam quis auctor.
+
+            Nunc quis augue quis purus pharetra vehicula. Fusce id tellus ut purus elementum tristique sed sodales
+            ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus
+            eget gravida turpis. Nunc eget sem lacus. Donec varius velit nec lorem feugiat cursus. Morbi vitae
+            tincidunt est, in iaculis erat. Nulla facilisi. Etiam eu efficitur est, in venenatis lorem. Praesent
+            libero ante, elementum molestie metus non, ornare laoreet dui. Curabitur erat dolor, molestie sed eros
+            sed, pretium tempus lacus.
+
+            Aenean nunc velit, efficitur laoreet varius et, tempus in risus. Phasellus hendrerit ante nec ligula
+            blandit finibus ac fringilla sapien. Phasellus tempor commodo venenatis. Etiam nec urna rutrum tellus
+            lobortis condimentum. Sed et quam vitae elit mattis faucibus. Quisque et nulla eget sem ullamcorper
+            eleifend sed at sapien. Aliquam ac maximus est. Curabitur ac semper nisi, sed semper nibh. Proin in mi
+            lacus. Nulla risus augue, feugiat sit amet accumsan sit amet, dignissim ac diam. Etiam pulvinar sed
+            tortor vitae mattis. Pellentesque quam dolor, dapibus vel massa et, efficitur mattis dui. Cras facilisis
+            auctor nisl, eget mattis sem facilisis in. Nam congue sed nisl vitae pulvinar. Donec id neque
+            sollicitudin justo blandit pharetra.
+
+            In pharetra leo enim, eget varius ipsum facilisis vitae. Sed ipsum est, tristique et tempor sit amet,
+            egestas vitae nunc. Suspendisse urna ipsum, auctor ac erat in, aliquet rutrum nibh. Duis velit tellus,
+            scelerisque at sollicitudin eget, tristique sed nunc. Quisque lacinia tortor vitae mi dictum imperdiet.
+            Nullam nulla lacus, scelerisque at velit ut, elementum facilisis felis. Mauris pellentesque magna nec
+            justo posuere, sit amet rhoncus enim lacinia. Etiam malesuada, leo sit amet porttitor dapibus, ligula
+            augue sollicitudin diam, sit amet viverra nunc felis ac sem. Aliquam vestibulum magna in auctor
+            pellentesque. Aliquam egestas erat lectus, id ultricies tellus mattis vitae. Nullam et risus sit amet
+            nibh eleifend congue. Pellentesque bibendum metus at nibh euismod, et porta lectus volutpat. Vivamus eu
+            venenatis velit. Suspendisse consectetur, eros eu imperdiet facilisis, ante justo malesuada metus, in
+            egestas erat augue vitae neque. </p>
+    </div>
+</div>
+
+
+</body>
+{#<script src="landing_page.js"></script>#}
+<link href="{% static "landing_page.js" %}" rel="stylesheet" type="javascript">
+
+</html>

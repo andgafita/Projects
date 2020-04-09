@@ -1,0 +1,235 @@
+{% extends 'navbar.html' %}
+{% block content %}
+
+<head>
+  {% load static %}
+  <title>Profil FII</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static "settings.css" %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  {#  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>#}
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+
+  <style>
+    :root {
+        --background-first: {{user.personalise.background_first}};
+        --background-second: {{user.personalise.background_second}};
+        --navbar: {{ user.personalise.navbar_color }};
+        --color1-first: {{ user.personalise.color1_first }};
+        --color1-second: {{ user.personalise.color1_second }};
+        --color2-first: {{ user.personalise.color2_first }};
+        --color2-second: {{ user.personalise.color2_second }};
+        --font: {{ user.personalise.font_color }};
+        --font-family: {{ user.personalise.font_family }};
+    }
+  </style>
+  <script>
+    function call_reset_settings(uid) {
+      $.ajax({
+        url: 'reset_settings/' + uid,
+        type: 'POST',
+        data: {
+          'csrfmiddlewaretoken': "{{ csrf_token }}"
+        },
+        success: function (data, response) {
+
+        }
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <div class="main-container">
+    <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+    <hr>
+    <form method="post">
+      {% csrf_token %}
+
+      <h4>Administrare</h4> <br>
+
+
+      <label>{{ form.email.label_tag}}</label>
+      <input type="email" name="{{ form.email.html_name }}" maxlength="{{ form.email.max_length }}"
+        class="form-control even" id="{{ form.email.id_for_label }}" value="{{ user.email }}">
+
+      <label>Nume:</label>
+      <input type="text" name="{{ form.first_name.html_name }}" maxlength="{{ form.first_name.max_length }}"
+        class="form-control odd" id="{{ form.first_name.id_for_label }}" value="{{ user.first_name }}">
+
+      <label>Prenume:</label>
+      <input type="text" name="{{ form.last_name.html_name }}" maxlength="{{ form.last_name.max_length }}"
+        class="form-control even" id="{{ form.last_name.id_for_label }}" value="{{ user.last_name }}">
+
+      <hr>
+
+      <label>An:</label>
+      <select name="{{ form.an_studiu.html_name }}" class="form-control odd" id="{{ form.an_studiu.id_for_label }}">
+        {% for opt1, opt in form.fields.an_studiu.choices %}
+        <option value="{{ opt }}" {% if opt == user.an_studiu %}selected="selected" {% endif %}>
+          {{ opt }}
+        </option>
+        {% endfor %}
+      </select>
+
+      <label>Grupă:</label>
+      <select name="{{ form.grupa.html_name }}" class="form-control even" id="{{ form.grupa.id_for_label }}">
+        {% for opt1, opt in form.fields.grupa.choices %}
+        <option value="{{ opt }}" {% if opt == user.grupa %}selected="selected" {% endif %}>
+          {{ opt }}
+        </option>
+        {% endfor %}
+      </select>
+
+      <label>Rol:</label>
+      <select name="{{ form.rol.html_name }}" class="form-control odd" id="{{ form.rol.id_for_label }}">
+        {% for opt1, opt in form.fields.rol.choices %}
+        <option value="{{ opt }}" {% if opt == user.rol %}selected="selected" {% endif %}>
+          {{ opt }}
+        </option>
+        {% endfor %}
+      </select>
+
+      <hr>
+
+      <h4>Personalizare</h4>
+      <br>
+      <div class="rows">
+        <div class="form-group">
+          <label for="">Culoarea 1</label>
+          <select
+            onchange="updateColor('--color1-first', document.getElementById('{{ form.color1_first.id_for_label }}').value);"
+            name="{{ form.color1_first.html_name }}" class="form-control" id="{{ form.color1_first.id_for_label }}"
+            style="background-color: var(--color1-first)">
+            {% for opt1, opt in form.fields.color1_first.choices %}
+            <option style="background-color: {{ opt }}; color: {{ opt }};"
+              {% if opt == user.personalise.color1_first %}selected="selected" {% endif %}>{{ opt }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="">Culoarea 2</label>
+          <select
+            onchange="updateColor('--color1-second', document.getElementById('{{ form.color1_second.id_for_label }}').value);"
+            name="{{ form.color1_second.html_name }}" class="form-control" id="{{ form.color1_second.id_for_label }}"
+            style="background-color: var(--color1-second)">
+            {% for opt1, opt in form.fields.color1_second.choices %}
+            <option style="background-color: {{ opt }}; color: {{ opt }};"
+              {% if opt == user.personalise.color1_second %}selected="selected" {% endif %}>{{ opt }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="">Culoarea 3</label>
+          <select
+            onchange="updateColor('--color2-first', document.getElementById('{{ form.color2_first.id_for_label }}').value);"
+            name="{{ form.color2_first.html_name }}" class="form-control" id="{{ form.color2_first.id_for_label }}"
+            style="background-color: var(--color2-first)">
+            {% for opt1, opt in form.fields.color2_first.choices %}
+            <option style="background-color: {{ opt }}; color: {{ opt }};"
+              {% if opt == user.personalise.color2_first %}selected="selected" {% endif %}>{{ opt }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="">Culoarea 4</label>
+          <select
+            onchange="updateColor('--color2-second', document.getElementById('{{ form.color2_second.id_for_label }}').value);"
+            name="{{ form.color2_second.html_name }}" class="form-control" id="{{ form.color2_second.id_for_label }}"
+            style="background-color: var(--color2-second)">
+            {% for opt1, opt in form.fields.color2_second.choices %}
+            <option style="background-color: {{ opt }}; color: {{ opt }};"
+              {% if opt == user.personalise.color2_second %}selected="selected" {% endif %}>{{ opt }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="">Fundal 1</label>
+          <select
+            onchange="updateColor('--background-first', document.getElementById('{{ form.background_first.id_for_label }}').value);"
+            name="{{ form.background_first.html_name }}" class="form-control"
+            id="{{ form.background_first.id_for_label }}" style="background-color: var(--background-first)">
+            {% for opt1, opt in form.fields.background_first.choices %}
+            <option style="background-color: {{ opt }}; color: {{ opt }};"
+              {% if opt == user.personalise.background_first %}selected="selected" {% endif %}>{{ opt }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="">Fundal 2</label>
+          <select
+            onchange="updateColor('--background-second', document.getElementById('{{ form.background_second.id_for_label }}').value);"
+            name="{{ form.background_second.html_name }}" class="form-control"
+            id="{{ form.background_second.id_for_label }}" style="background-color: var(--background-second)">
+            {% for opt1, opt in form.fields.background_second.choices %}
+            <option style="background-color: {{ opt }}; color: {{ opt }};"
+              {% if opt == user.personalise.background_second %}selected="selected" {% endif %}>{{ opt }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="">Bara de navigare</label>
+          <select
+            onchange="updateColor('--navbar', document.getElementById('{{ form.navbar_color.id_for_label }}').value);"
+            name="{{ form.navbar_color.html_name}}" class="form-control" id="{{ form.navbar_color.id_for_label }}"
+            style="background-color: var(--navbar)">
+            {% for opt1, opt in form.fields.navbar_color.choices %}
+            <option style="background-color: {{ opt }}; color: {{ opt }};"
+              {% if opt == user.personalise.navbar_color %}selected="selected" {% endif %}>{{ opt }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="">Font</label>
+          <select onchange="updateColor('--font', document.getElementById('{{ form.font_color.id_for_label }}').value);"
+            name="{{ form.font_color.html_name }}" class="form-control" id="{{ form.font_color.id_for_label }}"
+            style="background-color: var(--font)">
+            {% for opt1, opt in form.fields.font_color.choices %}
+            <option style="background-color: {{ opt }}; color: {{ opt }};"
+              {% if opt == user.personalise.font_color %}selected="selected" {% endif %}>{{ opt }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="">Font</label>
+        <select name="{{ form.font_family.html_name }}" class="form-control" id="{{ form.font_family.id_for_label }}"
+          onchange="updateColor('--font-family', document.getElementById('{{ form.font_family.id_for_label }}').value)"
+          style="background-color: var(--color1-first)">
+          {% for opt1, opt in form.fields.font_family.choices %}
+          <option value="{{ opt }}" {% if opt == user.personalise.font_family %}selected="selected" {% endif %}>
+            {{ opt }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <button class="btn btn-primary buttons" type="submit">Salvează</button>
+      <button class="btn btn-primary buttons" type="reset"
+{#        onclick="resetProps(); this.blur(); call_reset_settings({{ user.id }})">Revenire</button>#}
+        onclick="location.href='../settings/reset_settings/{{ user.id }}'">Resetare</button>
+    </form>
+    <hr>
+    <div>
+      <button type="button" class="btn btn-danger" onclick="location.href='./password_change'">Schimbare parolă</button>
+{#        <p>&#187; <a href="{% url 'password_change' %}">Change Password</a> </p>#}
+    </div>
+    <br>
+    {% load static %}
+    <script src="{% static "update_colors.js" %}"></script>
+  </div>
+
+</body>
+{% endblock %}

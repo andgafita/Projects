@@ -1,0 +1,123 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-size:15px;
+}
+body{
+    font-family: 'Montserrat';
+}
+
+li{
+    list-style: none;   
+}
+
+.board{
+    text-align:center;
+    width:80%;
+    box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.board .content{
+    margin-top:20px;
+}
+
+.board> p:first-child{
+    padding: 5px;
+    background-color:#09BCFF;
+    color:white;
+    width: 20%;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.board h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subtitle{
+
+    margin:auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px gray solid;
+    padding-bottom: 10px;
+}
+
+
+.subtitle >p:last-child{
+    color:gray;
+}
+.container{
+    margin:auto;
+    margin-top:20px;
+    width:80%;
+    display:flex; 
+}
+.meniu{
+    width: 18%;
+    box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    padding: 10px;
+}
+
+.meniu:hover{
+    transition:0.5s;
+    width: 18%;
+    box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 3px 0px 6px 4px rgba(0, 0, 0, 0.16);
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    padding: 10px;
+    background-color:#09BCFF;
+    
+}
+.meniu:hover p{
+    color: white;
+    
+}
+.meniu{
+
+    text-align: center;
+    text-decoration: none;
+}
+.meniu p{
+    margin:auto;
+}
+.meniu img{
+    width: 50px;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    display:block;
+    width: 100%;
+    margin-bottom:10px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+  }
+
+.btn.active {
+    background-color: #666;
+    color: white;
+  }

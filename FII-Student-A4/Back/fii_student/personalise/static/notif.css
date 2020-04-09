@@ -1,0 +1,120 @@
+:root {
+    --background-first: #1b1353;
+    --background-second: #000428;
+    --navbar: #030b3d;;
+    --color1-first: #f64abd;
+    --color1-second: #0086aa;
+    --color2-first: #65e1e0;
+    --color2-second: #0086aa;
+    --font: #ffffff;
+    --font-family: Montsserat;
+  }
+
+
+html{
+      height:100%;
+  }
+
+body{
+    background-image: radial-gradient(var(--background-first), var(--background-second));
+    font-family: var(--font-family);
+    color:var(--font);
+    display: flex;
+    flex-direction: column;
+    margin: 10%;    
+    margin-top: 5%;
+}
+
+h2{
+    size: 30px;
+}
+form{
+    width:40%;
+}
+button{
+    background-color:  var(--color1-second);
+    border-radius: 5px;
+    border-color: var(--color1-second);
+    height: 34px;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: var(--color1-first);
+    border-color: var(--color1-first);
+}
+
+a{
+    color: white;
+    /*font-size: 17px;*/
+}
+
+a:hover{
+    color: var(--color2-first);
+}
+a:visited a:active{
+    color: var(--color2-second);
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.form-control{
+    background-image: linear-gradient(to right, var(--color1-first),var(--color1-second));
+    border: 1px solid grey;
+    height: 34px;
+    font-size: 14px;
+    color: white;
+    border-radius: 0px;
+}
+option{
+    color: grey;
+}
+b{
+    color: var(--color2-second);
+}
+/* a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+} */
+@media screen and (max-width: 600px){
+    body{
+        margin-top: 10%;
+    }
+    form{
+        width:100%;
+    }
+}
+
+.nav.navbar-nav li a {
+    color: var(--font);
+}
+
+.nav.navbar-nav li a:hover {
+    transition: 0.3s;
+    background-color:var(--color2-first);
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+    background-color:var(--color2-first);
+}
+.navbar-inverse .navbar-nav>.active>a:hover{
+    background-color:var(--color2-first);
+}
+
+.navbar-brand img{
+    position: absolute;
+    top:-3px;
+    height: 60px;
+
+}
+.navbar {
+    background-color: var(--navbar);
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: var(--color2-first);
+    color:var(--navbar);
+
+}

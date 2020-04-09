@@ -1,0 +1,129 @@
+:root{
+    --background-first: #1b1353;
+    --background-second: #000428;
+    --navbar:#000000;
+    --color1-first:#1fd191;
+    --color1-second:#0086aa;
+    --color2-first:#f64abd;
+    --color2-second:#ad3abd;
+    --font: #ffffff;
+    --font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+    background-color: var(--navbar);
+}
+
+body{
+    background: radial-gradient(var(--background-first), var(--background-second));
+    color: var(--font);
+    font-family: var(--font-family);
+    display: grid;
+    grid-template-columns: 10% auto 60%;
+}
+
+@media (max-width:800px){
+ body{
+     grid-template-columns: 10% auto 10%;
+ }
+}
+.main-container{
+    margin-top: 60px;
+    grid-column: 2/3;
+    width: 100%;
+}
+
+.even{
+    background: linear-gradient(to right, var(--color1-first), var(--color1-second)); 
+}
+
+
+.odd{
+    background: linear-gradient(to right, var(--color2-first), var(--color2-second));
+}
+
+.rows {
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+}
+
+.rows .form-group {
+    grid-column: 1/2
+}
+
+.rows .form-group:nth-child(2n) {
+    grid-column: 3/4
+}
+
+.form-control{
+    border-style: hidden;
+    border-radius: 0px;
+    color: var(--font);
+}
+
+.even option{
+    font-size:1.2em !important;
+     background-color: var(--color1-first);
+}
+
+.odd option{
+    font-size:1.2em !important;
+     background-color: var(--color2-first);
+}
+
+.form-control option{
+    font-size:1.4em;
+     background-color: var(--color1-first);
+}
+
+.form-control::placeholder{
+    color: var(--font);
+    opacity: 1;
+    font-weight: bold;
+}
+
+label {
+    padding-top:10px;
+}
+
+
+.buttons{
+    background-color: var(--color1-first);
+    border-color: var(--color1-first);
+}
+
+.buttons:hover{
+    background-color: var(--color1-first);
+    border-color: var(--color1-first);
+    filter: brightness(85%);
+}
+
+.nav.navbar-nav li a {
+    color: var(--font);
+}
+
+.nav.navbar-nav li a:hover {
+    transition: 0.3s;
+    background-color:var(--color2-first);
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+    background-color:var(--color2-first);
+}
+.navbar-inverse .navbar-nav>.active>a:hover{
+    background-color:var(--color2-first);
+}
+
+.navbar-brand img{
+    position: absolute;
+    top:-3px;
+    height: 60px;
+
+}
+.navbar {
+    background-color: var(--navbar);
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: var(--color2-first);
+    color:var(--navbar);
+
+}

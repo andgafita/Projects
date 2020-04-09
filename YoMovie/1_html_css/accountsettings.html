@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Account Settings</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <nav>
+            <button onclick="location.href='index.html';">Home</button>
+            <button onclick="location.href='accountsettings.html';" class="currentButton">Account settings</button>
+            <button onclick="location.href='badges.html';" >Badges</button>
+            <button onclick="location.href='index.html';">YoMovies</button>
+            <button onclick="location.href='Upload.html';">Upload</button>
+    </nav>
+       <section id="container-2">
+           <div id="left-side" class="side"></div>
+           <div id="middle-side">
+            <form class="dateCont">
+                <img src="avatar.png" alt="Avatar">
+                <p>Username:</p>
+                <input type="text" name="username" value="User's name">
+                <br>
+                <p>Email:</p>
+                <input type="text" name="email" value="useremail@mail.com">
+                <br>
+                <p>New password:</p>
+                <input type="password" name="newpass">
+                <p>Confirm new password:</p>
+                <input type="password" name="email">
+                <br>
+                <input type="submit" class="profileButtons" id="saveChangesButton" value="Save changes">
+                <button type="reset" class="profileButtons"  value="Delete account">Delete account</button>
+            </form> </div>
+           <div id="right-side" class="side"></div>
+        </section>
+    </body>
+</html>

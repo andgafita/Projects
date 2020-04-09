@@ -1,0 +1,510 @@
+:root{
+    --background-first: #1b1353;
+    --background-second: #000428;
+    --navbar:#030b3d;
+    --color1-first:#1fd191;
+    --color1-second:#0086aa;
+    --color2-first:#f64abd;
+    --color2-second:#ad3abd;
+    --font: #ffffff;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+/* :root{
+    --background-first: {{user.personalise.background_first}};
+    --background-second: {{user.personalise.background_second}};
+    --navbar:{{ user.personalise.navbar_color }};
+    --color1-first:{{ user.personalise.color1_first }};
+    --color1-second:{{ user.personalise.color1_second }};
+    --color2-first:{{ user.personalise.color2_first }};
+    --color2-second:{{ user.personalise.color2_second }};
+    --font: {{ user.personalise.font_color }};
+    --font-family: {{ user.personalise.font_family }};
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+body{
+    min-height: 100vh;
+    font-family: var(--font-family);
+    font-weight: 600;
+    background: radial-gradient(var(--background-first), var(--background-second));
+}
+
+li{
+    list-style: none;
+}
+.nav.navbar-nav li a {
+    color: var(--font);
+}
+
+.nav.navbar-nav li a:hover {
+    transition: 0.3s;
+    background-color:var(--color2-first);
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+    background-color:var(--color2-first);
+}
+.navbar-inverse .navbar-nav>.active>a:hover{
+    background-color:var(--color2-first);
+}
+
+.navbar-brand img{
+    position: absolute;
+    top:-3px;
+    height: 60px;
+
+}
+.navbar {
+    background-color: var(--navbar);
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: var(--color2-first);
+    color:var(--navbar);
+
+}
+
+.link{
+    position: absolute;
+    top: 5px;
+    right:10px;
+    height:80px;
+    width:45px;
+}
+.plus{
+    height:45px;
+    position:fixed;
+    top:72px;
+    right:10px;
+    background-color:var(--color1-first);
+    border-radius:50%;
+    padding: 5px;
+    transition: width 2s;
+}
+
+@keyframes show {
+    from { width: 0px;  font-size:0px;   opacity:100%;}
+    to { width: 160px;  font-size:20px;   opacity:0%;}
+}
+
+@keyframes button{
+    from{border-radius:50%; height:45px;}
+    to{border-radius:0%;height: 80px;}
+}
+@keyframes in{
+    from{display:none; visibility: hidden;}
+    to{display:none; visibility: hidden;}
+}
+
+.link:hover .plus{
+    border-radius:0px;
+    height:80px;
+    animation:button;
+    animation-duration:0.3s;
+    top:72px;
+}
+
+.link:hover  .add_news{
+    display: block;
+    visibility: visible;
+    padding:10px;
+    text-decoration:none;
+
+    color:var(--font);
+    size: 30px;
+    font-size: 20px;
+
+    background-color:var(--color1-first);
+
+    position:fixed;
+    top:72px;
+    right:90px;
+    height:80px;
+    width: 160px;
+    animation: in 0.3s, show 0.3s ease-out 0.3s;
+    text-align: center;
+}
+
+.add_news{
+    display: none;
+    visibility: hidden;
+}
+
+/*.navbar-brand img{*/
+    /*position: absolute;*/
+    /*top:-3px;*/
+    /*height: 60px;*/
+
+/*}*/
+
+/* butoane stanga de filtrare anunturi */
+.meniu{
+    width: 10%;
+    height: 90vh;
+    top: 50;
+    position:fixed;
+
+}
+
+
+.butn{
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: var(--font);
+    background-color: var(--navbar);
+
+    font-size: 18px;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+
+    width: 100%;
+    height: 26%;
+    padding: 12px 16px;
+}
+
+.butn:hover {
+    background-image: linear-gradient(to right,var(--color2-first) , var(--color2-second) );
+    color:white;
+  }
+
+.butn.active {
+    background-image: linear-gradient(to right,var(--color2-first) , var(--color2-second) );
+    color:white;
+  }
+
+.container-main{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.board{
+    margin: 0 auto;
+    width: 60%;
+}
+
+.anunt-container{
+    background-color: white;
+    display: flex;
+    margin-top:20px;
+    margin-bottom: 30px;
+    padding-right: 10px;
+}
+
+/* data si ziua anuntului */
+.anunt-container:nth-child(even) .date{
+
+    padding: 10px;
+    background-image: linear-gradient(to right,var(--color1-first) , var(--color1-second));
+    color: white;
+
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    flex-direction: column;
+}
+
+.anunt-container:nth-child(odd) .date{
+
+    padding: 10px;
+    background-image: linear-gradient(to right,var(--color2-first) , var(--color2-second) );
+    color: white;
+
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    flex-direction: column;
+}
+
+.date > p{
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+
+.day{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.anunt-container .anunt{
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+/* titlu anunt */
+.anunt-container:nth-child(even) .anunt .top{
+    background-color: white;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right,var(--color1-first) , var(--color1-second));
+    border-image-slice: 1;
+    padding: 5px 5px 15px 2px;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    color: #030b3d;
+}
+
+.anunt-container:nth-child(odd) .anunt .top{
+    background-color: white;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right,var(--color2-first) , var(--color2-second));
+    border-image-slice: 1;
+    padding: 5px 5px 15px 2px;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    color: #030b3d;
+}
+
+/* continutul anuntului */
+.anunt-container .anunt .continut{
+    height: 3.6em;
+    line-height: 1.4em;
+    overflow: hidden;
+    background-color: white;
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.anunt-container .anunt .continut p, .anunt-container .anunt .continut a, .anunt-container .anunt .continut strong, .anunt-container .anunt em{
+    color: #444c72;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+
+}
+
+/* link pentru articolul complet */
+.anunt-container:nth-child(even) .anunt > a:last-child{
+    color: white;
+    padding: 7px 10px;
+    background-image: linear-gradient(to right,var(--color1-first) , var(--color1-second));
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+.anunt-container:nth-child(odd) .anunt > a:last-child{
+    color: white;
+    padding: 7px 10px;
+    background-image: linear-gradient(to right,var(--color2-first) , var(--color2-second) );
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+/* responsive */
+
+/* for toate anunturile si day font size */
+@media screen and (max-width: 1600px){
+    .butn{
+        font-size: 15px;
+    }
+
+
+}
+
+/* filter repositioning */
+
+@media screen and (max-width: 1300px) {
+    .day{
+        font-family: 'Monsterat', sans-serif;
+        font-weight: 300;
+        font-size: 3.5vw;
+    }
+
+    .board{
+        margin: 0px;
+        width: 100%;
+    }
+    .container-main{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .meniu{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        margin-bottom: 10px;
+
+        position: sticky;
+
+    }
+    .butn{
+
+        font-family:var(--font-family);
+        font-weight: 500;
+        color: white;
+        font-size: 15px;
+
+        background-color: var(--navbar);
+
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: block;
+
+        width: 100%;
+        height: 100%;
+        padding: 5px 5px;
+    }
+
+
+
+    .plus{
+        height:45px;
+        position:fixed;
+        top:115px;
+        right:10px;
+        background-color:var(--color1-first);
+        border-radius:50%;
+        padding: 5px;
+        transition: width 2s;
+    }
+
+    .link:hover .plus{
+        border-radius:0px;
+        height:80px;
+        animation:button;
+        animation-duration:0.3s;
+        top:115px;
+    }
+
+    .link:hover  .add_news{
+        display: block;
+        visibility: visible;
+        padding:10px;
+        text-decoration:none;
+
+        color:white;
+        size: 30px;
+        font-size: 20px;
+
+        background-color:var(--color1-first);
+
+        position:fixed;
+        top:115px;
+        right:90px;
+        height:80px;
+        width: 160px;
+        animation: in 0.3s, show 0.3s ease-out 0.3s;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 800px){
+
+    .butn{
+
+        font-family: var(--font-family);
+        font-weight: 500;
+        color: white;
+        font-size: 10px;
+
+        background-color: var(--navbar);
+
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: block;
+
+        width: 100%;
+        height: 100%;
+        padding: 5px 5px;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+
+
+
+    /* titlu anunt */
+.anunt-container .anunt .top{
+    background-color: white;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right,var(--color1-first) , var(--color1-second));
+    border-image-slice: 1;
+    /* padding: 5px 5px 15px 2px; */
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 15px;
+    color: #030b3d;
+}
+
+/* continutul anuntului */
+.anunt-container .anunt .continut{
+    height: 1.6em;
+    overflow: hidden;
+    background-color: white;
+    padding-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.anunt-container .anunt .continut p, .anunt-container .anunt .continut a, .anunt-container .anunt .continut strong{
+    color: #444c72;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+
+
+}
+
+/* link pentru articolul complet */
+.anunt-container:nth-child(even) .anunt > a:last-child{
+    color: white;
+    padding: 2px;
+    background-image: linear-gradient(to right,var(--color1-first) , var(--color1-second));
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 10px;
+
+}
+
+.anunt-container:nth-child(odd) .anunt > a:last-child{
+    color: white;
+    padding: 2px;
+    background-image: linear-gradient(to right,var(--color2-first) , var(--color2-second) );
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 10px;
+
+}
+
+
+}

@@ -1,0 +1,133 @@
+/*variables*/
+:root{
+	--Verde: #1fd191;
+	--Green1: linear-gradient(-90deg, #1fd191, #0086aa);
+	--Purple: linear-gradient(-90deg, #f64abd, #ad3abd);
+	--Albastru-inchis: #1b1354;
+
+	--background-first: #1b1353;
+	--background-second: #000428;
+	--navbar:#000000;
+	--color1-first:#1fd191;
+	--color1-second:#0086aa;
+	--color2-first:#f64abd;
+	--color2-second:#ad3abd;
+	--font: #ffffff;
+	--font-family: 'Arvo';
+
+
+}
+/*html, body*/
+html, body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	margin: 0 auto;
+	background-color: var(--background-first);
+}
+
+/*content*/
+section{
+	margin: 20px;
+}
+h1{
+	margin: 30px 0px;
+	text-align: center;
+	color: var(--font);
+	font-family: "Open Sans";
+	font-size: 42pt;
+	font-weight: bold;  /* 700 */
+}
+/*form*/
+#buttons{
+	margin: 10px 0px;
+	clear: both;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+button{
+	margin: 5px;
+	background-color: var(--color1-first);
+	border-style: none;
+	border-radius: 5px;
+	font-family: "MontSerrat";
+	font-size: 23pt;
+	font-weight: 500; /* Medium */
+	color: var(--font);
+}
+button:hover{
+	background-color: #1AB27B;
+	cursor: pointer;
+}
+/* cards */
+#cards{
+	margin: 70px 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 200px;
+	grid-gap: 20px;
+}
+#cards div{
+	margin: 10px;
+	border-radius: 5px;
+	padding: 20px;
+	font-family: "Roboto";
+	font-weight: 500; /* Medium */
+	font-size: 50pt;
+	color: var(--font);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#cards div:nth-of-type(odd){
+	background-image: linear-gradient(90deg, var(--color1-first), var(--color1-second));
+}
+#cards div:nth-of-type(even){
+	background-image: linear-gradient(90deg, var(--color2-first), var(--color2-second));
+}
+@media screen and (max-width: 1200px){
+	#cards{
+		margin: 70px 5px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: 150px;
+		grid-gap: 10px;
+	}
+	#cards div{
+		font-size:25pt;
+	}
+}
+
+.navbar-inverse{
+    z-index:101;
+    top:0;
+    position:sticky;
+    background-color: var(--navbar);
+    margin-bottom: 0px;
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+.nav.navbar-nav li a {
+    color: var(--font);
+}
+
+.nav.navbar-nav li a:hover {
+    transition: 0.3s;
+    background-color:var(--color2-first);
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+    background-color:var(--color2-first);
+}
+.navbar-inverse .navbar-nav>.active>a:hover{
+    background-color:var(--color2-first);
+}
+
+.navbar-brand img{
+    position: absolute;
+    top:-3px;
+    height: 60px;
+
+}

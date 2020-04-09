@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fii Student</title>
+      {% load static %}
+    <link href="{% static "register_style.css" %}" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+{% block content %}
+<form class="box" method="post">
+  <h1>Register to FII</h1>
+{#  <input type="email" name="" placeholder="E-mail">#}
+{#  <input type="password" name="" placeholder="Password">#}
+{#  <input type="password" name="" placeholder="Confirm Password">#}
+{#  <input type="submit" name="" value="Submit">#}
+{#  <input type="button" name="" value="Cancel" onclick="load()">#}
+    {% csrf_token %}
+    {% for field in form %}
+      <p>
+        {{ field.label_tag }}<br>
+        {{ field }}
+{#        {% if field.help_text %}#}
+{#          <small style="color: grey">{{ field.help_text }}</small>#}
+{#        {% endif %}#}
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+    {% endfor %}
+    <button type="submit">Sign up</button>
+</form>
+
+{#  <script type="text/javascript">#}
+{#  function load()#}
+{#  {#}
+{#    window.location.href = "login.html";#}
+{#  }#}
+{#  </script>#}
+
+  </body>
+{% endblock %}
+</html>
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Profil FII</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./settings.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Inconsolata|Lato|Montserrat|Roboto|Roboto Condensed"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --background-first: #1b1353;
+      --background-second: #000428;
+      --navbar: #000000;
+      --color1-first: #1fd191;
+      --color1-second: #0086aa;
+      --color2-first: #f64abd;
+      --color2-second: #ad3abd;
+      --font: #ffffff;
+      --font-family: 'Roboto Condensed';
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+  <div class="w3-container w3-theme-d2">
+    <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+    <br>
+    <div class="w3-padding w3-center">
+      <img class="w3-circle" src="user-solid.svg" alt="avatar" style="width:75%">
+      <hr>
+      <h3>Nickname</h3>
+    </div>
+  </div>
+  <a class="w3-bar-item w3-button" href="#">Pagina principala</a>
+  <a class="w3-bar-item w3-button" href="#">Orar</a>
+  <a class="w3-bar-item w3-button" href="#">Logout</a>
+</nav>
+-->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="Logo.svg" alt="FiiStudent"></a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Acasa</a></li>
+          <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Orar<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Sali</a></li>
+            <li><a href="#">Materii</a></li>
+            <li><a href="#">Grupa</a></li>
+          </ul>
+        </li>-->
+          <li><a href="#">Orar</a></li>
+          <li><a href="#">Cursuri</a></li>
+          <li><a href="#">Setari Cont</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Deconectare</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-container">
+    <h2>NUME PRENUME</h2>
+    <hr>
+
+    <form>
+      <h4>Administrare</h4>
+      <div class="form-group">
+        <label for="">Email</label>
+        <input type="email" class="form-control even" id="email1" placeholder="Adresa de Email">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control odd" id="password1" placeholder="Parola">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control even" id="password2" placeholder="Parola">
+      </div>
+
+      <h4>Personalizare</h4>
+
+      <div class="form-group">
+        <label for="">Font Family</label>
+        <select onchange="updateColor('--font-family', document.getElementById('family').value);" name="family"
+          class="form-control odd" id="family" value="">
+          <option class="form-control-select" value="Roboto">Roboto</option>
+          <option class="form-control-select" value="Arvo">Arvo</option>
+          <option class="form-control-select" value="Montserrat">Montserrat</option>
+          <option class="form-control-select" value="Lato">Lato</option>
+          <option class="form-control-select" value="Inconsolata">Inconsolata</option>
+          <option class="form-control-select" value="Roboto Condensed">Roboto Condensed</option>
+        </select>
+      </div>
+      <div class="rows">
+        <div class="form-group">
+          <label for="">Font Family</label>
+          <select onchange="updateColor('--font-family', document.getElementById('family').value);" name="family"
+            class="form-control" id="family" value="">
+            <option class="form-control-select" style="background-color: #1b1353;" value="Roboto"></option>
+            <option class="form-control-select" style="background-color: #aa076b;" value="Arvo"></option>
+            <option class="form-control-select" style="background-color: #65e1e0 ;" value="Montserrat"></option>
+            <option class="form-control-select" style="background-color: #004e92 ;" value="Lato"></option>
+
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="">Font Family</label>
+          <select onchange="updateColor('--font-family', document.getElementById('family').value);" name="family"
+            class="form-control" id="family" value="">
+            <option class="form-control-select" style="background-color: #1b1353;" value="Roboto"></option>
+            <option class="form-control-select" style="background-color: #aa076b;" value="Arvo"></option>
+            <option class="form-control-select" style="background-color: #65e1e0 ;" value="Montserrat"></option>
+            <option class="form-control-select" style="background-color: #004e92 ;" value="Lato"></option>
+
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="">Font Family</label>
+          <select onchange="updateColor('--font-family', document.getElementById('family').value);" name="family"
+            class="form-control" id="family" value="">
+            <option class="form-control-select" style="background-color: #1b1353;" value="Roboto"></option>
+            <option class="form-control-select" style="background-color: #aa076b;" value="Arvo"></option>
+            <option class="form-control-select" style="background-color: #65e1e0 ;" value="Montserrat"></option>
+            <option class="form-control-select" style="background-color: #004e92 ;" value="Lato"></option>
+
+          </select>
+        </div>
+
+      </div>
+      <input class="btn btn-primary buttons" type="submit" value="Save changes">
+      <input class="btn btn-primary buttons" type="reset" value="Undo" onclick="resetProps(); this.blur();">
+    </form>
+    <hr>
+    <div>
+      <button type="button" class="btn btn-danger">Ștergere cont</button>
+    </div>
+  </div>
+
+  <script src="update_colors.js"></script>
+
+</body>
+
+</html>

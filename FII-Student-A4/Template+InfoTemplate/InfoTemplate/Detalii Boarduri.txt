@@ -1,0 +1,27 @@
+Textul JOIN BOARD trebuie in Romana
+
+CULORI
+
+NAVBAR- #000428 eventual va fi modificata culoare ulterior
+
+Meniu Stanga- #030b3d
+Meniu Stanga Select-> #f64abd - #ad3abd - Purple
+
+Card nth of type even- #f64abd - #ad3abd - Purple
+Card nth of type odd - #1fd191 - #0086aa - Green1
+Card Sectiune alba - #f0f2f7
+
+Text Mijloc - #030b3d
+Text Alb - #ffffff
+
+
+FONTURI
+
+
+Meniu Stanga - Open Sans- Bold - 35pt 
+Titlu Carduri - Montserrat - Bold - 33pt
+Anul la Card - Open Sans - Bold - 25pt
+Profesor - Open Sans - Semibold Italic - 25pt
+Text Alb Card - Open Sans - Light - 24pt
+Join Board - Montserrat Bold - 24pt
+

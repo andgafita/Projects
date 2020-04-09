@@ -1,0 +1,26 @@
+
+BUTOANELE VERZI TREBUIE FACUTE MAI MARI
+
+
+CULORI
+
+NAVBAR- #000428 eventual va fi modificata culoare ulterior
+
+Butoane - #1fd191 - Verde
+Buton Liber - #1fd191 - Verde
+Buton Ocupat -#9c09d3 - Mov
+
+Linie Sala - #1fd191 - #0086aa - Green1
+Tabel Head/ Lateral - #f64abd - #ad3abd - Purple
+
+Text Alb - #ffffff
+Linie Interioare Tabele - #f7f7f7
+
+FONTURI
+
+Titlu - Open Sans Bold - 42pt
+Text Butoane Sus - Montserrat Medium 23 pt
+Text Liber/Ocupat - Montserrat Bold -24 pt
+Text Sala - Montserrat Semibold 54 pt
+Text Zile Saptamna - Open Sans Semibold -29 pt
+Text Ore  - Open Sans Semibold 23

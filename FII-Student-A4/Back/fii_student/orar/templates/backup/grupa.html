@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         {% load static %}
+          <title>Orar</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <link rel="stylesheet" type="text/css" href="{% static './css/bootstrap.min.css' %}">
+          <link rel="stylesheet" type="text/css" href="{% static 'grupa.css' %}">
+     </head>
+
+     <body>
+     {% load my_filters %}
+          <section>
+               <h1>{{titlu}}</h1>
+                   <article id="form">
+                         <div id="buttons">
+                              <button type="submit" name="Examene" value="Examene">Examene</button>
+                              <button type="submit" name="An" value="An" onclick="location.href='http://www.uaic.ro/studii/structura-anului-universitar/';">Structura anului universitar</button>
+                              <button type="submit" name="An" value="An" onclick="location.href='http:?sali_libere_acum=-';">Sali libere acum</button>
+                              <button type="submit" name="An" value="An" onclick="location.href='/orar/program_sali/';">Disponibilitate sali</button>
+                         </div>
+
+                         <div id="selectTags">
+                            <form action="" method="">
+                                   <select name="materie" onchange="this.form.submit();">
+                                        <option value="" selected>--Materie--</option>
+
+                                       {% for curs in cursuri %}
+                                       {% if curs == MATERIAH %}
+                                       <option value="{{curs}}" selected="selected">{{curs}}</option>
+                                       {% endif %}}
+                                       {% if curs != MATERIAH %}
+                                       <option value="{{curs}}">{{curs}}</option>
+                                       {% endif %}
+                                       {% endfor %}
+
+                                   </select>
+
+                                   <select name="grupa" onchange="this.form.submit();">
+                                        <option value="" selected>--Grupa--</option>
+
+                                       {% for grupa in grupe %}
+                                       {% if grupa == GRUPAH %}
+                                       <option value="{{grupa}}" selected="selected">{{grupa}}</option>
+                                       {% endif %}}
+                                       {% if grupa != GRUPAH %}
+                                       <option value="{{grupa}}">{{grupa}}</option>
+                                       {% endif %}
+                                       {% endfor %}
+
+                                   </select>
+
+                                   <select name="profesor" onchange="this.form.submit();">
+                                        <option value="" selected>--Profesor--</option>
+
+                                       {% for profesor in profesori %}
+                                       {% if profesor == PROFESORH %}
+                                       <option value="{{profesor}}" selected="selected">{{profesor}}</option>
+                                       {% endif %}}
+                                       {% if profesor != PROFESORH %}
+                                       <option value="{{profesor}}">{{profesor}}</option>
+                                       {% endif %}
+                                       {% endfor %}
+
+                                   </select>
+
+                                   <select name="sala" onchange="this.form.submit();">
+                                        <option value="" selected>--Sala--</option>
+                                        {% for sala in sali %}
+                                       {% if sala == SALAH %}
+                                       <option value="{{sala}}" selected="selected">{{sala}}</option>
+                                       {% endif %}}
+                                       {% if sala != SALAH %}
+                                       <option value="{{sala}}">{{sala}}</option>
+                                       {% endif %}
+                                       {% endfor %}
+                                   </select>
+                              </form>
+                         </div>
+               </article>
+    
+               <article> 
+                    <div class="table-responsive">
+                         <table class="table table-sm">
+                              <thead>
+                                   <tr>
+                                        <th>De la</th>
+                                        <th>Pana la</th>
+                                        <th>Disciplina</th>
+                                        <th>Tip</th>
+                                       <th>Grupa</th>
+                                        <th>Profesor</th>
+                                        <th>Sala</th>
+                                        <th>Pachet</th> 
+                                   </tr>
+                              </thead>
+
+                              <tbody>
+                                  {% if luni %}
+                                   <tr>
+                                       <td colspan="10" bgcolor="#76CC9A">
+                                         <b>Luni</b>({{ lista_ore.0 }} ore)
+                                       </td>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in luni %}
+
+                                                            <tr>
+                                     <td> {{rand.ora_inceput|time:'H:i'}}</td>
+                                     <td> {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                     <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                     <td>{{rand.sala}}</td>
+
+                                     <td align="center">{{rand.pachet}}</td>
+                                   </tr>
+
+                                   {% endfor %}
+
+                                   {% if marti %}
+                                   <tr>
+                                       <td colspan="10" bgcolor="#76CC9A">
+                                         <b>Marti</b>({{ lista_ore.1 }} ore)
+                                       </td>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in marti %}
+
+                                   <tr>
+                                     <td> {{rand.ora_inceput|time:'H:i'}}</td>
+                                     <td> {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                       <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                       <td>{{rand.sala}}</td>
+
+                                     <td align="center">{{rand.pachet}}</td>
+                                   </tr>
+
+                                   {% endfor %}
+
+                                   {% if miercuri %}
+                                   <tr>
+                                       <td colspan="10" bgcolor="#76CC9A">
+                                         <b>Miercuri</b>({{ lista_ore.2 }} ore)
+                                       </td>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in miercuri %}
+
+                                   <tr>
+                                     <td> {{rand.ora_inceput|time:'H:i'}}</td>
+                                     <td> {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                       <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                       <td>{{rand.sala}}</td>
+
+                                     <td align="center">{{rand.pachet}}</td>
+                                   </tr>
+
+                                   {% endfor %}
+
+                                   {% if joi %}
+                                   <tr>
+                                       <td colspan="10" bgcolor="#76CC9A">
+                                         <b>Joi</b>({{ lista_ore.3 }} ore)
+                                       </td>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in joi %}
+
+                                   <tr>
+                                     <td> {{rand.ora_inceput|time:'H:i'}}</td>
+                                     <td> {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                       <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                       <td>{{rand.sala}}</td>
+
+                                     <td align="center">{{rand.pachet}}</td>
+                                   </tr>
+
+                                   {% endfor %}
+
+                                   {% if vineri %}
+                                   <tr>
+                                       <td colspan="10" bgcolor="#76CC9A">
+                                         <b>Vineri</b>({{ lista_ore.4 }} ore)
+                                       </td>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in vineri %}
+
+                                   <tr>
+                                     <td> {{rand.ora_inceput|time:'H:i'}}</td>
+                                     <td> {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                       <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                       <td>{{rand.sala}}</td>
+
+                                     <td align="center">{{rand.pachet}}</td>
+                                   </tr>
+
+                                   {% endfor %}
+
+                                   {% if sambata %}
+                                   <tr>
+                                       <td colspan="10" bgcolor="#76CC9A">
+                                         <b>Sambata</b>({{ lista_ore.5 }} ore)
+                                       </td>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in sambata %}
+
+                                   <tr>
+                                     <td> {{rand.ora_inceput|time:'H:i'}}</td>
+                                     <td> {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                       <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                       <td>{{rand.sala}}</td>
+
+                                     <td align="center">{{rand.pachet}}</td>
+                                   </tr>
+
+                                   {% endfor %}
+
+                                   {% if duminica %}
+                                   <tr>
+                                       <td colspan="10" bgcolor="#76CC9A">
+                                         <b>Duminica</b>({{ lista_ore.6 }} ore)
+                                       </td>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in duminica %}
+
+                                   <tr>
+                                     <td> {{rand.ora_inceput|time:'H:i'}}</td>
+                                     <td> {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                       <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                       <td>{{rand.sala}}</td>
+
+                                     <td align="center">{{rand.pachet}}</td>
+                                   </tr>
+
+                                   {% endfor %}
+                              </tbody>
+                         </table>
+                    </div>
+               </article>
+          </section>
+
+
+<table class="table table-sm">
+                              <thead>
+                                   <tr>
+                                        <th>De la</th>
+                                        <th>Pana la</th>
+                                        <th>Disciplina</th>
+                                        <th>Tip</th>
+                                       <th>Grupa</th>
+                                        <th>Profesor</th>
+                                        <th>Sala</th>
+                                        <th>Pachet</th>
+                                   </tr>
+                              </thead>
+
+                              <tbody>
+                                  {% for zi in zile_examen %}
+                                   <tr>
+                                       <td colspan="10">
+                                         <b>{{zile_saptamana_examene|dict:zi}}</b>
+                                       </td>
+                                   </tr>
+                                   {% for rand in examene|in_category:zi %}
+
+                                                            <tr>
+                                     <td> {{rand.ora_inceput|time:'H:i'}}</td>
+                                     <td> {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                     <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                     <td>{{rand.sala}}</td>
+
+                                     <td align="center">{{rand.pachet}}</td>
+                                   </tr>
+
+                                   {% endfor %}
+                                {% endfor %}
+
+                              </tbody>
+                         </table>
+
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script type="text/javascript" src="{% static './js/bootstrap.min.js' %}"></script>
+     </body>
+</html>

@@ -1,0 +1,38 @@
+[
+  {
+    "subject": "MATEMATICA",
+    "year": "I",
+    "teacher": "Lect. dr. Florin Iacob/Lect. dr. Andreea Arusoaie",
+    "description": "Prezentarea unor elemente de matematică utile în abordarea și parcurgerea programelor analitice ale disciplinelor de informatică prevăzute în cadrul studiilor de licență."
+  },
+  {
+    "subject": "LFAC",
+    "year": "I",
+    "teacher": "Lect. dr. Florin Iacob/Lect. dr. Andreea Arusoaie",
+    "description": "Prezentarea unor elemente de matematică utile în abordarea și parcurgerea programelor analitice ale disciplinelor de informatică prevăzute în cadrul studiilor de licență."
+  },
+  {
+    "subject": "CS",
+    "year": "I",
+    "teacher": "Lect. dr. Florin Iacob/Lect. dr. Andreea Arusoaie",
+    "description": "Prezentarea unor elemente de matematică utile în abordarea și parcurgerea programelor analitice ale disciplinelor de informatică prevăzute în cadrul studiilor de licență."
+  },
+  {
+    "subject": "NEIN",
+    "year": "I",
+    "teacher": "Lect. dr. Florin Iacob/Lect. dr. Andreea Arusoaie",
+    "description": "Prezentarea unor elemente de matematică utile în abordarea și parcurgerea programelor analitice ale disciplinelor de informatică prevăzute în cadrul studiilor de licență."
+  },
+  {
+    "subject": "CSS",
+    "year": "II",
+    "teacher": "Lect. dr. Florin Iacob/Lect. dr. Andreea Arusoaie",
+    "description": "Prezentarea unor elemente de matematică utile în abordarea și parcurgerea programelor analitice ale disciplinelor de informatică prevăzute în cadrul studiilor de licență."
+  },
+  {
+    "subject": "ACSO",
+    "year": "II",
+    "teacher": "Lect. dr. Florin Iacob/Lect. dr. Andreea Arusoaie",
+    "description": "Prezentarea unor elemente de matematică utile în abordarea și parcurgerea programelor analitice ale disciplinelor de informatică prevăzute în cadrul studiilor de licență."
+  }
+]

@@ -1,0 +1,366 @@
+{% extends 'navbar.html' %}
+{% block content %}
+     <head>
+                  {% load static %}
+
+          <title>Orar</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{#          <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">#}
+{#          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">#}
+<link rel="stylesheet" type="text/css" href="{% static 'grupa.css' %}">
+         <link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+{#<script src="myScript1.js"></script>#}
+<script src="{% static 'js/scrollScript.js' %}"></script>
+
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+{#  script which runs after page is load #}
+{#  sets corect checkboxes according to existing joined rands #}
+    $(
+        function(){
+                $.ajax({
+                url: '/personalise/orar/check_rands/'+{{ user.id }},
+                type: 'POST',
+                data: {
+                    'csrfmiddlewaretoken': "{{ csrf_token }}"
+                },
+                success: function(data, response) {
+                    for (var i = 0; i < data['rands'].length; i++) {
+                        var checkbox = document.getElementById(data['rands'][i]);
+                        if(checkbox){
+                            checkbox.checked = true;
+                        }
+                    }
+                }
+            });
+        }
+    );
+        function call_add_rand(uid, rid) {
+            $.ajax({
+                url: '/personalise/orar/add_rand/' + uid + '/' + rid,
+                type: 'POST',
+                data: {
+                    'csrfmiddlewaretoken': "{{ csrf_token }}"
+                },
+                success: function(data, response) {
+
+                }
+            });
+        }
+        function call_remove_rand(uid, rid) {
+            $.ajax({
+                url: '/personalise/orar/remove_rand/' + uid + '/' + rid,
+                type: 'POST',
+                data: {
+                    'csrfmiddlewaretoken': "{{ csrf_token }}"
+                },
+                success: function (data, response) {
+
+                }
+            });
+        }
+        function call_handle(checkbox, uid, rid) {
+        if (checkbox.checked == true) {
+            call_add_rand(uid, rid);
+        }
+        else {
+            call_remove_rand(uid, rid);
+        }
+        }
+    </script>
+
+
+         <style>
+    :root {
+      --background-first: {{ user.personalise.background_first }};
+      --background-second: {{ user.personalise.background_second }};
+      --navbar: {{ user.personalise.navbar_color }};;
+      --color1-first: {{ user.personalise.color1_first }};
+      --color1-second: {{ user.personalise.color1_second }};
+      --color2-first: {{ user.personalise.color2_first }};
+      --color2-second: {{ user.personalise.color2_second }};
+      --font: {{ user.personalise.font_color }};
+      --font-family: {{ user.personalise.font_family }};
+    }
+  </style>
+
+
+     </head>
+
+     <body>
+     {% load static %}
+          {% load my_filters %}
+          <section>
+               <h1>{{titlu}}</h1>
+               <article id="form">
+                         <div id="buttons">
+                             <button type="submit" name="An" value="An" onclick="location.href='/personalise/orar/'">Orarul tuturor grupelor</button>
+                             <button type="submit" name="An" value="An" onclick="location.href='/personalise/orar/orar_personalised/'">Orarul meu personalizat</button>
+                             <button type="submit" name="An" value="An" onclick="location.href='/personalise/orar/orar_personalised/reset_orar/'">Reset defaults orar personalizat</button>
+                             <button type="submit" name="An" value="An" onclick="location.href='/orar/'">Orar nepersonalizat</button>
+                         </div>
+
+                    <form action="" method="">
+                         <div id="selectTags">
+                             <select name="materie" onchange="this.form.submit();">
+                                        <option value="" selected>Materie</option>
+
+                                       {% for curs in cursuri %}
+                                       {% if curs == MATERIAH %}
+                                       <option value="{{curs}}" selected="selected">{{curs}}</option>
+                                       {% endif %}}
+                                       {% if curs != MATERIAH %}
+                                       <option value="{{curs}}">{{curs}}</option>
+                                       {% endif %}
+                                       {% endfor %}
+
+                                   </select>
+
+                                   <select name="grupa" onchange="this.form.submit();">
+                                        <option value="" selected>Grupa</option>
+
+                                       {% for grupa in grupe %}
+                                       {% if grupa == GRUPAH %}
+                                       <option value="{{grupa}}" selected="selected">{{grupa}}</option>
+                                       {% endif %}}
+                                       {% if grupa != GRUPAH %}
+                                       <option value="{{grupa}}">{{grupa}}</option>
+                                       {% endif %}
+                                       {% endfor %}
+
+                                   </select>
+
+                                   <select name="profesor" onchange="this.form.submit();">
+                                        <option value="" selected>Profesor</option>
+
+                                       {% for profesor in profesori %}
+                                       {% if profesor == PROFESORH %}
+                                       <option value="{{profesor}}" selected="selected">{{profesor}}</option>
+                                       {% endif %}}
+                                       {% if profesor != PROFESORH %}
+                                       <option value="{{profesor}}">{{profesor}}</option>
+                                       {% endif %}
+                                       {% endfor %}
+
+                                   </select>
+
+                                   <select name="sala" onchange="this.form.submit();">
+                                        <option value="" selected>Sala</option>
+                                        {% for sala in sali %}
+                                       {% if sala == SALAH %}
+                                       <option value="{{sala}}" selected="selected">{{sala}}</option>
+                                       {% endif %}}
+                                       {% if sala != SALAH %}
+                                       <option value="{{sala}}">{{sala}}</option>
+                                       {% endif %}
+                                       {% endfor %}
+                                   </select>
+                         </div>
+                    </form>
+               </article>
+
+               <article>
+                    <div class="table-responsive">
+
+
+                              <table class="tabelmare">
+                             <thead >
+                                   <tr>
+                                        <th style="border-right : 10px solid #1b1354">ORE</th>
+                                        <th style="border-right : 10px solid #1b1354">DISCIPLINA</th>
+                                        <th style="border-right : 10px solid #1b1354">TIP</th>
+                                        <th style="border-right : 10px solid #1b1354">GRUPA</th>
+                                        <th style="border-right : 10px solid #1b1354">PROFESOR</th>
+                                        <th style="border-right : 10px solid #1b1354">SALA</th>
+                                        <th style="border-right : 10px solid #1b1354">PACHET</th>
+                                        <th>ABONARE</th>
+                                   </tr>
+                              </thead>
+
+
+
+                              <tbody>
+                                <tr class="spatiu">
+                                                  <td></td>
+                                                  <td></td>
+                                                  <td></td>
+                                                  <td></td>
+                                                  <td></td>
+                                                  <td></td>
+                                                  <td></td>
+                                                  <td></td>
+
+                                             </tr>
+
+                                  {% if luni %}
+                                   <tr class="zi">
+                                       <th colspan="10">
+                                         <b>Luni</b>({{ lista_ore.0 }} ore)
+                                       </th>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in luni %}
+
+                                                            <tr>
+                                     <td> {{rand.ora_inceput|time:'H:i'}} - {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                     <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                     <td>{{rand.sala}}</td>
+                                     <td>{{rand.pachet}}</td>
+                                       <td align="center"><input class="cbox" type='checkbox' id="{{ rand.id }}" onclick="call_handle(this, {{ user.id }},{{ rand.id }})"></td>
+                                   </tr>
+
+                                   {% endfor %}
+
+                                   {% if marti %}
+                                   <tr class="zi">
+                                       <th colspan="10">
+                                         <b>Marti</b>({{ lista_ore.1 }} ore)
+                                       </th>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in marti %}
+
+                                   <tr>
+                                     <td>{{rand.ora_inceput|time:'H:i'}} - {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                       <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                       <td>{{rand.sala}}</td>
+                                       <td>{{rand.pachet}}</td>
+                                       <td align="center"><input class="cbox" type='checkbox' id="{{ rand.id }}" onclick="call_handle(this, {{ user.id }},{{ rand.id }})"></td>
+                                   </tr>
+
+                                   {% endfor %}
+
+                                   {% if miercuri %}
+                                   <tr class="zi">
+                                       <th colspan="10">
+                                         <b>Miercuri</b>({{ lista_ore.2 }} ore)
+                                       </th>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in miercuri %}
+
+                                   <tr>
+                                     <td>{{rand.ora_inceput|time:'H:i'}} - {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                       <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                       <td>{{rand.sala}}</td>
+                                       <td>{{rand.pachet}}</td>
+                                       <td align="center"><input class="cbox" type='checkbox' id="{{ rand.id }}" onclick="call_handle(this, {{ user.id }},{{ rand.id }})"></td>
+                                   </tr>
+
+
+                                   {% endfor %}
+
+                                   {% if joi %}
+                                   <tr class="zi">
+                                       <th colspan="10">
+                                         <b>Joi</b>({{ lista_ore.3 }} ore)
+                                       </th>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in joi %}
+
+                                   <tr>
+                                     <td>{{rand.ora_inceput|time:'H:i'}} - {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                       <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                       <td>{{rand.sala}}</td>
+                                       <td>{{rand.pachet}}</td>
+                                       <td align="center"><input class="cbox" type='checkbox' id="{{ rand.id }}" onclick="call_handle(this, {{ user.id }},{{ rand.id }})"></td>
+                                   </tr>
+
+
+                                   {% endfor %}
+
+                                   {% if vineri %}
+                                 <tr class="zi">
+                                       <th colspan="10">
+                                         <b>Vineri</b>({{ lista_ore.4 }} ore)
+                                       </th>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in vineri %}
+
+                                   <tr>
+                                     <td>{{rand.ora_inceput|time:'H:i'}} - {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                       <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                       <td>{{rand.sala}}</td>
+                                       <td>{{rand.pachet}}</td>
+                                       <td align="center"><input class="cbox" type='checkbox' id="{{ rand.id }}" onclick="call_handle(this, {{ user.id }},{{ rand.id }})"></td>
+                                   </tr>
+
+
+                                   {% endfor %}
+
+                                   {% if sambata %}
+                                   <tr class="zi">
+                                       <th colspan="10">
+                                         <b>Sambata</b>({{ lista_ore.5 }} ore)
+                                       </th>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in sambata %}
+
+                                  <tr>
+                                     <td>{{rand.ora_inceput|time:'H:i'}} - {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                       <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                       <td>{{rand.sala}}</td>
+                                      <td>{{rand.pachet}}</td>
+                                       <td align="center"><input class="cbox" type='checkbox' id="{{ rand.id }}" onclick="call_handle(this, {{ user.id }},{{ rand.id }})"></td>
+                                   </tr>
+
+
+                                   {% endfor %}
+
+                                   {% if duminica %}
+                                   <tr class="zi">
+                                       <th colspan="10">
+                                         <b>Duminica</b>({{ lista_ore.6 }} ore)
+                                       </th>
+                                   </tr>
+                                   {% endif %}
+                                   {% for rand in duminica %}
+
+                                   <tr>
+                                     <td>{{rand.ora_inceput|time:'H:i'}} - {{rand.ora_sfarsit|time:'H:i'}}</td>
+                                     <td>{{rand.curs}}</td>
+                                     <td>{{rand.tip}}</td>
+                                       <td>{{rand.grupa}}</td>
+                                     <td>{{rand.profesor}}</td>
+                                       <td>{{rand.sala}}</td>
+                                       <td>{{rand.pachet}}</td>
+                                       <td align="center"><input class="cbox" type='checkbox' id="{{ rand.id }}" onclick="call_handle(this, {{ user.id }},{{ rand.id }})"></td>
+                                   </tr>
+
+
+                                   {% endfor %}
+                              </tbody>
+
+
+                              </tbody>
+                         </table>
+                    </div>
+               </article>
+          </section>
+
+          <script type="text/javascript" src="{% static './js/bootstrap.min.js'%}"></script>
+          
+     </body>
+{% endblock %}

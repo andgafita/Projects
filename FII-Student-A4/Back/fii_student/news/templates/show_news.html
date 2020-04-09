@@ -1,0 +1,126 @@
+﻿{% extends 'navbar.html' %}
+
+{% block content %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Anunturi</title>
+    {% load static %}
+    <link href="{% static 'anunturi-style.css' %}" rel="stylesheet" type="text/css">
+{#    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Roboto:300,400i" rel="stylesheet">#}
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+
+ <style> :root{
+    --background-first: {{user.personalise.background_first}};
+    --background-second: {{user.personalise.background_second}};
+    --navbar:{{ user.personalise.navbar_color }};
+    --color1-first:{{ user.personalise.color1_first }};
+    --color1-second:{{ user.personalise.color1_second }};
+    --color2-first:{{ user.personalise.color2_first }};
+    --color2-second:{{ user.personalise.color2_second }};
+    --font: {{ user.personalise.font_color }};
+    --font-family: {{ user.personalise.font_family }};
+} </style>
+
+    <!--TODO: this fucks up everything -->
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div class="container-main">
+    <div class="meniu">
+        <button class="butn active" onclick="filterSelection(&#39;all&#39;)"> TOATE ANUNȚURILE</button>
+        <button class="butn" onclick="filterSelection(&#39;uaic&#39;)"> UAIC</button>
+        <button class="butn" onclick="filterSelection(&#39;fii&#39;)"> FII</button>
+        <button class="butn" onclick="filterSelection(&#39;orar&#39;)"> ORAR</button>
+    </div>
+
+
+    <a class="link" href ="/news/add_news">
+        <img class="plus" src="{% static 'plus.png' %}">
+        <p class="add_news">Adaugă un anunț!</p>
+    </a>
+
+    <div class="board">
+        {% for obj in objects %}
+        <div class="anunt-container {{ obj.source }}">
+            <div class="date">
+                <p>{{ obj.published_time|date:'d M Y' }}</p>
+                <p class="day"> {{ obj.published_time|date:'D' }}.</p>
+                <p>{{ obj.author_name}}</p>
+            </div>
+            <div class="anunt">
+                <p class="top"><a href="{{ obj.news_id }}/">{{ obj.title }}</a></p>
+                <div class="continut">{{ obj.body|safe}}</div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+</div>
+
+<script>
+// pentru ca filtrarea sa functioneze trebuie ca, clasa anunt-container
+// sa mai contina si una dintre clasele cu numele "UAIC" sau "FII" sau "ORAR" in functie de caz
+        function filterSelection(nume){
+            var anunturi = document.getElementsByClassName("anunt-container");
+            var first, second;
+            nume = nume.toUpperCase();
+            if(nume == "ALL"){
+
+                for (i = 0; i < anunturi.length; i++){
+                    first = anunturi[i].className.split(" ");
+                    second = first[1];
+
+                    anunturi[i].style.visbility = "visible";
+                    anunturi[i].style.display = "flex";
+
+                }
+            }else{
+
+                for (i = 0; i < anunturi.length; i++){
+                    first = anunturi[i].className.split(" ");
+                    second = first[1];
+                    if(nume != second){
+                        anunturi[i].style.visbility = "none";
+                        anunturi[i].style.display = "none";
+                    }else{
+                        anunturi[i].style.visbility = "visible";
+                        anunturi[i].style.display = "flex";
+                    }
+                }
+            }
+
+
+            var button = document.getElementsByClassName("butn");
+            for(i = 0; i<button.length; i++){
+                if(button[i].className == "butn active"){
+                    button[i].className = "butn";
+                }else if(button[i].textContent.trim() == nume.toUpperCase()){
+                    button[i].className = "butn active";
+                }else if(nume == "all"){
+                    button[0].className = "butn active";
+                }
+            }
+        }
+
+        (function($){
+        $(document).ready(function(){
+            var btns = $('.continut');
+           btns.each(function(index) {
+                $(this).on("click", function(){
+                    if($(this).css('overflow') == 'hidden'){
+                        $(this).css({'overflow': 'unset', "height": "auto"});
+                    } else {
+                        $(this).css({'overflow': 'hidden', "height": "3.6em"});
+                    }
+                });
+            });
+            })
+        })(jQuery);
+
+
+
+
+</script>
+{% endblock %}

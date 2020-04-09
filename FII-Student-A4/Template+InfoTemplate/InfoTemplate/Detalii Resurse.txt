@@ -1,0 +1,15 @@
+CULORI
+
+NAVBAR- #000428 eventual va fi modificata culoare ulterior
+
+Meniu Stanga- #030b3d
+Meniu Stanga Select-> #f64abd - #ad3abd - Purple
+
+Card nth of type even- #f64abd - #ad3abd - Purple
+Card nth of type odd - #1fd191 - #0086aa - Green1
+Opacitate la carduri( doar la gradiente ) - 80%
+
+FONTURI
+
+Meniu Stanga - Open Sans- Bold - 30 pt 
+Card Title - Open Sans - Semibold - 33pt

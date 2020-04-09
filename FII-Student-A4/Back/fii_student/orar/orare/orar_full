@@ -1,0 +1,6407 @@
+[
+    {
+        "model": "orar.Rand",
+        "pk": 1,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS,MOC1,MOC2,MSD",
+            "curs": "Aspecte pragmatice pentru ingineria serviciilor cloud: arhitecturi, procese si practici",
+            "tip": "Curs",
+            "profesor": "",
+            "sala": "",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 2,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC",
+            "curs": "Calitatea sistemelor software",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Radulescu Vlad",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 3,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS,MOC",
+            "curs": "Calitatea sistemelor software",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Radulescu Vlad",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 4,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Programare concurenta si distribuita",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Alboaie Lenuta",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 5,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Programare concurenta si distribuita",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Alboaie Lenuta",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 6,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Programare concurenta si distribuita",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Alboaie Lenuta",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 7,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS,MOC1,MOC2,MSD",
+            "curs": "Aspecte pragmatice pentru ingineria serviciilor cloud: arhitecturi, procese si practici",
+            "tip": "Laborator",
+            "profesor": "",
+            "sala": "",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 8,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS2,MOC2",
+            "curs": "Managementul proiectelor",
+            "tip": "Seminar",
+            "profesor": "Artene Radu",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 9,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS,MOC",
+            "curs": "Interactiune om-calculator",
+            "tip": "Laborator",
+            "profesor": "Colab. Grigoriu Alecsandru",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 10,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "MIS,MOC",
+            "curs": "Interactiune om-calculator",
+            "tip": "Curs",
+            "profesor": "Conf.dr. Buraga Sabin Corneliu",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 11,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC,MSD2",
+            "curs": "Capitole speciale de invatare automata",
+            "tip": "Curs",
+            "profesor": "Conf.dr. Ciortuz Liviu",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 12,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Sisteme bazate pe evenimente",
+            "tip": "Curs",
+            "profesor": "Lect. dr. Onica Emanuel",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 13,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS,MOC,MSD2",
+            "curs": "Capitole speciale de invatare automata",
+            "tip": "Seminar",
+            "profesor": "Conf.dr. Ciortuz Liviu",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 14,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS2,MOC2",
+            "curs": "Analiza bazelor mari de date",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Breaban Mihaela",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 15,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "MIS2,MOC2",
+            "curs": "Analiza bazelor mari de date",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Breaban Mihaela",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 16,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "MIS,MOC,MSD2",
+            "curs": "Capitole speciale de invatare automata",
+            "tip": "Seminar",
+            "profesor": "Conf.dr. Ciortuz Liviu",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 17,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS2,MOC2",
+            "curs": "Managementul proiectelor",
+            "tip": "Curs",
+            "profesor": "Prof. Dr. Oprea Dumitru",
+            "sala": "B5",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 18,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Sisteme bazate pe evenimente",
+            "tip": "Curs",
+            "profesor": "Lect. dr. Onica Emanuel",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 19,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Sisteme bazate pe evenimente",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Onica Emanuel",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 20,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "MLC1",
+            "curs": "Limbaje de scripturi (pentru studentii umanisti)",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Trandabat Diana",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 21,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MLC1",
+            "curs": "Introducere in Lingvistica Computationala",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Cristea Dan",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 22,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MLC1",
+            "curs": "Introducere in Lingvistica Computationala",
+            "tip": "Seminar",
+            "profesor": "Prof.dr. Cristea Dan",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 23,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MLC2",
+            "curs": "Aplicatii ale prelucrarii limbajului natural",
+            "tip": "Curs",
+            "profesor": "Conf.dr. Forascu Corina",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 24,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "MLC2",
+            "curs": "Aplicatii ale prelucrarii limbajului natural",
+            "tip": "Seminar",
+            "profesor": "Conf.dr. Forascu Corina",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 25,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "MLC1,MOC",
+            "curs": "Data Mining",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Luchian Henri",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 26,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MLC1",
+            "curs": "Introducere in Lingvistica Computationala",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Cristea Dan",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 27,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MLC1",
+            "curs": "Introducere in Lingvistica Computationala",
+            "tip": "Seminar",
+            "profesor": "Prof.dr. Cristea Dan",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 28,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MLC1,MOC2",
+            "curs": "Data Mining",
+            "tip": "Laborator",
+            "profesor": "Simion Alin Ciprian",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 29,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "MLC1",
+            "curs": "Prelucrarea statistica a limbajului natural",
+            "tip": "Seminar",
+            "profesor": "Conf. dr. Trandabat Diana",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 30,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "MLC1",
+            "curs": "Prelucrarea statistica a limbajului natural",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Trandabat Diana",
+            "sala": "Acvariu",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 31,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "MLC1",
+            "curs": "Limbaje de scripturi (pentru studentii umanisti)",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Trandabat Diana",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 32,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MLC2",
+            "curs": "Metode de invatare aplicate limbajului natural",
+            "tip": "Curs",
+            "profesor": "Conf.dr. Forascu Corina Colab. Oniciuc Oriana",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 33,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MLC2",
+            "curs": "Metode de invatare aplicate limbajului natural",
+            "tip": "Seminar",
+            "profesor": "Conf.dr. Forascu Corina Colab. Oniciuc Oriana",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 34,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "MLC",
+            "curs": "Cerc NLP",
+            "tip": "Cerc stiintific",
+            "profesor": "Prof.dr. Cristea Dan drd. Diac Paul Cerc. Dr. Gifu Daniela Conf. dr. Iftene Adrian Lect.dr. Moruz Alex Lect. dr. Pistol Ionut Conf. dr. Trandabat Diana",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 35,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MLC",
+            "curs": "Prelucrarea vorbirii si sisteme fuzzy",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Teodorescu Horia",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Sambata"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 36,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "MLC",
+            "curs": "Prelucrarea vorbirii si sisteme fuzzy",
+            "tip": "Seminar",
+            "profesor": "Prof.dr. Teodorescu Horia",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Sambata"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 37,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS,MOC1,MOC2,MSD",
+            "curs": "Aspecte pragmatice pentru ingineria serviciilor cloud: arhitecturi, procese si practici",
+            "tip": "Curs",
+            "profesor": "",
+            "sala": "",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 38,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC",
+            "curs": "Calitatea sistemelor software",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Radulescu Vlad",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 39,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS,MOC",
+            "curs": "Calitatea sistemelor software",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Radulescu Vlad",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 40,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MOC1,MOC2",
+            "curs": "Data Mining",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Breaban Mihaela",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 41,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MOC",
+            "curs": "Metode inspirate din natura",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Breaban Mihaela",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 42,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Programare concurenta si distribuita",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Alboaie Lenuta",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 43,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "MLC1,MOC",
+            "curs": "Data Mining",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Luchian Henri",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 44,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Programare concurenta si distribuita",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Alboaie Lenuta",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 45,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Programare concurenta si distribuita",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Alboaie Lenuta",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 46,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS,MOC1,MOC2,MSD",
+            "curs": "Aspecte pragmatice pentru ingineria serviciilor cloud: arhitecturi, procese si practici",
+            "tip": "Laborator",
+            "profesor": "",
+            "sala": "",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 47,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MLC1,MOC2",
+            "curs": "Data Mining",
+            "tip": "Laborator",
+            "profesor": "Simion Alin Ciprian",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 48,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "MOC",
+            "curs": "Metode inspirate din natura",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Luchian Henri",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 49,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS2,MOC2",
+            "curs": "Managementul proiectelor",
+            "tip": "Seminar",
+            "profesor": "Artene Radu",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 50,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS,MOC",
+            "curs": "Interactiune om-calculator",
+            "tip": "Laborator",
+            "profesor": "Colab. Grigoriu Alecsandru",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 51,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "MIS,MOC",
+            "curs": "Interactiune om-calculator",
+            "tip": "Curs",
+            "profesor": "Conf.dr. Buraga Sabin Corneliu",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 52,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC,MSD2",
+            "curs": "Capitole speciale de invatare automata",
+            "tip": "Curs",
+            "profesor": "Conf.dr. Ciortuz Liviu",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 53,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Sisteme bazate pe evenimente",
+            "tip": "Curs",
+            "profesor": "Lect. dr. Onica Emanuel",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 54,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS,MOC,MSD2",
+            "curs": "Capitole speciale de invatare automata",
+            "tip": "Seminar",
+            "profesor": "Conf.dr. Ciortuz Liviu",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 55,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS2,MOC2",
+            "curs": "Analiza bazelor mari de date",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Breaban Mihaela",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 56,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "MIS2,MOC2",
+            "curs": "Analiza bazelor mari de date",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Breaban Mihaela",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 57,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "MIS,MOC,MSD2",
+            "curs": "Capitole speciale de invatare automata",
+            "tip": "Seminar",
+            "profesor": "Conf.dr. Ciortuz Liviu",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 58,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS2,MOC2",
+            "curs": "Managementul proiectelor",
+            "tip": "Curs",
+            "profesor": "Prof. Dr. Oprea Dumitru",
+            "sala": "B5",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 59,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Sisteme bazate pe evenimente",
+            "tip": "Curs",
+            "profesor": "Lect. dr. Onica Emanuel",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 60,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Sisteme bazate pe evenimente",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Onica Emanuel",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 61,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS,MOC1,MOC2,MSD",
+            "curs": "Aspecte pragmatice pentru ingineria serviciilor cloud: arhitecturi, procese si practici",
+            "tip": "Curs",
+            "profesor": "",
+            "sala": "",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 62,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Programare concurenta si distribuita",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Alboaie Lenuta",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 63,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "MSD,MSI1",
+            "curs": "Protocoale de securitate: modelare si verificare",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Birjoveanu Catalin",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 64,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Programare concurenta si distribuita",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Alboaie Lenuta",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 65,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Programare concurenta si distribuita",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Alboaie Lenuta",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 66,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MIS,MOC1,MOC2,MSD",
+            "curs": "Aspecte pragmatice pentru ingineria serviciilor cloud: arhitecturi, procese si practici",
+            "tip": "Laborator",
+            "profesor": "",
+            "sala": "",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 67,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MSD,MSI1",
+            "curs": "Specificarea si verificarea sistemelor distribuite",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 68,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MSD,MSI1",
+            "curs": "Specificarea si verificarea sistemelor distribuite",
+            "tip": "Seminar",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 69,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MSD",
+            "curs": "Modelarea sistemelor distribuite",
+            "tip": "Curs",
+            "profesor": "Lect. dr. Captarencu Oana",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 70,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "MSD",
+            "curs": "Modelarea sistemelor distribuite",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Captarencu Oana",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 71,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC,MSD2",
+            "curs": "Capitole speciale de invatare automata",
+            "tip": "Curs",
+            "profesor": "Conf.dr. Ciortuz Liviu",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 72,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Sisteme bazate pe evenimente",
+            "tip": "Curs",
+            "profesor": "Lect. dr. Onica Emanuel",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 73,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS,MOC,MSD2",
+            "curs": "Capitole speciale de invatare automata",
+            "tip": "Seminar",
+            "profesor": "Conf.dr. Ciortuz Liviu",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 74,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "MSD,MSI1",
+            "curs": "Protocoale de securitate: modelare si verificare",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Birjoveanu Catalin",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 75,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "MIS,MOC,MSD2",
+            "curs": "Capitole speciale de invatare automata",
+            "tip": "Seminar",
+            "profesor": "Conf.dr. Ciortuz Liviu",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 76,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Sisteme bazate pe evenimente",
+            "tip": "Curs",
+            "profesor": "Lect. dr. Onica Emanuel",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 77,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MIS,MOC2,MSD",
+            "curs": "Sisteme bazate pe evenimente",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Onica Emanuel",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 78,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MSI1",
+            "curs": "Modele de securitate",
+            "tip": "Curs",
+            "profesor": "Lect. Dr. Condurache Rodica",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 79,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "MSD,MSI1",
+            "curs": "Protocoale de securitate: modelare si verificare",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Birjoveanu Catalin",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 80,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MSI2",
+            "curs": "Logici de incredere in securitatea informatiei",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Masalagiu Cristian",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 81,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "MSD,MSI1",
+            "curs": "Specificarea si verificarea sistemelor distribuite",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 82,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MSD,MSI1",
+            "curs": "Specificarea si verificarea sistemelor distribuite",
+            "tip": "Seminar",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 83,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MSI2",
+            "curs": "Logici de incredere in securitatea informatiei",
+            "tip": "Seminar",
+            "profesor": "Prof.dr. Masalagiu Cristian",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 84,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "MSI1",
+            "curs": "Securitatea retelelor de calculatoare",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Onica Emanuel",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 85,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MSI2",
+            "curs": "Metode bioinformatice in securitate",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Tiplea Ferucio Laurentiu",
+            "sala": "",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 86,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "MSI1",
+            "curs": "Modele de securitate",
+            "tip": "Seminar",
+            "profesor": "Lect. Dr. Condurache Rodica",
+            "sala": "C114",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 87,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "MSD,MSI1",
+            "curs": "Protocoale de securitate: modelare si verificare",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Birjoveanu Catalin",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 88,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "MSI1",
+            "curs": "Securitatea retelelor de calculatoare",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Tiplea Ferucio Laurentiu",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Sambata"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 89,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1E",
+            "curs": "Object-Oriented Programming",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Gavrilut Dragos Prof.dr. Lucanu Dorel",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 90,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1B",
+            "curs": "Probabilitati si statistica",
+            "tip": "Curs",
+            "profesor": "Lect. dr. Olariu Florentin Emanuel",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 91,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1A7",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Colab. Aioanei Dragos",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 92,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1B",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Iftene Sorin",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 93,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1E",
+            "curs": "Probabilities and Statistics",
+            "tip": "Curs",
+            "profesor": "Lect. dr. Olariu Florentin Emanuel",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 94,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1A",
+            "curs": "Sisteme de operare",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Vidrascu Cristian",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 95,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1A",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Tiplea Ferucio Laurentiu",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 96,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1E1",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Onofrei Paula",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 97,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1B3",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Colab. Enachescu Cristian",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 98,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1X1",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Vidrascu Cristian",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 99,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1E",
+            "curs": "Algebraic Foundations of Computer Science",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Tiplea Ferucio Laurentiu",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 100,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1A1",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Onofrei Paula",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 101,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1B",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Ciobaca Stefan Prof.dr. Lucanu Dorel",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 102,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1B2",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Colab. Enachescu Cristian",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 103,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1A2",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Onofrei Paula",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 104,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1A1",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Gavrilut Dragos",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 105,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1B5",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Citea Alexandru",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 106,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1A3",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Onofrei Paula",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 107,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1,I2,I3",
+            "curs": "Matematica pentru concursuri",
+            "tip": "Alte activitati",
+            "profesor": "Lect.dr. Iacob Florin",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 108,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1E1",
+            "curs": "Object-Oriented Programming",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Benchea Razvan",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 109,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1X1",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Citea Alexandru",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 110,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1X4",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Morosanu Dan",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 111,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1B5",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Colab. Aioanei Dragos",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 112,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1B2",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Lect.dr. Iftene Sorin",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 113,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1B4",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Asist. drd. Nica Anca-Maria",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 114,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1A",
+            "curs": "Programare orientata-obiect",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Gavrilut Dragos Prof.dr. Lucanu Dorel",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 115,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1E",
+            "curs": "Algorithm Design",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Ciobaca Stefan Prof.dr. Lucanu Dorel",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 116,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1A",
+            "curs": "Probabilitati si statistica",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Zalinescu Adrian",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 117,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1B",
+            "curs": "Sisteme de operare",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Vidrascu Cristian",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 118,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1B1",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Lect.dr. Iftene Sorin",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 119,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1A4",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Asist. drd. Nica Anca-Maria",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 120,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1A6",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Onofrei Paula",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 121,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1B5",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Asist. dr. Botezat Sorin",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 122,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1B2",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Zalinescu Adrian",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 123,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1B6",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Colab. Ionita Alexandru",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 124,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1B4",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Lect. Dr. Arusoaie Andrei",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 125,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1A1",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Vidrascu Cristian",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 126,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1B6",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Asist. drd. Nica Anca-Maria",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 127,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1E2",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Onofrei Paula",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 128,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1B1",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Zalinescu Adrian",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 129,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1B5",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Lect. Dr. Arusoaie Andrei",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 130,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1B3",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Colab. Ionita Alexandru",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 131,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1A",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Ciobaca Stefan Prof.dr. Lucanu Dorel",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 132,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1A4",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Onofrei Paula",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 133,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1A,I1E",
+            "curs": "Pedagogie",
+            "tip": "Seminar",
+            "profesor": "Tatarusanu Florin",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 134,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1,I2,I3",
+            "curs": "Programare competitiva II, facultativ, pregatire olimpiada",
+            "tip": "Curs",
+            "profesor": "drd. Diac Paul Colab. Ionita Alexandru",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 135,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1A5",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Ungureanu Ionut",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 136,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1B3",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Popoiu George",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 137,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1A1",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Conf. dr. Ciobaca Stefan",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 138,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1A5",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Onofrei Paula",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 139,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1E2",
+            "curs": "Object-Oriented Programming",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Benchea Razvan",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 140,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1B",
+            "curs": "Pedagogie",
+            "tip": "Seminar",
+            "profesor": "Tatarusanu Florin",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 141,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1B2",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Popoiu George",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 142,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1A1",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Asist. drd. Nica Anca-Maria",
+            "sala": "C114",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 143,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1A5",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Lect.dr. Birjoveanu Catalin",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 144,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1B",
+            "curs": "Programare orientata-obiect",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Gavrilut Dragos Prof.dr. Lucanu Dorel",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 145,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1X3",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Lect. Dr. Condurache Rodica",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 146,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1A2",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Asist. drd. Nica Anca-Maria",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 147,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1A6",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Lect.dr. Birjoveanu Catalin",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 148,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1E",
+            "curs": "Operating Systems",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Vidrascu Cristian",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 149,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1X3",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Lupascu Marilena",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 150,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1A3",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Lect. Dr. Condurache Rodica",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 151,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1A3",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Asist. drd. Nica Anca-Maria",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 152,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1A2",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Colab. Rusu Radu",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 153,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1A4",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Lect. Dr. Condurache Rodica",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 154,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1B1",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Vidrascu Cristian",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 155,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1B1",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Onofrei Paula",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 156,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1B4",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Colab. Motroi Valeriu",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 157,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1X4",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Colab. Rusu Radu",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 158,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1E2",
+            "curs": "Algebraic Foundations of Computer Science",
+            "tip": "Seminar",
+            "profesor": "Colab. Dr. Cojocaru Liliana",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 159,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1A7",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Onofrei Paula",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 160,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1B4",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Popoiu George",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 161,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1A2",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Leonte Mihai",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 162,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1E1",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Benchea Razvan",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 163,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1E1",
+            "curs": "Algebraic Foundations of Computer Science",
+            "tip": "Seminar",
+            "profesor": "Colab. Dr. Cojocaru Liliana",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 164,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1A4",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Colab. Rusu Bogdan",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 165,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1E2",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Benchea Razvan",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 166,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1B5",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Lect.dr. Iftene Sorin",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 167,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1A7",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Lect.dr. Birjoveanu Catalin",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 168,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1A4",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Colab. Dr. Spiridonica Alexandru",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 169,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1E1",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Olariu Florentin Emanuel",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 170,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1A6",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Ungureanu Ionut",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 171,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1B6",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Anton Gabriel Dan",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 172,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1X2",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Lect. Dr. Condurache Rodica",
+            "sala": "C114",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 173,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1",
+            "curs": "Etica si integritate academica",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Trandabat Diana",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 174,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1E2",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Olariu Florentin Emanuel",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 175,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1A2",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Anton Gabriel Dan",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 176,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1A6",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Lect. Dr. Condurache Rodica",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 177,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1A5,I2A6,I2B1,I2B2,I2B3,I2E2",
+            "curs": "Introducere in criptografie",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Iftene Sorin",
+            "sala": "C308",
+            "pachet": "1",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 178,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1B3",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Colab. Motroi Valeriu",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 179,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1B6",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Asist. dr. Botezat Sorin",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 180,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1B2",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Colab. Simionescu Cristian",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 181,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1A7",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Lect. Dr. Condurache Rodica",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 182,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1A5",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Colab. Motroi Valeriu",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 183,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1B2",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Patrut Bogdan",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 184,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1A6",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Colab. Policiuc A",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 185,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1A4",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Timcu Tudor",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 186,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1A7",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Ionita Norbert",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 187,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1B1",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Colab. Simionescu Cristian",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 188,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1B3",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Patrut Bogdan",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 189,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1A7",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Colab. Policiuc A",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 190,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1A2",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Colab. Dr. Spiridonica Alexandru",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 191,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1B1",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Ionita Norbert",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 192,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1A3",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Timcu Tudor",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 193,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1A5",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Patrut Bogdan",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 194,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1",
+            "curs": "Pedagogie",
+            "tip": "Curs",
+            "profesor": "Lect. Dr. Apostolache Roxana",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 195,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1A1",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Colab. Dr. Spiridonica Alexandru",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 196,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1X2",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Balan Gheorghe",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 197,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I1X1",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Lect. dr. Patrut Bogdan",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 198,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1B3",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Lect.dr. Iftene Sorin",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 199,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1X4",
+            "curs": "Programare orientata-obiect",
+            "tip": "Laborator",
+            "profesor": "Colab. Balan Gheorghe",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 200,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1E1",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Colab. Buruiana Sebastian",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 201,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I1A5",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Patrut Bogdan",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 202,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1X1",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Voicu Maria",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 203,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1E2",
+            "curs": "Proiectarea algoritmilor",
+            "tip": "Seminar",
+            "profesor": "Colab. Buruiana Sebastian",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 204,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1X2",
+            "curs": "Fundamente algebrice ale informaticii",
+            "tip": "Seminar",
+            "profesor": "Voicu Maria",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 205,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1B4",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Colab. Enachescu Cristian",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 206,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I1A6",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Patrut Bogdan",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 207,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1B6",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Colab. Enachescu Cristian",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 208,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1A3",
+            "curs": "Probabilitati si statistica",
+            "tip": "Laborator",
+            "profesor": "Colab. Dr. Spiridonica Alexandru",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 209,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I1B4",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "drd. Craciun Vlad",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 210,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1B5",
+            "curs": "Limba engleza II",
+            "tip": "Seminar",
+            "profesor": "Colab. Enachescu Cristian",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 211,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1B6",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "drd. Craciun Vlad",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 212,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1A3",
+            "curs": "Sisteme de operare",
+            "tip": "Laborator",
+            "profesor": "Colab. Rusu Bogdan",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 213,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2E1",
+            "curs": "DBMS Practice",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Varlan Cosmin",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 214,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A1",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Iftene Adrian",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 215,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A2,I2A3,I2A4",
+            "curs": "Introducere in criptografie",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Iftene Sorin",
+            "sala": "C409",
+            "pachet": "1",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 216,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2E2",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "Armanu Nicoleta",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 217,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A5",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "Colab. Gabor Silviu",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 218,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2E2",
+            "curs": "DBMS Practice",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Varlan Cosmin",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 219,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A",
+            "curs": "Ingineria programarii",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Iftene Adrian",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 220,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2X1",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Moruz Alex",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 221,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2E1",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "Armanu Nicoleta",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 222,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2B5,I2B6",
+            "curs": "Programare functionala",
+            "tip": "Laborator",
+            "profesor": "Lect. Dr. Arusoaie Andrei",
+            "sala": "C412",
+            "pachet": "1",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 223,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2",
+            "curs": "Modele continue si Matlab",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Iacob Florin",
+            "sala": "C112",
+            "pachet": "1",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 224,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2E2",
+            "curs": "Software Engineering",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Moruz Alex",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 225,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2A7",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Lect. Dr. Arusoaie Andrei",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 226,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2B5",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Moruz Alex",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 227,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2A6",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "Colab. Enachescu Cristian",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 228,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2B1,I2B3,I2B4",
+            "curs": "Modele continue si Matlab",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Iacob Florin",
+            "sala": "C210",
+            "pachet": "1",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 229,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2E1,I2E2",
+            "curs": "Web Technologies",
+            "tip": "Curs",
+            "profesor": "Asist. Panu Andrei",
+            "sala": "C308",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 230,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2A3",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Lect. Dr. Arusoaie Andrei",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 231,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2B2,I2B5,I2B6,I2E1,I2E2",
+            "curs": "Modele continue si Matlab",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Iacob Florin",
+            "sala": "C401",
+            "pachet": "1",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 232,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2B3",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "Colab. Coca Georgiana",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 233,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2A4",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "Manolescu Catalin",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 234,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I2",
+            "curs": "Introducere in criptografie",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Tiplea Ferucio Laurentiu",
+            "sala": "C112",
+            "pachet": "1",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 235,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1,I2,I3",
+            "curs": "Matematica pentru concursuri",
+            "tip": "Alte activitati",
+            "profesor": "Lect.dr. Iacob Florin",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 236,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I2A7",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "Colab. Coca Georgiana",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 237,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I2B4",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "Manolescu Catalin",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 238,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2B1",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "Colab. Enachescu Cristian",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 239,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A",
+            "curs": "Practica SGBD",
+            "tip": "Curs",
+            "profesor": "Lect. dr. Varlan Cosmin",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 240,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2B2",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "Colab. Gabor Silviu",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 241,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2E1",
+            "curs": "Software Engineering",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Iftene Adrian",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 242,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2B",
+            "curs": "Ingineria programarii",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Moruz Alex",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 243,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A5",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "Colab. Enachescu Cristian",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 244,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A3",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Varlan Cosmin",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 245,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A1,I2A4,I2A6,I2A7",
+            "curs": "Programare functionala",
+            "tip": "Laborator",
+            "profesor": "Lect. Dr. Arusoaie Andrei",
+            "sala": "C412",
+            "pachet": "1",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 246,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2E1",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Asist. Panu Andrei",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 247,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2A7",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "Colab. Enachescu Cristian",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 248,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2A1,I2A4,I2A5,I2A6",
+            "curs": "Modele continue si Matlab",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Iacob Florin",
+            "sala": "C210",
+            "pachet": "1",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 249,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2B",
+            "curs": "Tehnologii Web",
+            "tip": "Curs",
+            "profesor": "Conf.dr. Buraga Sabin Corneliu",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 250,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2B1",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Moruz Alex",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 251,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2B4",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Asist. dr. Varlan Simona-Elena",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 252,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2A",
+            "curs": "Tehnologii Web",
+            "tip": "Curs",
+            "profesor": "Conf.dr. Buraga Sabin Corneliu",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 253,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2B2",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Asist. Panu Andrei",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 254,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2B6",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Moruz Alex",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 255,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2B1",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Asist. dr. Varlan Simona-Elena",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 256,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2A",
+            "curs": "Programare avansata",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Frasinaru Cristian",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 257,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1,I2,I3",
+            "curs": "Programare competitiva II, facultativ, pregatire olimpiada",
+            "tip": "Curs",
+            "profesor": "drd. Diac Paul Colab. Ionita Alexandru",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 258,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I2E1,I2E2",
+            "curs": "Advanced Programming",
+            "tip": "Curs",
+            "profesor": "Popovici Paul",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 259,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I2X1",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Frasinaru Cristian",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 260,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A2",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Iftene Adrian Lect. dr. Pistol Ionut",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 261,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A4",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Pistol Ionut",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 262,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A5",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Colab. Olariu Florin",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 263,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A1",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "Armanu Nicoleta",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 264,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2X1",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Varlan Cosmin",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 265,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2B",
+            "curs": "Practica SGBD",
+            "tip": "Curs",
+            "profesor": "Asist. dr. Varlan Simona-Elena",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 266,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2B2",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Pistol Ionut",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 267,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A3",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "Armanu Nicoleta",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 268,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A4",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Varlan Cosmin",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 269,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2E1",
+            "curs": "Software Engineering",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Iftene Adrian",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 270,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A2",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Asist. Panu Andrei",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 271,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2B1",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Colab. Pavaloi Alexandru",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 272,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2",
+            "curs": "Antreprenoriat si inovare in IT",
+            "tip": "Curs",
+            "profesor": "Conf.dr. Forascu Corina",
+            "sala": "C309",
+            "pachet": "1",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 273,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2B3",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Pistol Ionut",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 274,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2A2,I2A3,I2A7",
+            "curs": "Modele continue si Matlab",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Iacob Florin",
+            "sala": "C210",
+            "pachet": "1",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 275,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2B2",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Asist. dr. Varlan Simona-Elena",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 276,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2X2",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Colab. Pavaloi Alexandru",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 277,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2A1,I2B",
+            "curs": "Antreprenoriat si inovare in IT",
+            "tip": "Seminar",
+            "profesor": "Conf.dr. Forascu Corina",
+            "sala": "C905",
+            "pachet": "1",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 278,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2",
+            "curs": "Modele continue si Matlab",
+            "tip": "Consultatii",
+            "profesor": "Lect.dr. Iacob Florin",
+            "sala": "C2",
+            "pachet": "1",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 279,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2",
+            "curs": "Programare functionala",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Ciobaca Stefan",
+            "sala": "C112",
+            "pachet": "1",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 280,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2B3",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Colab. Pavaloi Alexandru",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 281,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2A2,I2A3,I2A4,I2A5,I2A6,I2A7,I2E1,I2E2",
+            "curs": "Antreprenoriat si inovare in IT",
+            "tip": "Seminar",
+            "profesor": "Conf.dr. Forascu Corina",
+            "sala": "C905",
+            "pachet": "1",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 282,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2B5",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Asist. dr. Varlan Simona-Elena",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 283,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2A1",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Colab. Dr. Spiridonica Alexandru",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 284,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2A2,I2A3,I2A5",
+            "curs": "Programare functionala",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Ciobaca Stefan",
+            "sala": "C413",
+            "pachet": "1",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 285,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I2E1",
+            "curs": "Advanced Programming",
+            "tip": "Laborator",
+            "profesor": "Popovici Paul",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 286,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I2E2",
+            "curs": "Advanced Programming",
+            "tip": "Laborator",
+            "profesor": "Lacatusu Vlad",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 287,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I2A2",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Colab. Dr. Spiridonica Alexandru",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 288,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2E1",
+            "curs": "DBMS Practice",
+            "tip": "Curs",
+            "profesor": "Asist. dr. Varlan Simona-Elena",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 289,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A6",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Colab. Olariu Florin",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 290,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A2",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "Armanu Nicoleta",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 291,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A7",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Varlan Cosmin",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 292,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A1,I2B4,I2B5,I2B6",
+            "curs": "Introducere in criptografie",
+            "tip": "Laborator",
+            "profesor": "Asist. drd. Nica Anca-Maria",
+            "sala": "C308",
+            "pachet": "1",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 293,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A7,I2E1",
+            "curs": "Introducere in criptografie",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Iftene Sorin",
+            "sala": "C412",
+            "pachet": "1",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 294,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A4",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "Armanu Nicoleta",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 295,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A6",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Varlan Cosmin",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 296,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2B",
+            "curs": "Programare avansata",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Frasinaru Cristian",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 297,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A1",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Asist. Panu Andrei",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 298,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A5",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Colab. Amariei Ciprian",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 299,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I1A5,I2A6,I2B1,I2B2,I2B3,I2E2",
+            "curs": "Introducere in criptografie",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Iftene Sorin",
+            "sala": "C308",
+            "pachet": "1",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 300,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2A1",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Frasinaru Cristian",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 301,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2A4",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Colab. Amariei Ciprian",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 302,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2B3",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Asist. dr. Varlan Simona-Elena",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 303,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2B1",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Frasinaru Cristian",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 304,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2E2",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Asist. Panu Andrei",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 305,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2B6",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Asist. dr. Varlan Simona-Elena",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 306,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2A2",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "drd. Prelipcean Bogdan",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 307,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2A3",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Asist. Panu Andrei",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 308,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I2A3",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "drd. Prelipcean Bogdan",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 309,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2B4",
+            "curs": "Ingineria programarii",
+            "tip": "Laborator",
+            "profesor": "Colab. Olariu Florin",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 310,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2B2",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "drd. Perez Cenel Augusto",
+            "sala": "C903",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 311,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A5",
+            "curs": "Practica SGBD",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Varlan Cosmin",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 312,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2A6",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Coman Alexandru",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 313,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2B3",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "drd. Perez Cenel Augusto",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 314,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2A7",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Coman Alexandru",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 315,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2X1",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Colab. Amariei Ciprian",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 316,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2B5",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "drd. Perez Cenel Augusto",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 317,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I2B4",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Coman Alexandru",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 318,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2B6",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "drd. Perez Cenel Augusto",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 319,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I2B1,I2B2,I2B3,I2B4",
+            "curs": "Programare functionala",
+            "tip": "Laborator",
+            "profesor": "Colab. Rusu Radu",
+            "sala": "C403",
+            "pachet": "1",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 320,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2A,I2E1",
+            "curs": "Didactica informaticii",
+            "tip": "Seminar",
+            "profesor": "Colab. Tibu Mirela",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 321,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I2B4",
+            "curs": "Limba engleza IV",
+            "tip": "Seminar",
+            "profesor": "drd. Perez Cenel Augusto",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 322,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I2B",
+            "curs": "Didactica informaticii",
+            "tip": "Seminar",
+            "profesor": "Colab. Tibu Mirela",
+            "sala": "C909",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 323,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I2A6",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "Colab. Abacioaie Nicolae",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 324,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2B6",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "Colab. Cusmuliuc Ciprian",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Sambata"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 325,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I2B5",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Coman Alexandru",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Sambata"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 326,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2B5",
+            "curs": "Programare avansata",
+            "tip": "Laborator",
+            "profesor": "Colab. Cusmuliuc Ciprian",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Sambata"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 327,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I2B6",
+            "curs": "Tehnologii Web",
+            "tip": "Laborator",
+            "profesor": "Coman Alexandru",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Sambata"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 328,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3A2,I3A3,I3A4,I3A7",
+            "curs": "Programare bazata pe reguli",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Pistol Ionut",
+            "sala": "C401",
+            "pachet": "5",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 329,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3",
+            "curs": "Smart Card-uri si Aplicatii",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Birjoveanu Catalin",
+            "sala": "C309",
+            "pachet": "7",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 330,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3B1,I3B2,I3B3",
+            "curs": "Tehnici de programare e platforma Android",
+            "tip": "Laborator",
+            "profesor": "Simion Alin Ciprian",
+            "sala": "C411",
+            "pachet": "5",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 331,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3A1",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Asist. dr. Botezat Sorin",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 332,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3A4",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Colab. Talif Victor",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 333,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3B4,I3B6,I3B7",
+            "curs": "Programare bazata pe reguli",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Pistol Ionut",
+            "sala": "C401",
+            "pachet": "5",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 334,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3B1,I3B2,I3B3",
+            "curs": "Retele Petri si aplicatii",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Captarencu Oana",
+            "sala": "C413",
+            "pachet": "7",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 335,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3A5,I3A6,I3A7,I3B1",
+            "curs": "Smart Card-uri si Aplicatii",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Birjoveanu Catalin",
+            "sala": "C411",
+            "pachet": "7",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 336,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3B3",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Asist. dr. Botezat Sorin",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 337,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3A7",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Asist.dr. Croitoru Eugen",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 338,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3B4,I3B5,I3B6,I3B7",
+            "curs": "Retele Petri si aplicatii",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Captarencu Oana",
+            "sala": "C413",
+            "pachet": "7",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 339,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3A5,I3E",
+            "curs": "Tehnici de ingineria limbajului natural",
+            "tip": "Laborator",
+            "profesor": "Cerc. Dr. Gifu Daniela Lect. dr. Pistol Ionut Conf. dr. Trandabat Diana",
+            "sala": "C409",
+            "pachet": "7",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 340,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3B5",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Asist.dr. Croitoru Eugen",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 341,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3A,I3E",
+            "curs": "Managementul clasei de elevi",
+            "tip": "Seminar",
+            "profesor": "Dr. Carasievici Laura",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 342,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3B",
+            "curs": "Managementul clasei de elevi",
+            "tip": "Seminar",
+            "profesor": "Dr. Carasievici Laura",
+            "sala": "C905",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 343,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3B1,I3B2,I3B3,I3B4",
+            "curs": "Metodologii de lucru in mediul Open Source",
+            "tip": "Laborator",
+            "profesor": "Yonder",
+            "sala": "C405",
+            "pachet": "6",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 344,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3A4,I3A5,I3A6",
+            "curs": "Retele Petri si aplicatii",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Captarencu Oana",
+            "sala": "C413",
+            "pachet": "7",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 345,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3B1,I3B2,I3B3,I3B4,I3B5",
+            "curs": "Analiza retelelor media sociale",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Vitcu Anca",
+            "sala": "C409",
+            "pachet": "5",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 346,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3A",
+            "curs": "Grafica pe calculator",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 347,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3B5,I3B6,I3B7",
+            "curs": "Metodologii de lucru in mediul Open Source",
+            "tip": "Laborator",
+            "profesor": "Yonder",
+            "sala": "C411",
+            "pachet": "6",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 348,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1,I2,I3",
+            "curs": "Matematica pentru concursuri",
+            "tip": "Alte activitati",
+            "profesor": "Lect.dr. Iacob Florin",
+            "sala": "C2",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 349,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I3E",
+            "curs": "Numerical calculus",
+            "tip": "Laborator",
+            "profesor": "Calcai Doru",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 350,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I3",
+            "curs": "Tehnici de programare e platforma Android",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Gavrilut Dragos",
+            "sala": "C309",
+            "pachet": "5",
+            "zi": "Luni"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 351,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3A5,I3A6,I3B1,I3B2",
+            "curs": "Programare bazata pe reguli",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Pistol Ionut",
+            "sala": "C401",
+            "pachet": "5",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 352,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3",
+            "curs": "Psihologia comunicarii profesionale in domeniul IT-lui",
+            "tip": "Curs",
+            "profesor": "Armanu Nicoleta",
+            "sala": "C309",
+            "pachet": "6",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 353,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3B3,I3B5,I3B7",
+            "curs": "Smart Card-uri si Aplicatii",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Birjoveanu Catalin",
+            "sala": "C409",
+            "pachet": "7",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 354,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3B4,I3B6",
+            "curs": "Tehnici de programare e platforma Android",
+            "tip": "Laborator",
+            "profesor": "Simion Alin Ciprian",
+            "sala": "C411",
+            "pachet": "5",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 355,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3A4",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Asist.dr. Croitoru Eugen",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 356,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3A1,I3B3,I3B5,I3E",
+            "curs": "Programare bazata pe reguli",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Pistol Ionut",
+            "sala": "C409",
+            "pachet": "5",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 357,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3A5,I3A6,I3A7,I3B1,I3B2",
+            "curs": "Psihologia comunicarii profesionale in domeniul IT-lui",
+            "tip": "Seminar",
+            "profesor": "Armanu Nicoleta",
+            "sala": "C909",
+            "pachet": "6",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 358,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3B",
+            "curs": "Tehnici de ingineria limbajului natural",
+            "tip": "Laborator",
+            "profesor": "Cerc. Dr. Gifu Daniela Lect. dr. Pistol Ionut Conf. dr. Trandabat Diana",
+            "sala": "C401",
+            "pachet": "7",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 359,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3A5",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Asist.dr. Croitoru Eugen",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 360,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3E",
+            "curs": "Numerical calculus",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Ignat Anca",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 361,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3A1,I3A2,I3A3,I3A4,I3A6,I3A7",
+            "curs": "Tehnici de ingineria limbajului natural",
+            "tip": "Laborator",
+            "profesor": "Cerc. Dr. Gifu Daniela Lect. dr. Pistol Ionut Conf. dr. Trandabat Diana",
+            "sala": "C401",
+            "pachet": "7",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 362,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3",
+            "curs": "Cloud computing",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Alboaie Lenuta",
+            "sala": "C309",
+            "pachet": "6",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 363,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3",
+            "curs": "Programare MS-Office",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Radulescu Vlad",
+            "sala": "C308",
+            "pachet": "6",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 364,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3B1",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Ignat Anca",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 365,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3B4",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Colab. Oniciuc Oriana",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 366,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3E",
+            "curs": "Computer graphics",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 367,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3A1,I3A2,I3A7",
+            "curs": "Programare MS-Office",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Radulescu Vlad",
+            "sala": "C210",
+            "pachet": "6",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 368,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I1,I2,I3",
+            "curs": "Programare competitiva II, facultativ, pregatire olimpiada",
+            "tip": "Curs",
+            "profesor": "drd. Diac Paul Colab. Ionita Alexandru",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 369,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I3B5",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Colab. Oniciuc Oriana",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 370,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I3B2",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Marti"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 371,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3A6",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Calcai Doru",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 372,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "11:00",
+            "grupa": "I3B1,I3B2,I3B3,I3B4",
+            "curs": "Practica pedagogica in invatamantul preuniversitar obligatoriu (2), facultativ",
+            "tip": "Alte activitati",
+            "profesor": "Lect.dr. Ignat Anca",
+            "sala": "Cabinet",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 373,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "11:00",
+            "grupa": "I3A1,I3A2,I3A3,I3A4",
+            "curs": "Practica pedagogica in invatamantul preuniversitar obligatoriu (2), facultativ",
+            "tip": "Alte activitati",
+            "profesor": "Asist.dr. Croitoru Eugen",
+            "sala": "Cabinet",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 374,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3A1,I3A2,I3A3,I3A7",
+            "curs": "Retele Petri si aplicatii",
+            "tip": "Laborator",
+            "profesor": "Lect. dr. Captarencu Oana",
+            "sala": "C413",
+            "pachet": "7",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 375,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3A4,I3A5,I3A6",
+            "curs": "Tehnici de programare e platforma Android",
+            "tip": "Laborator",
+            "profesor": "Colab. Lupascu Marilena",
+            "sala": "C411",
+            "pachet": "5",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 376,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3",
+            "curs": "Retele Petri si aplicatii",
+            "tip": "Curs",
+            "profesor": "Lect. dr. Captarencu Oana",
+            "sala": "C112",
+            "pachet": "7",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 377,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3A7",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Colab. Miron Radu",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 378,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3B",
+            "curs": "Calcul numeric",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Ignat Anca",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 379,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3A6",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Asist.dr. Croitoru Eugen",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 380,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3A1,I3A2,I3A3,I3A5",
+            "curs": "Topici speciale de programare .NET",
+            "tip": "Laborator",
+            "profesor": "Lect. Asiminoaei Ioan",
+            "sala": "C412",
+            "pachet": "7",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 381,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3A3",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Colab. Miron Radu",
+            "sala": "C409",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 382,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3B2,I3B7",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Ignat Anca",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 383,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3B3,I3B5,I3B6",
+            "curs": "Programare MS-Office",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Radulescu Vlad",
+            "sala": "C401",
+            "pachet": "6",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 384,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3",
+            "curs": "Tehnici de ingineria limbajului natural",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Cristea Dan",
+            "sala": "C309",
+            "pachet": "7",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 385,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3B1,I3B4,I3B6",
+            "curs": "Topici speciale de programare .NET",
+            "tip": "Laborator",
+            "profesor": "Lect. Asiminoaei Ioan",
+            "sala": "C413",
+            "pachet": "7",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 386,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3",
+            "curs": "Metodologii de lucru in mediul Open Source",
+            "tip": "Curs",
+            "profesor": "Yonder",
+            "sala": "C309",
+            "pachet": "6",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 387,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3A5,I3B1,I3B4",
+            "curs": "Programare MS-Office",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Radulescu Vlad",
+            "sala": "C412",
+            "pachet": "6",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 388,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3A7,I3B5,I3B7",
+            "curs": "Tehnici de programare e platforma Android",
+            "tip": "Laborator",
+            "profesor": "drd. Prelipcean Bogdan",
+            "sala": "C210",
+            "pachet": "5",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 389,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I3B6",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Colab. Oniciuc Oriana",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 390,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I3B1,I3B2,I3B3,I3B4,I3B5",
+            "curs": "Cloud computing",
+            "tip": "Laborator",
+            "profesor": "Colab. Calancea Georgiana",
+            "sala": "C210",
+            "pachet": "6",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 391,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I3A1,I3A2,I3A3",
+            "curs": "Tehnici de programare e platforma Android",
+            "tip": "Laborator",
+            "profesor": "Colab. Onu Stefan",
+            "sala": "C405",
+            "pachet": "5",
+            "zi": "Miercuri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 392,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "11:00",
+            "grupa": "I3B5,I3B6,I3B7",
+            "curs": "Practica pedagogica in invatamantul preuniversitar obligatoriu (2), facultativ",
+            "tip": "Alte activitati",
+            "profesor": "Lect.dr. Ignat Anca",
+            "sala": "Cabinet",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 393,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "11:00",
+            "grupa": "I3A5,I3A6,I3A7,I3E",
+            "curs": "Practica pedagogica in invatamantul preuniversitar obligatoriu (2), facultativ",
+            "tip": "Alte activitati",
+            "profesor": "Asist.dr. Croitoru Eugen",
+            "sala": "Cabinet",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 394,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3",
+            "curs": "Programare bazata pe reguli",
+            "tip": "Curs",
+            "profesor": "Prof.dr. Cristea Dan",
+            "sala": "C309",
+            "pachet": "5",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 395,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3A1,I3B2,I3B4,I3B6",
+            "curs": "Smart Card-uri si Aplicatii",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Birjoveanu Catalin",
+            "sala": "C405",
+            "pachet": "7",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 396,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3A",
+            "curs": "Calcul numeric",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Ignat Anca",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 397,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3B4",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Asist.dr. Croitoru Eugen",
+            "sala": "C403",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 398,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3B2,I3B3,I3B5,I3B7",
+            "curs": "Topici speciale de programare .NET",
+            "tip": "Laborator",
+            "profesor": "Lect. Asiminoaei Ioan",
+            "sala": "C401",
+            "pachet": "7",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 399,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3A3,I3A7,I3B6,I3B7,I3E",
+            "curs": "Analiza retelelor media sociale",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Vitcu Anca",
+            "sala": "C401",
+            "pachet": "5",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 400,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3A5",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Ignat Anca",
+            "sala": "C210",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 401,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3B",
+            "curs": "Grafica pe calculator",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C112",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 402,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3A4,I3A6,I3A7,I3E",
+            "curs": "Topici speciale de programare .NET",
+            "tip": "Laborator",
+            "profesor": "Lect. Asiminoaei Ioan",
+            "sala": "C409",
+            "pachet": "7",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 403,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3A2",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C405",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 404,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3",
+            "curs": "Topici speciale de programare .NET",
+            "tip": "Curs",
+            "profesor": "Lect. Asiminoaei Ioan",
+            "sala": "C309",
+            "pachet": "7",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 405,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I3A1",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Joi"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 406,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3",
+            "curs": "Aspecte computationale in teoria numerelor",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Iftene Sorin",
+            "sala": "C112",
+            "pachet": "5",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 407,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3A5,I3A6,I3B6,I3E",
+            "curs": "Cloud computing",
+            "tip": "Laborator",
+            "profesor": "Colab. Bogdan Ioana",
+            "sala": "C413",
+            "pachet": "6",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 408,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3B3,I3B4,I3B5,I3B6,I3B7",
+            "curs": "Psihologia comunicarii profesionale in domeniul IT-lui",
+            "tip": "Seminar",
+            "profesor": "Armanu Nicoleta",
+            "sala": "C909",
+            "pachet": "6",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 409,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3A2,I3A3,I3A4",
+            "curs": "Smart Card-uri si Aplicatii",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Birjoveanu Catalin",
+            "sala": "C412",
+            "pachet": "7",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 410,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3A1,I3A2,I3A3,I3A4,I3A7",
+            "curs": "Cloud computing",
+            "tip": "Laborator",
+            "profesor": "Colab. Bogdan Ioana",
+            "sala": "C411",
+            "pachet": "6",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 411,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3E",
+            "curs": "Computer Graphics",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 412,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3",
+            "curs": "Managementul clasei de elevi",
+            "tip": "Curs",
+            "profesor": "Lect.dr. Curelaru Versavia",
+            "sala": "C309",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 413,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3A3,I3A4,I3A6",
+            "curs": "Programare MS-Office",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Radulescu Vlad",
+            "sala": "C413",
+            "pachet": "6",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 414,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3A1,I3A2,I3A3,I3A4",
+            "curs": "Psihologia comunicarii profesionale in domeniul IT-lui",
+            "tip": "Seminar",
+            "profesor": "Armanu Nicoleta",
+            "sala": "C903",
+            "pachet": "6",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 415,
+        "fields": {
+            "ora_inceput": "12:00",
+            "ora_sfarsit": "14:00",
+            "grupa": "I3",
+            "curs": "Analiza retelelor media sociale",
+            "tip": "Curs",
+            "profesor": "Conf. dr. Vitcu Anca",
+            "sala": "C308",
+            "pachet": "5",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 416,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3A1,I3A2,I3A4,I3A5,I3A6",
+            "curs": "Analiza retelelor media sociale",
+            "tip": "Laborator",
+            "profesor": "Conf. dr. Vitcu Anca",
+            "sala": "C409",
+            "pachet": "5",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 417,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3A3",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C413",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 418,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3B6",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Asist.dr. Croitoru Eugen",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 419,
+        "fields": {
+            "ora_inceput": "14:00",
+            "ora_sfarsit": "16:00",
+            "grupa": "I3B2,I3B7,I3E",
+            "curs": "Programare MS-Office",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Radulescu Vlad",
+            "sala": "C412",
+            "pachet": "6",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 420,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3A,I3B1",
+            "curs": "Aspecte computationale in teoria numerelor",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Iftene Sorin",
+            "sala": "C401",
+            "pachet": "5",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 421,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3B3",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C412",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 422,
+        "fields": {
+            "ora_inceput": "16:00",
+            "ora_sfarsit": "18:00",
+            "grupa": "I3B7",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Asist.dr. Croitoru Eugen",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 423,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I3B2,I3B3,I3B4,I3B5,I3B6",
+            "curs": "Aspecte computationale in teoria numerelor",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Iftene Sorin",
+            "sala": "C412",
+            "pachet": "5",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 424,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I3A2",
+            "curs": "Calcul numeric",
+            "tip": "Laborator",
+            "profesor": "Calcai Doru",
+            "sala": "C411",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 425,
+        "fields": {
+            "ora_inceput": "18:00",
+            "ora_sfarsit": "20:00",
+            "grupa": "I3B1",
+            "curs": "Grafica pe calculator",
+            "tip": "Laborator",
+            "profesor": "Lect.dr. Ghirvu Lucian",
+            "sala": "C401",
+            "pachet": "",
+            "zi": "Vineri"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 426,
+        "fields": {
+            "ora_inceput": "08:00",
+            "ora_sfarsit": "10:00",
+            "grupa": "I3A1,I3A2,I3A3,I3A4",
+            "curs": "Metodologii de lucru in mediul Open Source",
+            "tip": "Laborator",
+            "profesor": "Yonder",
+            "sala": "C401",
+            "pachet": "6",
+            "zi": "Sambata"
+        }
+    },
+    {
+        "model": "orar.Rand",
+        "pk": 427,
+        "fields": {
+            "ora_inceput": "10:00",
+            "ora_sfarsit": "12:00",
+            "grupa": "I3A5,I3A6,I3A7,I3E",
+            "curs": "Metodologii de lucru in mediul Open Source",
+            "tip": "Laborator",
+            "profesor": "Yonder",
+            "sala": "C401",
+            "pachet": "6",
+            "zi": "Sambata"
+        }
+    }
+]

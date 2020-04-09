@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fii Student</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <form class="box2" action="main.html" method="post">
+      <h1>FII News</h1>
+
+      <input type="submit" name="" value="Back">
+
+      <article onclick="load()">
+        <header>
+         <h3>In atentia Informatica, anul 1</h3>
+        </header>
+         <p>In legatura cu Etica si integritate academica</p>
+         <p>- curs facultativ. </p>
+         <p>Publicat la 12.02.2019. Anuntul este valabil doar pana la 12.06.2019.</p>
+       </article>
+
+       <article onclick="load()">
+         <header>
+          <h3>In atentia Informatica, anul 3</h3>
+         </header>
+          <p>Pentru disciplina Practica Pedagogica in invatamantul preuniversitar obligatoriu II locul de desfasurare este unul dintre liceele:</p>
+          <p>  Colegiul National "Costache Negruzzi"</p>
+            <p>Colegiul National "Emil Racovita"</p>
+            <p>Liceul Teoretic de Informatica "Grigore Moisil"</p>
+          <p>Publicat la 12.02.2019. Anuntul este valabil doar pana la 12.06.2019.</p>
+        </article>
+
+<input type="button" name="" value="Next page" onclick="news()">
+<h3>Page 1</h3>
+    </form>
+
+    <script type="text/javascript">
+    function load()
+    {
+      window.location.href = "https://profs.info.uaic.ro/~orar/globale/anunturi.html";
+    }
+    </script>
+
+    <script type="text/javascript">
+    function news()
+    {
+      window.location.href = "news2.html";
+    }
+    </script>
+
+  </body>
+</html>

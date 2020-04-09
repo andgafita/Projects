@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NPC\Player\Mage\PlayerController_Mage.cs">
+    <Files>
+      <File FileName="Assets\NPC\Enemy\EnemyController.cs" Line="42" Column="4" />
+      <File FileName="Assets\NPC\Player\Mage\PlayerController_Mage.cs" Line="52" Column="15" />
+      <File FileName="Assets\NPC\Player\Warrior\PlayerController_Warrior.cs" Line="62" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,134 @@
+:root{
+    --background-first: #1b1353;
+    --background-second: #000428;
+    --navbar:#030b3d;
+    --color1-first:#1fd191;
+    --color1-second:#0086aa;
+    --color2-first:#f64abd;
+    --color2-second:#ad3abd;
+    --font: #ffffff;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+
+/* :root{
+    --background-first: {{user.personalise.background_first}};
+    --background-second: {{user.personalise.background_second}};
+    --navbar:{{ user.personalise.navbar_color }};
+    --color1-first:{{ user.personalise.color1_first }};
+    --color1-second:{{ user.personalise.color1_second }};
+    --color2-first:{{ user.personalise.color2_first }};
+    --color2-second:{{ user.personalise.color2_second }};
+    --font: {{ user.personalise.font_color }};
+    --font-family: {{ user.personalise.font_family }};
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    min-height: 100vh;
+    background: radial-gradient(var(--background-first), var(--background-second));
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+p {
+    color: #35363A;
+    font-family: var(--font-family);
+    font-weight: 500;
+
+}
+
+form h1 {
+    padding-bottom: 10px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--color1-first);
+
+}
+
+/* navbar  */
+.navbar-inverse{
+    top:0;
+    position:fixed;
+    background-color: var(--navbar);
+    margin-bottom: 0px;
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+.nav.navbar-nav li a {
+    color: var(--font);
+}
+
+.nav.navbar-nav li a:hover {
+    transition: 0.1s;
+    background-color:var(--color2-first);
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+    background-color:var(--color2-first);
+}
+.navbar-inverse .navbar-nav>.active>a:hover{
+    background-color:var(--color2-first);
+}
+
+.navbar-brand img{
+    position: absolute;
+    top:-3px;
+    height: 60px;
+
+}
+/* end navbar */
+
+form {
+    text-align: center;
+    padding:20px 0px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:white;
+
+
+}
+
+form p{
+    text-align: center;
+    width: 100%;
+}
+
+.form-control {
+    margin: auto;
+    width: 70%;
+}
+
+.form-control:focus {
+    outline: none;
+    border: 1px #7877B8 solid;
+}
+
+button[type=submit] {
+    height: 40px;
+    width: 120px;
+    border:none;
+    background-image: linear-gradient(to right,var(--color1-first) , var(--color1-second));
+    color: white;
+    font-weight: bold;
+
+}
+
+
+@media screen and (max-width: 1200px){
+
+    form h1 {
+        font-size: 25px;
+    }
+}
+

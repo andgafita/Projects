@@ -1,0 +1,175 @@
+/* :root{
+    --first-gradient: linear-gradient(to right, #f64abd 0%,  #ad3abd 100%);
+    --second-gradient: linear-gradient(to right, #1fd191 0%, #0086aa 100%);
+    --bg-color: #1b1353;
+    --text-color: white;
+    --menu-color: #030b3d; */
+/* } */
+
+:root {
+    --background-first: #1b1353;
+    --background-second: #000428;
+    --navbar: #030b3d;
+    --color1-first: #1fd191;
+    --color1-second: #0086aa;
+    --color2-first: #f64abd;
+    --color2-second: #ad3abd;
+    --font: #ffffff;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+html{
+    background: var(--background-first);
+}
+
+body {
+    font-family: var(--font-family);
+    color: white;
+    background-image: radial-gradient(var(--background-first),var(--background-second));
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+}
+
+li {
+    list-style: none;
+}
+
+.board h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px var(--font) solid;
+    padding-bottom: 10px;
+}
+
+
+.container {
+
+    width: 60%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.board {
+    text-align: center;
+    width: 100%;
+    padding: 50px;
+    /*background: linear-gradient(to right,var(--color1-first) 0%, var(--color1-second) 100%);*/
+    /*background-image: radial-gradient(var(--background-first),var(--background-second));*/
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.board .content {
+    margin-top: 20px;
+    background: var(--background-second);
+    padding: 2vw;
+}
+
+.board>p:first-child {
+    padding: 5px;
+    background: linear-gradient(to right, var(--color1-first) 0%, var(--color1-second) 100%);
+    width: 20%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.meniu {
+    width: auto;
+    background-color: transparent;
+    margin-top: 20px;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    justify-content: space-around;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.meniu:hover {
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--font);
+    background-color: #ad3abd;
+}
+
+a.meniu {
+    text-align: center;
+    text-decoration: none;
+}
+
+.meniu p {
+    margin: auto;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+.btn.active {
+    color: var(--font);
+}
+.meniu>p {
+    color: var(--font);
+}
+
+.nav.navbar-nav li a {
+    color: var(--font);
+}
+
+.nav.navbar-nav li a:hover {
+    transition: 0.3s;
+    background-color:var(--color2-first);
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+    background-color:var(--color2-first);
+}
+.navbar-inverse .navbar-nav>.active>a:hover{
+    background-color:var(--color2-first);
+}
+
+.navbar-brand img{
+    position: absolute;
+    top:-3px;
+    height: 60px;
+
+}
+.navbar {
+    background-color: var(--navbar);
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: var(--color2-first);
+    color:var(--navbar);
+
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width:100%;
+    }
+}

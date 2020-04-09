@@ -1,0 +1,27 @@
+CULORI
+
+NAVBAR- #000428 eventual va fi modificata culoare ulterior
+
+Meniu Stanga- #030b3d
+Meniu Stanga Select-> #f64abd - #ad3abd - Purple
+
+Card nth of type even- #f64abd - #ad3abd - Purple
+Card nth of type odd - #1fd191 - #0086aa - Green1
+
+Text Titlu Card - #030b3d
+Text Mijloc - #444c72
+Text Alb - #ffffff
+
+
+FONTURI
+
+Toate Anunturile - Open Sans Bold -30 pt(sau sa ramana 35)
+Meniu Stanga - Open Sans- Bold - 35pt 
+
+Card Data - Montserrat - Medium - 24 pt
+Card Ziua - Montserrat - SemiBold -45 pt
+Card Titlu - Roboto - Italic - 30 pt
+Card Text - Roboto - Light - 30pt
+Text Articol Complet - Open Sans Semibold 24pt
+
+

@@ -1,0 +1,18 @@
+CULORI
+
+NAVBAR- #000428 eventual va fi modificata culoare ulterior
+
+Background - #1b1354
+Card Stanga- opacity 85%- #1fd191 - #0086aa - Green1
+Card Alb - opacity 85% - alb;
+
+Text Mesaj - #030b3d
+Text Alb - #ffffff
+
+
+FONTURI
+
+Inregistrare pe - Montserrat - Bold - 37pt
+FII STUDENT - Mntserrat - Bold -51 pt
+Text Card - Open Sans - Regular - 38pt
+
