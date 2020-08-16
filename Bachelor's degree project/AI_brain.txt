@@ -1,0 +1,74 @@
+State Start noAction
+State Offense noAction
+State mRightOff moveRight
+State mLeftOff moveLeft
+State Defense noAction
+State mRightDef moveRight
+State mLeftDef moveLeft
+State atkLeft attackLeft
+State atkRight attackRight
+State playerAirborne noAction
+State PAJump jump
+State atkUp attackUp
+State Emergency noAction
+State FalseAlarm noAction
+State EmergJump jump
+State mRightAir moveRight
+State mLeftAir moveLeft
+State atkDown attackDown
+
+
+
+TransitionThreshold 0 0 Start Defense < enemyHP 50.0 10.0 90.0
+TransitionThreshold 1 1 Start Defense > enemyATKCD 0.0 0.0 0.1
+TransitionThreshold 2 2 Start Offense > playerATKCD 0.0 0.0 0.1
+TransitionThreshold 3 3 Start Offense > playerDist 5.0 3.0 8.0
+TransitionThreshold 4 4 Start Offense > enemyHP 25.0 10.0 90.0
+       //Defense
+Transition2Variables 5 1 Defense mRightDef < playerXpos enemyXpos
+Transition2Variables 6 2 Defense mLeftDef > playerXpos enemyXpos
+Transition2Variables 7 3 mLeftDef mRightDef < playerXpos enemyXpos
+Transition2Variables 8 3 mRightDef mLeftDef > playerXpos enemyXpos
+TransitionThreshold 9 2 mLeftDef Offense > playerDist 5.0 3.0 8.0
+TransitionThreshold 10 2 mRightDef Offense > playerDist 5.0 3.0 8.0
+TransitionThreshold 11 1 mLeftDef atkRight <= playerDist 2.0 1.3 2.5
+TransitionThreshold 12 1 mRightDef atkLeft <= playerDist 2.0 1.3 2.5
+            //Emergency
+TransitionThreshold 13 0 Defense Emergency > enemyATKCD 0.0 0.0 0.2
+TransitionThreshold 14 1 Emergency FalseAlarm > playerDist 3.0 3.0 5.0
+TransitionThreshold 15 0 Emergency EmergJump < playerDist 3.0 3.0 4.0
+               //FalseAlarm
+Transition2Variables 16 0 FalseAlarm mRightDef < playerXpos enemyXpos
+Transition2Variables 17 0 FalseAlarm mLeftDef > playerXpos enemyXpos
+                //EmergJump
+Transition2Variables 18 0 EmergJump mRightAir > playerXpos enemyXpos
+Transition2Variables 19 0 EmergJump mLeftAir <= playerXpos enemyXpos
+Transition2Variables 20 1 mLeftAir mRightAir > playerXpos enemyXpos
+Transition2Variables 21 1 mRightAir mLeftAir <= playerXpos enemyXpos
+TransitionThreshold 22 0 mLeftAir atkDown < playerDist 3.0 3.5 4.0
+TransitionThreshold 23 0 mRightAir atkDown < playerDist 3.0 3.5 4.0
+        //Offense
+Transition2Variables 24 0 Offense mRightOff > playerXpos enemyXpos
+Transition2Variables 25 0 Offense mLeftOff < playerXpos enemyXpos
+Transition2Variables 26 2 mLeftOff mRightOff > playerXpos enemyXpos
+Transition2Variables 27 2 mRightOff mLeftOff < playerXpos enemyXpos
+TransitionThreshold 28 1 mLeftOff atkLeft <= playerDist 2.0 1.3 2.5
+TransitionThreshold 29 1 mRightOff atkRight <= playerDist 2.0 1.3 2.5
+        //playerAirborne
+Transition2Variables 30 0 mLeftDef playerAirborne > playerYpos enemyYpos
+Transition2Variables 31 0 mRightDef playerAirborne > playerYpos enemyYpos
+Transition2Variables 32 0 mLeftOff playerAirborne > playerYpos enemyYpos
+Transition2Variables 33 0 mRightOff playerAirborne > playerYpos enemyYpos
+TransitionThreshold 34 0 playerAirborne atkUp <= playerDist 3.0 2.0 3.5
+TransitionThreshold 35 1 playerAirborne PAJump > playerDist 3.0 3.0 5.0
+TransitionThreshold 36 0 PAJump atkUp <= playerDist 2.5 2.0 3.5
+
+        //Attacks
+Transition2Variables 37 0 atkUp Start <= enemyATKCD enemyATKCD
+Transition2Variables 38 0 atkDown Start <= enemyATKCD enemyATKCD
+Transition2Variables 39 0 atkLeft Start <= enemyATKCD enemyATKCD
+Transition2Variables 40 0 atkRight Start <= enemyATKCD enemyATKCD
+
+InitialState Start
+
+GeneticAlgorithm 2 50 500 3

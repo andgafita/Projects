@@ -1,0 +1,40 @@
+State Start noAction
+State Offense noAction
+State mRightOff moveRight
+State mLeftOff moveLeft
+State Defense noAction
+State mRightDef moveRight
+State mLeftDef moveLeft
+State atkLeft attackLeft
+State atkRight attackRight
+
+
+
+TransitionThreshold 0 4 Start Defense < enemyHP 50.0 10.0 90.0
+TransitionThreshold 1 1 Start Defense > enemyATKCD 0.0 0.0 0.1
+TransitionThreshold 2 2 Start Offense > playerATKCD 0.0 0.0 0.1
+TransitionThreshold 3 3 Start Offense > playerDist 5.0 3.0 8.0
+TransitionThreshold 4 0 Start Offense > enemyHP 25.0 10.0 90.0
+       //Defense
+Transition2Variables 5 1 Defense mRightDef < playerXpos enemyXpos
+Transition2Variables 6 2 Defense mLeftDef > playerXpos enemyXpos
+Transition2Variables 7 3 mLeftDef mRightDef < playerXpos enemyXpos
+Transition2Variables 8 3 mRightDef mLeftDef > playerXpos enemyXpos
+TransitionThreshold 9 2 mLeftDef Offense > playerDist 5.0 3.0 8.0
+TransitionThreshold 10 2 mRightDef Offense > playerDist 5.0 3.0 8.0
+TransitionThreshold 11 1 mLeftDef atkRight <= playerDist 3.5 2.0 3.5
+TransitionThreshold 12 1 mRightDef atkLeft <= playerDist 3.5 2.0 3.5
+        //Offense
+Transition2Variables 24 0 Offense mRightOff > playerXpos enemyXpos
+Transition2Variables 25 0 Offense mLeftOff < playerXpos enemyXpos
+Transition2Variables 26 2 mLeftOff mRightOff > playerXpos enemyXpos
+Transition2Variables 27 2 mRightOff mLeftOff < playerXpos enemyXpos
+TransitionThreshold 28 1 mLeftOff atkLeft <= playerDist 3.5 2.0 3.5
+TransitionThreshold 29 1 mRightOff atkRight <= playerDist 3.5 2.0 3.5
+        //Attacks
+Transition2Variables 39 0 atkLeft Start <= enemyATKCD enemyATKCD
+Transition2Variables 40 0 atkRight Start <= enemyATKCD enemyATKCD
+
+InitialState Start
+
+GeneticAlgorithm 2 50 500 3
